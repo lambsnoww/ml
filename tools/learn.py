@@ -11,8 +11,9 @@ import tools
 
 def loadDataRandom(per):
     #per - percentage
-    data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr.txt"), delimiter=",", skiprows=0)
+    data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt"), delimiter=",", skiprows=0)
     label = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/labels.txt"), delimiter=",", skiprows=0)
+    print data
     n = len(data)
     m1 = int(n * per)
     m2 = n - m1
@@ -28,8 +29,10 @@ def loadDataRandom(per):
     print "&&&&&&&&&&&&&&&&"
     return trainData, trainLabel, testData, testLabel
 def loadDataSequential(per):
-    data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr.txt"), delimiter=",", skiprows=0)
+    data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt"), delimiter=",", skiprows=0)
+    #data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt"), delimiter=",", skiprows=0)
     label = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/labels.txt"), delimiter=",", skiprows=0)
+    print data
     n = len(data)
     m1 = int(n * per)
     m2 = n - m1
@@ -42,20 +45,22 @@ def loadDataSequential(per):
 
 
 if __name__ == "__main__":
-    #trainData, trainLabel, testData, testLabel = loadDataRandom(0.7)
-    trainData, trainLabel, testData, testLabel = loadDataSequential(0.5)
+    p = 0.7
+
+    trainData, trainLabel, testData, testLabel = loadDataRandom(p)
+    #trainData, trainLabel, testData, testLabel = loadDataSequential(p)
     clf = svm.SVC()
     clf.fit(trainData, trainLabel)
     pre = clf.predict(testData)
     out = abs(testLabel - pre)
     #print 1 - float(sum(out))/(len(testData))
-    print out
-    print sum(out)
-    print len(testData)
-    f = open("/Users/linxue/PycharmProjects/ml/resources/data.txt")
-    a = f.readlines()
-    n = len(out)
 
+
+    f = open("/Users/linxue/PycharmProjects/ml/resources/OUTCOMES.txt", "a")
+    f.write("SVM: " + str(p) + "\n")
+    f.write(str(ra.outcome(pre, testLabel)))
+    f.write("\n")
+    f.close()
 
     #evaluate the outcome of the classifier
     tools.evaluate.outcome(pre, testLabel)
