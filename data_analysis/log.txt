@@ -1,0 +1,13 @@
+删除4.csv中的271-275共五行数据，数据处理恢复正常
+
+#合并5个文件
+d1.to_csv('all.csv', index = False, header = True)
+d2.to_csv('all.csv', index = False, header = False, mode = 'a+')
+d3.to_csv('all.csv', index = False, header = False, mode = 'a+')
+d4.to_csv('all.csv', index = False, header = False, mode = 'a+')
+d5.to_csv('all.csv', index = False, header = False, mode = 'a+')
+
+tools->Vim Emulator
+应用Vim
+
+将complete.txt写为csv文件，并加入header

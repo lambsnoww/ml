@@ -1,21 +1,12 @@
 #_*_coding:utf-8_*_
 
-import glob
-import time
-import io
-import sys
+from scipy.stats import ttest_ind
+import pandas as pd
+import numpy as np
 
+if __name__ == "__main__":
 
-csvx_list = glob.glob('*.csv')
-print('总共发现%s个CSV文件'% len(csvx_list))
-time.sleep(2)
-print('正在处理............')
-for i in csvx_list:
-    fr = open(i,'r').read()
-    with open('csv_to_csv.csv','a') as f:
-        f.write(fr)
-    print('写入成功！')
-print('写入完毕！')
-print('10秒钟自动关闭程序！')
-time.sleep(10)
+    datap = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/fpout.txt"), delimiter=",", skiprows=0)
+    datan = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/fnout.txt"), delimiter=",", skiprows=0)
+
 

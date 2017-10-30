@@ -4,6 +4,7 @@ import numpy as np
 import csv
 import scipy as sp
 
+from sklearn import preprocessing
 from sklearn import svm
 from sklearn import linear_model
 from sklearn.naive_bayes import GaussianNB
@@ -12,6 +13,7 @@ from sklearn import tree
 from sklearn.model_selection import cross_val_score
 from sklearn.datasets import load_iris
 from sklearn.ensemble import AdaBoostClassifier
+
 
 import tools.evaluate as ra
 from sklearn.ensemble import RandomForestClassifier
@@ -58,13 +60,16 @@ def loadDataSequential(per, type):
     testLabel = label[m1:]
     return trainData, trainLabel, testData, testLabel
 
-def printOutcomes(p, pre, testLabel, frameOrNot, method, trainOrTest, loadType):
+def printOutcomes(p, pre, testLabel, frameOrNot, method, trainOrTest, loadType, scaled):
     f = open("/Users/linxue/PycharmProjects/ml/resources/OUTCOMES.txt", "a")
     if trainOrTest == "train":
         f.write("\n**************************************************************************************************\n")
     else:
         f.write("\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
-    s = trainOrTest + ',' + str(p) + ',' + frameOrNot + ',' + method + ',' + loadType + '\n'
+    sc = "non-scaled"
+    if scaled:
+        sc = "scaled"
+    s = trainOrTest + ',' + str(p) + ',' + frameOrNot + ',' + method + ',' + loadType + ',' + sc + '\n'
     f.write(s)
     f.write(str(ra.outcome(pre, testLabel)))
     if trainOrTest == "test":
@@ -75,20 +80,24 @@ def printOutcomes(p, pre, testLabel, frameOrNot, method, trainOrTest, loadType):
 if __name__ == "__main__":
     ############################################################
     # paramaters
-    p = 0.7
-    frameOrNot = "frame" # use FrameNet or not
+    p = 0.9
+    scaled = False
+    frameOrNot = "non-frame" # use FrameNet or not
     loadType = "Sequential"
     #method = "Decision tree"
     #method = "SVM"
     #method = "GaussianNB"
     #method = "BernoulliNB"
     method = "AdaBoost"
-    ############################################################
+    ###########################################################
 
     if loadType == "Random":
         trainData, trainLabel, testData, testLabel = loadDataRandom(p, frameOrNot)
     else:
         trainData, trainLabel, testData, testLabel = loadDataSequential(p, frameOrNot)
+    if scaled:
+        trainData = preprocessing.scale(trainData)
+        testData = preprocessing.scale(testData)
     # clf = svm.SVC(gamma=0.001, C=100)
 
     if method == "SVM":
@@ -105,7 +114,7 @@ if __name__ == "__main__":
     pre = clf.fit(trainData, trainLabel).predict(testData)
     trainPre = clf.fit(trainData, trainLabel).predict(trainData)
 
-    printOutcomes(p, trainPre, trainLabel, frameOrNot, method, "train", loadType)
-    printOutcomes(p, pre, testLabel, frameOrNot, method, "test", loadType)
+    printOutcomes(p, trainPre, trainLabel, frameOrNot, method, "train", loadType, scaled)
+    printOutcomes(p, pre, testLabel, frameOrNot, method, "test", loadType, scaled)
 
 

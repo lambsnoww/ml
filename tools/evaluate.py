@@ -9,11 +9,11 @@ def outcome(p, a):
     for i in range(0, n):
         if (a[i] == 1 and p[i] == 1):
             TP += 1
-        elif (a[i] == 1 and p[i] == 0):
+        elif (a[i] == 1 and p[i] != 1):
             FN += 1
-        elif (a[i] == 0 and p[i] == 1):
+        elif (a[i] != 1 and p[i] == 1):
             FP += 1
-        elif (a[i] == 0 and p[i] == 0):
+        elif (a[i] != 1 and p[i] != 1):
             TN += 1
 
     #accuracy

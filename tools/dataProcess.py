@@ -40,7 +40,15 @@ def writeFile(filename, type):
         att = getAttr(row[3])
         f.write(row[3] + '\n')
         f2.write(row[-1] + '\n')
-        f3.write(row[3] + ',' + row[-1] + ',' + str(att) + '\n')
+        row[3] = row[3].replace("\"", "\"\"")
+        f3.write('\"' + row[3] + '\",' + row[-1] + '\n')
+        '''
+        if ',' in row[3]:
+            row[3] = row[3].replace("\"", "\"\"")
+            f3.write('\"' + row[3] + '\",' + row[-1] + '\n')
+        else:
+            f3.write(row[3] + ',' + row[-1] + '\n')
+        '''
 
         n = len(att)
         for i in att:
@@ -153,6 +161,7 @@ if __name__ == "__main__":
 
     # write to attr_all.txt the additional attributes of the FrameNet
     writeAttr()
+
 
     print "data files have been written"
 
