@@ -2,16 +2,30 @@
 
 import numpy as np
 import csv
+import scipy as sp
+
 from sklearn import svm
+from sklearn import linear_model
+from sklearn.naive_bayes import GaussianNB
+from sklearn.naive_bayes import BernoulliNB
+from sklearn import tree
+from sklearn.model_selection import cross_val_score
+from sklearn.datasets import load_iris
+from sklearn.ensemble import AdaBoostClassifier
+
 import tools.evaluate as ra
 from sklearn.ensemble import RandomForestClassifier
 import string
 import random
 import tools
 
-def loadDataRandom(per):
+
+def loadDataRandom(per, type):
     #per - percentage
-    data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt"), delimiter=",", skiprows=0)
+    if (type == "frame"):
+        data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt"), delimiter=",", skiprows=0)
+    else:
+        data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr.txt"), delimiter=",", skiprows=0)
     label = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/labels.txt"), delimiter=",", skiprows=0)
     print data
     n = len(data)
@@ -28,9 +42,11 @@ def loadDataRandom(per):
     print testData
     print "&&&&&&&&&&&&&&&&"
     return trainData, trainLabel, testData, testLabel
-def loadDataSequential(per):
-    data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt"), delimiter=",", skiprows=0)
-    #data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt"), delimiter=",", skiprows=0)
+def loadDataSequential(per, type):
+    if type == "frame":
+        data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt"), delimiter=",", skiprows=0)
+    else:
+        data = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/attr.txt"), delimiter=",", skiprows=0)
     label = np.loadtxt(open("/Users/linxue/PycharmProjects/ml/resources/labels.txt"), delimiter=",", skiprows=0)
     print data
     n = len(data)
@@ -42,29 +58,54 @@ def loadDataSequential(per):
     testLabel = label[m1:]
     return trainData, trainLabel, testData, testLabel
 
+def printOutcomes(p, pre, testLabel, frameOrNot, method, trainOrTest, loadType):
+    f = open("/Users/linxue/PycharmProjects/ml/resources/OUTCOMES.txt", "a")
+    if trainOrTest == "train":
+        f.write("\n**************************************************************************************************\n")
+    else:
+        f.write("\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
+    s = trainOrTest + ',' + str(p) + ',' + frameOrNot + ',' + method + ',' + loadType + '\n'
+    f.write(s)
+    f.write(str(ra.outcome(pre, testLabel)))
+    if trainOrTest == "test":
+        f.write("\n**************************************************************************************************\n")
+    f.close()
 
 
 if __name__ == "__main__":
+    ############################################################
+    # paramaters
     p = 0.7
+    frameOrNot = "frame" # use FrameNet or not
+    loadType = "Sequential"
+    #method = "Decision tree"
+    #method = "SVM"
+    #method = "GaussianNB"
+    #method = "BernoulliNB"
+    method = "AdaBoost"
+    ############################################################
 
-    trainData, trainLabel, testData, testLabel = loadDataRandom(p)
-    #trainData, trainLabel, testData, testLabel = loadDataSequential(p)
-    clf = svm.SVC()
-    clf.fit(trainData, trainLabel)
-    pre = clf.predict(testData)
-    out = abs(testLabel - pre)
-    #print 1 - float(sum(out))/(len(testData))
+    if loadType == "Random":
+        trainData, trainLabel, testData, testLabel = loadDataRandom(p, frameOrNot)
+    else:
+        trainData, trainLabel, testData, testLabel = loadDataSequential(p, frameOrNot)
+    # clf = svm.SVC(gamma=0.001, C=100)
 
+    if method == "SVM":
+        clf = svm.SVC()
+    elif method == "GaussianNB":
+        clf = GaussianNB()
+    elif method == "BernoulliNB":
+        clf = BernoulliNB()
+    elif method == "Decision Tree":
+        clf = tree.DecisionTreeClassifier()
+    elif method == "AdaBoost":
+        clf = AdaBoostClassifier(n_estimators=100)
 
-    f = open("/Users/linxue/PycharmProjects/ml/resources/OUTCOMES.txt", "a")
-    f.write("SVM: " + str(p) + "\n")
-    f.write(str(ra.outcome(pre, testLabel)))
-    f.write("\n")
-    f.close()
+    pre = clf.fit(trainData, trainLabel).predict(testData)
+    trainPre = clf.fit(trainData, trainLabel).predict(trainData)
 
-    #evaluate the outcome of the classifier
-    tools.evaluate.outcome(pre, testLabel)
-
-
+    printOutcomes(p, trainPre, trainLabel, frameOrNot, method, "train", loadType)
+    printOutcomes(p, pre, testLabel, frameOrNot, method, "test", loadType)
 
 
