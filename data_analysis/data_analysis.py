@@ -24,20 +24,17 @@ def dataWrite():
 def writeAttr():
     data = pd.read_csv("complete.csv")
     print len(data)
-    for i in range(len(data)):
-        print data.xs(i)
 
 
 
-def extractAttr(da):
-    n = len(da)
-    print da
-    for i in range(n):
-        a = da.xs(i)[0]
-        print a
-        #l = da.xs(i)[1]
-        #text_attr = getTextAttr(a)
-        #frame_attr = getFrameAttr(a)
+
+
+
+
+    
+
+
+
 
 
 

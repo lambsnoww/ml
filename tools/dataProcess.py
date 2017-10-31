@@ -42,13 +42,6 @@ def writeFile(filename, type):
         f2.write(row[-1] + '\n')
         row[3] = row[3].replace("\"", "\"\"")
         f3.write('\"' + row[3] + '\",' + row[-1] + '\n')
-        '''
-        if ',' in row[3]:
-            row[3] = row[3].replace("\"", "\"\"")
-            f3.write('\"' + row[3] + '\",' + row[-1] + '\n')
-        else:
-            f3.write(row[3] + ',' + row[-1] + '\n')
-        '''
 
         n = len(att)
         for i in att:
@@ -75,7 +68,7 @@ def writeAttr():
     ff = open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt", 'w')
 
     f1 = open("/Users/linxue/PycharmProjects/ml/resources/attr.txt", 'r')
-    f2 = open("/Users/linxue/PycharmProjects/ml/resources/dataout.txt", 'r')
+    f2 = open("/Users/linxue/PycharmProjects/ml/resources/dataout1.txt", 'r')
 
     lines1 = f1.readlines()
     lines2 = f2.readlines()

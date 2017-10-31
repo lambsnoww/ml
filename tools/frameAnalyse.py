@@ -8,17 +8,12 @@ def readFrame(filename):
     #f = open("/Users/linxue/PycharmProjects/ml/resources/fpout.txt")
     f = open(filename)
     count = {}
-    cnt = 0
     for line in f:
         #js = json.dumps(line, sort_keys=True, indent=4, separators=(',', ':'))
         #js = json.loads(line, encoding='utf-8')
         #js['frames'][0]['target']['name']
         #is the frame name of the sentence
         js = json.loads(line) #dumps-string; loads-dict
-        print cnt
-        '''if cnt == 9:
-            print js
-        cnt = cnt + 1'''
 
         #print js['frames'][0]
         if js['frames'] != []:
@@ -33,6 +28,7 @@ def readFrame(filename):
             count[str] = 1
         print type(str)
     print count
+    return count
 
 def extractFrameAttribute(line):
     js = json.loads(line) #dumps-string; loads-dict
@@ -44,7 +40,9 @@ def extractFrameAttribute(line):
     s6 = 0
     s7 = 0
     s8 = 0
-    for i in range(min(3, len(js['frames']))):
+    s9 = 0
+    s10 = 0
+    for i in range(min(10, len(js['frames']))):
         if js['frames'] != []:
             if js['frames'][i]['target']['name'].encode("gbk") == "People":
                 s1 += 1
@@ -62,22 +60,26 @@ def extractFrameAttribute(line):
                 s7 += 1
             elif js['frames'][i]['target']['name'].encode("gbk") == "Cardinal_numbers":
                 s8 += 1
-    return str(s1) + ',' + str(s2) + ',' + str(s3) + ',' + str(s4) + ',' + str(s5) + ',' + str(s6) + ',' + str(s7) + ',' + str(s8)
+            elif js['frames'][i]['target']['name'].encode("gbk") == "Categorization":
+                s9 += 1
+            elif js['frames'][i]['target']['name'].encode("gbk") == "Locative_relation":
+                s10 += 1
+    return str(s1) + ',' + str(s2) + ',' + str(s3) + ',' + str(s4) + ',' + str(s5) + ',' + str(s6) + ',' + str(s7) + ',' + str(s8) + ',' + str(s9) + ',' + str(s10)
 
 def calculateFrame():
     dp = {}
     dn = {}
     d = {}
-    fp = open("/Users/linxue/PycharmProjects/ml/resources/fpout.txt")
-    fn = open("/Users/linxue/PycharmProjects/ml/resources/fnout.txt")
-    calculatelines(dp, fp.readlines())
-    calculatelines(dn, fn.readlines())
+    fp = open("/Users/linxue/PycharmProjects/ml/resources/fpout1.txt")
+    fn = open("/Users/linxue/PycharmProjects/ml/resources/fnout1.txt")
+    calculatelines(dp, fp.readlines(), 3)
+    calculatelines(dn, fn.readlines(), 3)
     fp.close()
     fn.close()
-    fp = open("/Users/linxue/PycharmProjects/ml/resources/fpout.txt")
-    fn = open("/Users/linxue/PycharmProjects/ml/resources/fnout.txt")
-    calculatelines(d, fn.readlines())
-    calculatelines(d, fn.readlines())
+    fp = open("/Users/linxue/PycharmProjects/ml/resources/fpout1.txt")
+    fn = open("/Users/linxue/PycharmProjects/ml/resources/fnout1.txt")
+    calculatelines(d, fn.readlines(), 3)
+    calculatelines(d, fn.readlines(), 3)
     fp.close()
     fn.close()
     print "ddddddddddddddddddddddddddddddddddddddd\n"
@@ -103,10 +105,10 @@ def draw(d):
 
 
 # called by calculateFrame
-def calculatelines(d, lines):
+def calculatelines(d, lines, n):
     for line in lines:
         js = json.loads(line)
-        for i in range(min(3, len(js['frames']))):
+        for i in range(min(n, len(js['frames']))):
             if js['frames'] != []:
                 framename =  js['frames'][i]['target']['name'].encode("gbk")
                 if framename in d:
@@ -114,6 +116,59 @@ def calculatelines(d, lines):
                 else:
                     d[framename] = 1
 
+def getImportantFrames(filename, num):
+    f = open(filename)
+    count = {}
+    ratio = {}
+    for line in f:
+        js = json.loads(line)
+        n = min(num, len(js['frames']))
+        if len(js['frames']) > 0:
+            local_count = {}
+            for i in range(min(num, len(js['frames']))):
+                str = js['frames'][i]['target']['name'].encode("gbk")
+                if str in count:
+                    count[str] += 1
+                else:
+                    count[str] = 1
+
+                if str in local_count:
+                    local_count[str] += 1
+                else:
+                    local_count[str] = 1
+            for i in range(min(num, len(js['frames']))):
+                str = js['frames'][i]['target']['name'].encode("gbk")
+                if str in ratio:
+                    ratio[str] += local_count[str] / float(n)
+                else:
+                    ratio[str] = local_count[str] / float(n)
+    #print count, ratio
+    return count, ratio
+
+
+
+
 if __name__ == "__main__":
     # readFrame("/Users/linxue/PycharmProjects/ml/resources/fpout.txt")
-    calculateFrame()
+    #calculateFrame()
+    fp = "/Users/linxue/PycharmProjects/ml/resources/fpout1.txt"
+    cntp, rp = getImportantFrames(fp, 10)
+    fn = "/Users/linxue/PycharmProjects/ml/resources/fnout1.txt"
+    cntn, rn = getImportantFrames(fn, 10)
+
+    diff = {}
+    for key in rp:
+        diff[key] = rp[key]
+    for key in rn:
+        if key in diff:
+            diff[key] -= rn[key]
+        else:
+            diff[key] = rn[key] * (-1)
+    items = diff.items()
+    items = sorted(items, key=lambda x: x[1], reverse=True)
+    print items
+
+
+
+
+
