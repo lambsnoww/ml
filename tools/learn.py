@@ -89,11 +89,12 @@ if __name__ == "__main__":
     loadType = "Random"
     #loadType = "Sequential"
     #method = "Decision tree"
-    #method = "SVM"
+    method = "SVM"
     #method = "GaussianNB"
     #method = "BernoulliNB"
     #method = "AdaBoost"
-    method = "Stacking"
+    #method = "Stacking"
+    #method Stacking is not usable now
     ###########################################################
 
     if loadType == "Random":
@@ -125,20 +126,22 @@ if __name__ == "__main__":
                 RidgeClassifier(random_state=1)]
         clf = StackedClassifier(bclf, clfs)
 
+    print testData
+    print "*************************************"
     pre = clf.fit(trainData, trainLabel).predict(testData)
     trainPre = clf.fit(trainData, trainLabel).predict(trainData)
 
     printOutcomes(p, trainPre, trainLabel, "frame", method, "train", loadType, scaled)
     printOutcomes(p, pre, testLabel, "frame", method, "test", loadType, scaled)
-    score = metrics.accuracy_score(trainLabel, pre)
-    print ("Accuracy: %f" % score)
+    #score = metrics.accuracy_score(trainLabel, pre)
+    #print ("Accuracy: %f" % score)
 
     pre = clf.fit(trainDatan, trainLabel).predict(testDatan)
     trainPre = clf.fit(trainDatan, trainLabel).predict(trainDatan)
 
     printOutcomes(p, trainPre, trainLabel, "non-frame", method, "train", loadType, scaled)
     printOutcomes(p, pre, testLabel, "non-frame", method, "test", loadType, scaled)
-    score = metrics.accuracy_score(trainLabel, pre)
-    print ("Accuracy: %f" % score)
+    #score = metrics.accuracy_score(trainLabel, pre)
+    #print ("Accuracy: %f" % score)
 
 

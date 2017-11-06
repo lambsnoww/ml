@@ -8,6 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 import string
 from contextlib import nested
 import frameAnalyse as fa
+import tools.wordProcess as wp
 
 def writeFile(filename, type):
     sen = []
@@ -21,6 +22,7 @@ def writeFile(filename, type):
         f4 = open("/Users/linxue/PycharmProjects/ml/resources/attr.txt", "w")
         fp = open("/Users/linxue/PycharmProjects/ml/resources/fp.txt", "w")
         fn = open("/Users/linxue/PycharmProjects/ml/resources/fn.txt", "w")
+        ft = open("/Users/linxue/PycharmProjects/ml/resources/datat.txt", "w")
     else:
         f = open("/Users/linxue/PycharmProjects/ml/resources/data.txt", "a")
         f2 = open("/Users/linxue/PycharmProjects/ml/resources/labels.txt", "a")
@@ -28,6 +30,7 @@ def writeFile(filename, type):
         f4 = open("/Users/linxue/PycharmProjects/ml/resources/attr.txt", "a")
         fp = open("/Users/linxue/PycharmProjects/ml/resources/fp.txt", "a")
         fn = open("/Users/linxue/PycharmProjects/ml/resources/fn.txt", "a")
+        ft = open("/Users/linxue/PycharmProjects/ml/resources/datat.txt", "a")
 
     flag = True
     for row in csv_reader:
@@ -50,6 +53,7 @@ def writeFile(filename, type):
             if n != 0:
                 f4.write(',')
         f4.write('\n')
+        ft.write(wp.senTrim(row[3]) + '\n')
        # f4.write(str(att[0]) + ',' + str(att[1]) + ',' + str(att[2])  + ',' + str(att[3]) + '\n')
 
         if (row[-1] == '1'):
@@ -63,6 +67,7 @@ def writeFile(filename, type):
     f4.close()
     fp.close()
     fn.close()
+    ft.close()
 
 def writeAttr():
     ff = open("/Users/linxue/PycharmProjects/ml/resources/attr_all.txt", 'w')
@@ -89,6 +94,8 @@ def getAttr(s):
     line = s.strip()
     words = line.split()
     word_counts = len(words)
+
+
     # if has a hyperlink
     link = 0
     if "http" in line:

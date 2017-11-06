@@ -3,6 +3,21 @@
 import json
 import sys
 
+def frame2vec(filename):
+    f = open(filename)
+    for line in f:
+        js = json.loads(line)
+        n = len(js['frames'])
+        ls = []
+        l = []
+        for i in range(n):
+            str = js['frames'][i]['target']['name'].encode("gbk")
+            l.extend(str)
+        ls.append(l)
+
+    return ls
+
+
 
 def readFrame(filename):
     #f = open("/Users/linxue/PycharmProjects/ml/resources/fpout.txt")
