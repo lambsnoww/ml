@@ -6,7 +6,7 @@ from collections import Counter
 
 
 def wordTrim(word):
-    sy = "~!@#$%^&*()_+-={}[]|\\:;,.?/<>\xea\xb0\x95\xeb\x82\xa8\xec\x8a\xa4\xed\x83\x80\xec\x9d\xbc\xc2\xb7\xef\xb4\xa9\xef\xb3'"
+    sy = "~!@#$%^&*()_+-={}[]|\\:;,.?<>\xea\xb0\x95\xeb\x82\xa8\xec\x8a\xa4\xed\x83\x80\xec\x9d\xbc\xc2\xb7\xef\xb4\xa9\xef\xb3\xc5\xab\xa1\xad\xae\xa3\xaf\xad\xad\xa5\xe2\x9c\xf0\x9f\x98\x97'"
     str = ""
     for i in range(len(word)):
         if word[i] in sy:
@@ -38,6 +38,8 @@ def hasLink(sens):
     for sen in sens:
         l = 0
         if ("http://" in sen) or ("https://" in sen) or ("www." in sen) or (".com" in sen):
+            l = 1
+        elif sen.count('/') >= 3:
             l = 1
         # attLink = attLink + ',' + str(l)
         ls.append(l)

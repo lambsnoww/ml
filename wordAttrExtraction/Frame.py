@@ -27,6 +27,8 @@ class Frame(object):
         self.allcount = {} # dict
         print "self.framelist:"
         print self.framelist
+        ######add vector
+        self.frame2vec()
 
 
     def frame2vec(self):
@@ -65,6 +67,7 @@ if __name__ == "__main__":
     frame = Frame(10, "/Users/linxue/PycharmProjects/ml/resources/dataout1.txt")
     frame.frame2vec()
     print frame.vector
+    print len(frame.vector[0])
 
 
 

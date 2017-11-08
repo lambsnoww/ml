@@ -1,0 +1,5 @@
+thx,thanks
+u,you
+ur,you are
+im,i am
+sub,subscribe

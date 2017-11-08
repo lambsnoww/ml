@@ -6,6 +6,30 @@ from collections import Counter
 from collections import defaultdict
 import pandas as pd
 import tools.wordProcess as tw
+import pylab
+
+
+def ifStopword(word):
+    f = open("ENstopwords.txt", 'r')
+    for i in f.readlines():
+        if word == i.strip():
+            f.close()
+            return True
+
+    f.close()
+    return False
+
+
+def ifAbbrecation(word):
+    f = open("ENabbrevation.txt", 'r')
+    for i in f.readlines():
+        a = i.split(',')
+        if word == a[0]:
+            f.close()
+            return a[1]
+    f.close()
+    return False
+
 
 # f = open("/Users/linxue/PycharmProjects/ml/resources/dataout.txt")
 # Word - input is a list of sentences, and output is the trimed sentences & words
@@ -18,14 +42,9 @@ class Word(object):
         self.wordlist = [] # list of list of words(trimed and without stopword)
         self.sentences = [] # list of trimed sentences
         self.vector = [] # word vector
-        self.stopwords = [] # stop words
 
         # get the sentences and words
-        f = open("ENstopwords.txt", 'r')
-        sw = []
-        for i in f.readlines():
-            sw.append(i.strip())
-        self.stopwords = sw
+
 
         sens = []
         for s in contents:
@@ -83,6 +102,8 @@ class Word(object):
 
 
 
+
+
 if __name__ == "__main__":
     d1 = pd.read_csv("Youtube01-Psy.csv")
     lk = tw.hasLink(d1["CONTENT"])
@@ -93,6 +114,8 @@ if __name__ == "__main__":
     print word.sentences
     print "wordlist:"
     print word.wordlist
+    print word.vector
+    print len(word.vector[0])
 
 
 

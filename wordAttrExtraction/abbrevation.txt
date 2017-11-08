@@ -1,0 +1,5 @@
+sub,subscribe
+omg,oh my god
+u,you
+ur,you are
+
