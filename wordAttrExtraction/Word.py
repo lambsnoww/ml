@@ -85,8 +85,8 @@ class Word(object):
 
 
         allkeys = allcount.keys()
-        print "allkeys:"
-        print allkeys
+        #print "allkeys:"
+        #print allkeys
 
 
         vec = []

@@ -25,8 +25,8 @@ class Frame(object):
         self.vector = []
         self.countlist = [] # list of dicts
         self.allcount = {} # dict
-        print "self.framelist:"
-        print self.framelist
+        #print "self.framelist:"
+        #print self.framelist
         ######add vector
         self.frame2vec()
 
