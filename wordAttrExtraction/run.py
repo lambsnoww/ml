@@ -80,13 +80,21 @@ if __name__ == "__main__":
     #np.set_printoptions(threshold=np.inf)
     #print haslink[haslink['CLASS'] == 0]['CONTENT']
 
-    x = nolink2.iloc[:, -1].values.tolist()
-    y = nolink2.iloc[:, 0:-1].values.tolist()
+    x = nolink2.iloc[:, 0:-1].values
+    y = nolink2.iloc[:, -1].values
+    y = list(nolink2['CLASS'])
+    y = nolink2.iloc[:, -1].values
+
+    print len(x)
+    print len(x[0])
+    print len(y)
 
     x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=1)
-    x_train = StandardScaler(x_train)
+    #x_train = StandardScaler(x_train)
     clf = AdaBoostClassifier(n_estimators=100)
     y_pred = clf.fit(x_train, y_train).predict(x_test)
+    ev.outcome(y_pred, y_test)
+
 
 
 

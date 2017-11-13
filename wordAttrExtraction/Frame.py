@@ -11,17 +11,42 @@ class Frame(object):
     # m - max number of frames for every sentences
     def __init__(self, m, filename):
         f = open(filename)
+
         ls = []
-        for line in f:
+        ls2 = []
+        arr = f.readlines()
+        for line in arr:
             js = json.loads(line)
-            n = min(len(js['frames']), m)
+            #n = min(len(js['frames']), m)
+            n = len(js['frames'])
             l = []
+            l2 = []
             for i in range(n):
                 str = js['frames'][i]['target']['name'].encode("gbk")
+                score = js['frames'][i]['annotationSets'][0]['score']
+                    #.encode("gbk")
                 l.append(str)
+                l2.append([str, score])
+                #print str + '%f'%score
+            l2 = sorted(l2, key=lambda x:x[1])
             ls.append(l)
+            ls2.append(l2)
 
-        self.framelist = ls
+        fl = []
+        for i in range(len(ls2)):
+            t = ls2[i]
+            count = 0
+            fll = []
+            for line in t:
+                fll.append(line[0])
+                count += 1
+                if (count >= m):
+                    break
+            fl.append(fll)
+        print fl
+
+
+        self.framelist = fl
         self.vector = []
         self.countlist = [] # list of dicts
         self.allcount = {} # dict
@@ -45,7 +70,7 @@ class Frame(object):
 
 
         allkeys = allcount.keys()
-        print "allkeys:"
+        print "all frame keys:"
         print allkeys
 
 

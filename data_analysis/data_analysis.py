@@ -14,11 +14,11 @@ def dataWrite():
     d4 = pd.read_csv("/Users/linxue/PycharmProjects/ml/resources/Youtube04-Eminem02.csv")
     d5 = pd.read_csv("/Users/linxue/PycharmProjects/ml/resources/Youtube05-Shakira.csv")
 
-    d1.to_csv('all_data.csv', index = False, header = True)
-    d2.to_csv('all_data.csv', index = False, header = False, mode = 'a+')
-    d3.to_csv('all_data.csv', index = False, header = False, mode = 'a+')
-    d4.to_csv('all_data.csv', index = False, header = False, mode = 'a+')
-    d5.to_csv('all_data.csv', index = False, header = False, mode = 'a+')
+    d1.to_csv('Youtube.csv', index = False, header = True)
+    d2.to_csv('Youtube.csv', index = False, header = False, mode = 'a+')
+    d3.to_csv('Youtube.csv', index = False, header = False, mode = 'a+')
+    d4.to_csv('Youtube.csv', index = False, header = False, mode = 'a+')
+    d5.to_csv('Youtube.csv', index = False, header = False, mode = 'a+')
 
 
 def writeAttr():
