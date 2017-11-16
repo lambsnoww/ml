@@ -92,8 +92,8 @@ def outcome2(p, a, p2, a2):
     f.write('(%.4f, %.4f, %.4f, %.4f)\n'%(A, P, R, F))
     f.write("****************************************\n")
     f.write("from/to\tspam\tno-spam\n")
-    f.write("spam\t%4d\t%4d"%(TP, FN))
-    f.write("no-spam\t%4d\t%4d"%(FP, TN))
+    f.write("spam\t%4d\t%4d\n"%(TP, FN))
+    f.write("no-spam\t%4d\t%4d\n"%(FP, TN))
     f.write("****************************************\n")
     f.close()
 

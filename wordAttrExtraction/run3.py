@@ -33,16 +33,22 @@ import tools
 from sklearn.cross_validation import train_test_split
 from sklearn import metrics
 import string
+from sklearn.decomposition import PCA
+from sklearn import metrics
+from sklearn.neighbors import KNeighborsClassifier
 
 if __name__ == "__main__":
-
+    # 1 - frame and word
+    # 0 - word only
+    # -1 - frame only
     frameOrNot = 1
 
-    method = "SVM"
+    #method = "SVM"
     #method = "GaussianNB"
     #method = "BernoulliNB"
     #method = "Decision Tree"
-    #method = "AdaBoost"
+    method = "AdaBoost"
+    #method = "KNN"
 
     #d = pd.read_csv("Youtube01-Psy.csv")
     #d = pd.read_csv("Youtube02-KatyPerry.csv")
@@ -55,22 +61,46 @@ if __name__ == "__main__":
     ls = pd.Series(lk)
     d = pd.DataFrame({"CONTENT": d["CONTENT"], "CLASS": d["CLASS"], "LINK": ls})
 
+    dp = d[d["CLASS"] == 1]
+    dn = d[d["CLASS"] == 0]
+
+
+
     # word
     word = Word(10, pd.Series.tolist(d["CONTENT"]))
+    pword = Word(10, pd.Series.tolist(dp["CONTENT"]))
+    nword = Word(10, pd.Series.tolist(dn["CONTENT"]))
+
 
     # before this step, make sure to write sentences to file1.txt for Semafor to process
+    '''
     f = open('allsens.txt', 'w')
-
     for sen in d["CONTENT"]:
         f.write(sen + '\n')
     f.close()
-
+    #positive
+    fp = open('psens.txt', 'w')
+    for sen in dp["CONTENT"]:
+        fp.write(sen + '\n')
+    fp.close()
+    #negative
+    fn = open('nsens.txt', 'w')
+    for sen in dn["CONTENT"]:
+        fn.write(sen + '\n')
+    fn.close()
+    '''
     # frame
-    frame = Frame(4, 'allsensFrame.txt')
+    frame = Frame(100, 'allsensFrame.txt')
     #frame = Frame(10, 'f1out.txt')
-
-    w = pd.DataFrame(word.vector)
-    f = pd.DataFrame(frame.vector)
+    '''
+    print "VECTORS"
+    print "WORD.VECTOR"
+    print word.vector
+    print "FRAME.VECTOR"
+    print frame.vector
+    '''
+    #w = pd.DataFrame(word.vector)
+    #f = pd.DataFrame(frame.vector)
     ##############
     if (frameOrNot == 1):
         all = np.hstack((word.vector, frame.vector))
@@ -80,10 +110,6 @@ if __name__ == "__main__":
         all = frame.vector
     a = pd.DataFrame(all)
     a = pd.concat([a, d[["CLASS"]], d[["LINK"]]], axis=1)
-    # a = pd.concat([a, d1[['CONTENT']]], axis=1)
-    print len(a)
-    print type(a)
-    print len(a.xs(0))
 
     tz_counts = a['CLASS'].value_counts()
     # print tz_counts[:2]
@@ -102,8 +128,17 @@ if __name__ == "__main__":
 
     x = nolink2.iloc[:, 0:-1].values
     y = nolink2.iloc[:, -1].values
-    y = list(nolink2['CLASS'])
-    y = nolink2.iloc[:, -1].values
+    '''
+    pca = PCA(n_components=10)
+    newData = pca.fit_transform(x)
+    print "SHAPE@@@@@@@@@@@@@@@@@@@@@@@@@"
+    print x.shape
+    print newData.shape
+    x = newData
+    '''
+
+    #y = list(nolink2['CLASS'])
+    #y = nolink2.iloc[:, -1].values
 
     print len(x)
     print len(x[0])
@@ -123,16 +158,23 @@ if __name__ == "__main__":
         clf = tree.DecisionTreeClassifier()
     elif method == "AdaBoost":
         clf = AdaBoostClassifier(n_estimators=100)
+    elif method == "KNN":
+        clf = KNeighborsClassifier()
 
     print 'frame: ' + str(frameOrNot) + ', method: ' + method
     y_pred = clf.fit(x_train, y_train).predict(x_test)
     #ev.outcome(y_pred, y_test)
+    f = open('OUTCOMES.txt', 'a')
+    f.write('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n')
+    f.write('frame: ' + str(frameOrNot) + ', method: ' + method + '\n')
+    f.close()
+
     ev.outcome2(y_pred, y_test, p2, a2)
+
+    print (metrics.classification_report(y_test, y_pred))
+    print (metrics.confusion_matrix(y_test, y_pred))
     #print y_pred
     #print y_test
 
-    f = open('OUTCOMES.txt', 'a')
-    f.write('frame: ' + str(frameOrNot) + ', method: ' + method + '\n')
-    f.close()
 
 

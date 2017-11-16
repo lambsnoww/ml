@@ -50,8 +50,8 @@ class Frame(object):
         self.vector = []
         self.countlist = [] # list of dicts
         self.allcount = {} # dict
-        #print "self.framelist:"
-        #print self.framelist
+        print "self.framelist:"
+        print self.framelist
         ######add vector
         self.frame2vec()
 
@@ -69,18 +69,23 @@ class Frame(object):
         self.allcount = allcount # dict
 
 
-        allkeys = allcount.keys()
-        print "all frame keys:"
-        print allkeys
+        allkeys2 = sorted(allcount.items(), lambda x, y: cmp(x[1], y[1]), reverse=True)
+        allkeys = []
+        for i in allkeys2:
+            allkeys.append(i[0])
+        #print "all frame keys:"
+        #print allkeys
 
 
         vec = []
         for l in self.countlist:
             num = [0] * len(allkeys)
+            al = 0
             for i in l.keys():
-                num[allkeys.index(i)] += 1
+                num[allkeys.index(i)] += l[i]
+                al += l[i]
             for i in l.keys():
-                num[allkeys.index(i)] /= float(len(l))
+                num[allkeys.index(i)] /= float(al)
             vec.append(num)
 
         self.vector = vec

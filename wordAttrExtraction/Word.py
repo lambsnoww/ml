@@ -81,10 +81,17 @@ class Word(object):
             countlist.append(count)
         self.countlist = countlist # list of dicts
         self.allcount = allcount # dict
+        print "self.countlist"
+        print self.countlist
 
 
 
-        allkeys = allcount.keys()
+        # sorted by number of value
+        allkeys = []
+        allkeys2 = sorted(allcount.items(), lambda x, y: cmp(x[1], y[1]), reverse=True)
+        for i in allkeys2:
+            allkeys.append(i[0])
+
         #print "allkeys:"
         #print allkeys
 
@@ -92,10 +99,12 @@ class Word(object):
         vec = []
         for l in self.countlist:
             num = [0] * len(allkeys)
+            al = 0
             for i in l.keys():
-                num[allkeys.index(i)] += 1
+                num[allkeys.index(i)] += l[i]
+                al += l[i]
             for i in l.keys():
-                num[allkeys.index(i)] /= float(len(l))
+                num[allkeys.index(i)] /= float(al)
             vec.append(num)
 
         self.vector = vec
@@ -110,11 +119,11 @@ if __name__ == "__main__":
     ls = pd.Series(lk)
     d1 = pd.DataFrame({"CONTENT": d1["CONTENT"], "CLASS": d1["CLASS"], "LINK": ls})
     word = Word(10, pd.Series.tolist(d1["CONTENT"]))
-    print "sentences:"
-    print word.sentences
-    print "wordlist:"
-    print word.wordlist
-    print word.vector
+    #print "sentences:"
+    #print word.sentences
+    #print "wordlist:"
+    #print word.wordlist
+    #print word.vector
     print len(word.vector[0])
 
 
