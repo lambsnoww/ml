@@ -54,6 +54,14 @@ class Frame(object):
         print self.framelist
         ######add vector
         self.frame2vec()
+        self.framelist = []
+        for sen in self.vector:
+            s = ''
+            for i in sen:
+                s = s + i + ' '
+            self.framelist.append(s.strip())
+
+
 
 
     def frame2vec(self):

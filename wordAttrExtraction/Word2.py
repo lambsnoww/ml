@@ -33,18 +33,13 @@ def ifAbbrecation(word):
 
 # f = open("/Users/linxue/PycharmProjects/ml/resources/dataout.txt")
 # Word - input is a list of sentences, and output is the trimed sentences & words
-class Word(object):
+class Word2(object):
 
     # m - max number of words for every sentences
     def __init__(self, m, contents):
-        self.countlist = [] # list of dicts (word-count dict list of every sentences)
-        self.allcount = defaultdict # dict (word-count dict of all sentences)
         self.wordlist = [] # list of list of words(trimed and without stopword)
-        self.sentences = [] # list of trimed sentences
-        self.vector = [] # word vector
 
         # get the sentences and words
-
 
         sens = []
         for s in contents:

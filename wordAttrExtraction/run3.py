@@ -61,15 +61,15 @@ if __name__ == "__main__":
     ls = pd.Series(lk)
     d = pd.DataFrame({"CONTENT": d["CONTENT"], "CLASS": d["CLASS"], "LINK": ls})
 
-    dp = d[d["CLASS"] == 1]
-    dn = d[d["CLASS"] == 0]
+    #dp = d[d["CLASS"] == 1]
+    #dn = d[d["CLASS"] == 0]
 
 
 
     # word
     word = Word(10, pd.Series.tolist(d["CONTENT"]))
-    pword = Word(10, pd.Series.tolist(dp["CONTENT"]))
-    nword = Word(10, pd.Series.tolist(dn["CONTENT"]))
+    #pword = Word(10, pd.Series.tolist(dp["CONTENT"]))
+    #nword = Word(10, pd.Series.tolist(dn["CONTENT"]))
 
 
     # before this step, make sure to write sentences to file1.txt for Semafor to process
