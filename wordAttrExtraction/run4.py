@@ -33,7 +33,7 @@ from sklearn.ensemble import RandomForestClassifier
 import string
 import random
 import tools
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn import metrics
 import string
 from sklearn.decomposition import PCA

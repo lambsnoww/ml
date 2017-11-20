@@ -23,19 +23,28 @@ class Frame2(object):
             n = len(js['frames'])
             l = []
             l2 = []
-            s = ''
             for i in range(n):
                 str = js['frames'][i]['target']['name'].encode("gbk")
                 score = js['frames'][i]['annotationSets'][0]['score']
                     #.encode("gbk")
                 l.append(str)
                 l2.append([str, score])
-                s = s + str + ' '
                 #print str + '%f'%score
-            l2 = sorted(l2, key=lambda x:x[1])
+            l2 = sorted(l2, key=lambda x:x[1], reverse=True)
             ls.append(l)
             ls2.append(l2)
-            ss = ss.append(s.strip())
+
+            ss = []
+            for i in ls2:
+                s = ''
+                n = 0
+                for j in i:
+                    s = s + j[0] + ' '
+                    n = n + 1
+                    # print n
+                    if n >= m:
+                        break
+                ss.append(s.strip())
 
         self.framelist = ss
 
@@ -47,9 +56,9 @@ class Frame2(object):
 if __name__ == "__main__":
 
     frame = Frame2(10, "/Users/linxue/PycharmProjects/ml/resources/dataout1.txt")
-    frame.frame2vec()
-    print frame.vector
-    print len(frame.vector[0])
+    print frame.framelist[1]
+    print frame.framelist[10]
+    print len(frame.framelist)
 
 
 
