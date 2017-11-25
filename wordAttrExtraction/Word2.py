@@ -119,7 +119,7 @@ if __name__ == "__main__":
     lk = tw.hasLink(d1["CONTENT"])
     ls = pd.Series(lk)
     d1 = pd.DataFrame({"CONTENT": d1["CONTENT"], "CLASS": d1["CLASS"], "LINK": ls})
-    word = Word(10, pd.Series.tolist(d1["CONTENT"]))
+    word = Word2(10, pd.Series.tolist(d1["CONTENT"]))
     #print "sentences:"
     #print word.sentences
     #print "wordlist:"

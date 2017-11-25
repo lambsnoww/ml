@@ -145,9 +145,12 @@ if __name__ == "__main__":
     d0 = pd.DataFrame({"CONTENT": content, "FRAME": frame.framelist, "CLASS": d0["CLASS"], "LINK": ls})
     # d1 -- the data without links
     d1 = d0[d0['LINK'] == 0]
-    print d1.head()
+    d2 = d0[d0['LINK'] == 1]
+    yp = np.array(d2['LINK'])
+    yo = np.array(d2['CLASS'])
+    #print d1.head()
 
-    x_train, x_test, y_train, y_test = train_test_split(d1[['CONTENT', 'FRAME', 'CLASS']], d1['CLASS'], test_size=0.33, random_state=1)
+    x_train, x_test, y_train, y_test = train_test_split(d1[['CONTENT', 'FRAME', 'CLASS']], d1['CLASS'], test_size=0.33, random_state=134432)
 
     #print len(x_train)
     #print len(y_train)
@@ -193,13 +196,13 @@ if __name__ == "__main__":
 
     xtrain1 = get_features(word_features, x_train['CONTENT'])
     xtrain2 = get_features(frame_features, x_train['FRAME'])
-    #xtrain = np.concatenate((xtrain1, xtrain2), axis=1)
-    xtrain = xtrain1
+    xtrain = np.concatenate((xtrain1, xtrain2), axis=1)
+    #xtrain = xtrain1
 
     xtest1 = get_features(word_features, x_test['CONTENT'])
     xtest2 = get_features(frame_features, x_test['FRAME'])
-    #xtest = np.concatenate((xtest1, xtest2), axis=1)
-    xtest = xtest1
+    xtest = np.concatenate((xtest1, xtest2), axis=1)
+    #xtest = xtest1
 
     ytrain = np.array(y_train.tolist())
     ytest = np.array(y_test.tolist())
@@ -231,6 +234,21 @@ if __name__ == "__main__":
     ypred = classifier.predict(xtest)
     # ypred = clf.fit(xtrain, ytrain).predict(xtest)
     ev.outcome(ypred, ytest)
+    ev.outcome2(ypred, ytest, yp, yo)
+
+
+    print "___________________________________________________________"
+    classifier = clf.fit(xtrain1, ytrain)
+    ypred1 = classifier.predict(xtest1)
+    # ypred = clf.fit(xtrain, ytrain).predict(xtest)
+    ev.outcome(ypred1, ytest)
+    ev.outcome2(ypred1, ytest, yp, yo)
+
+
+    print (metrics.classification_report(ytest, ypred))
+    print (metrics.confusion_matrix(ytest, ypred))
+    print (metrics.classification_report(ytest, ypred1))
+    print (metrics.confusion_matrix(ytest, ypred1))
 
 
 

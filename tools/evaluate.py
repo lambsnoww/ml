@@ -26,7 +26,7 @@ def outcome(p, a):
     F = 2 * P * R / (P + R)
     print "accuracy, precision, recall, F-value:"
     print (A, P, R, F)
-
+    '''
     print "****************************************"
     print "from/to  spam  no-spam"
     print "spam      %4d  %4d"%(TP, FN)
@@ -41,8 +41,8 @@ def outcome(p, a):
     f.write("no-spam\t%4d\t%4d\n"%(FP, TN))
     f.write("****************************************\n")
     f.close()
-
-    #return A, P, R, F
+    '''
+    return A, P, R, F
 
 
 def outcome2(p, a, p2, a2):
@@ -80,7 +80,7 @@ def outcome2(p, a, p2, a2):
     F = 2 * P * R / (P + R)
     print "accuracy, precision, recall, F-value:"
     print (A, P, R, F)
-
+    '''
     print "****************************************"
     print "from/to\tspam\tno-spam"
     print "spam\t%4d\t%4d"%(TP, FN)
@@ -96,8 +96,8 @@ def outcome2(p, a, p2, a2):
     f.write("no-spam\t%4d\t%4d\n"%(FP, TN))
     f.write("****************************************\n")
     f.close()
+    '''
 
-
-    #return A, P, R, F
+    return A, P, R, F
 
 

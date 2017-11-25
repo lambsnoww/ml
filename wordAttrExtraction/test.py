@@ -3,6 +3,8 @@
 from collections import Counter
 import jieba.analyse
 import time
+import cv2
+import cv2.cv as cv
 bill_path = r'bill.txt'
 bill_result_path = r'bill_result.txt'
 car_path = 'car.txt'
