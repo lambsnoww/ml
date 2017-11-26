@@ -129,7 +129,7 @@ def get_features(flst, sens):
 
 if __name__ == "__main__":
     c = 0
-    for i in range(100):
+    for i in range(10):
         # 1 - frame and word
         # 0 - word only
         # -1 - frame only
