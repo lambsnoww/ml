@@ -9,7 +9,7 @@ from wordAttrExtraction.Word import *
 from wordAttrExtraction.Frame import *
 from wordAttrExtraction.Frame2 import *
 import tools.evaluate as ev
-from wordAttrExtraction.run8 import *
+from wordAttrExtraction.run7 import *
 
 import csv
 import scipy as sp
@@ -81,19 +81,18 @@ se = pd.read_csv('ann.csv', header = None)
 x = se.values
 y = np.array(d0['CLASS'])
 
-seed = 1
+seed = random.randint(1, 1000)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
 
 # clf = svm.SVC()
 # clf = GaussianNB()
-# clf = BernoulliNB()
-# clf = tree.DecisionTreeClassifier()
-# clf = AdaBoostClassifier(n_estimators=100)
-# clf = KNeighborsClassifier()
-clf = AdaBoostClassifier(n_estimators=100)
+#clf = BernoulliNB()
+#clf = tree.DecisionTreeClassifier()
+#clf = KNeighborsClassifier()
+#clf = AdaBoostClassifier(n_estimators=100)
 
 
-# from stacked.stacked_generalization.lib.stacking import StackedClassifier
+#from stacked.stacked_generalization.lib.stacking import StackedClassifier
 #bclf = KNeighborsClassifier()
 #clfs = [GaussianNB(), BernoulliNB(), tree.DecisionTreeClassifier()]
 #clf = StackedClassifier(bclf, clfs)
