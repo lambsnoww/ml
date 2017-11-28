@@ -1,5 +1,7 @@
 #_*_coding:utf-8_*_
 
+#仅利用语义信息进行机器学习模型训练，最高正确率达83%左右
+
 import nltk
 from nltk.probability import FreqDist
 import pandas as pd
@@ -89,7 +91,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 #clf = BernoulliNB()
 #clf = tree.DecisionTreeClassifier()
 #clf = KNeighborsClassifier()
-#clf = AdaBoostClassifier(n_estimators=100)
+clf = AdaBoostClassifier(n_estimators=100)
 
 
 #from stacked.stacked_generalization.lib.stacking import StackedClassifier
