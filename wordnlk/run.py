@@ -59,7 +59,7 @@ import random
 d0 = pd.read_csv("Youtube.csv")
 
 lk = tw.hasLink(d0["CONTENT"])
-ls = pd.Series(lk)
+ls = pd.DataFrame(lk)
 #frame = Frame2(10, 'allsensFrame.txt')
 # d0 -- all of the data
 #d0 = pd.DataFrame({"CONTENT": content, "FRAME": frame.framelist, "CLASS": d0["CLASS"], "LINK": ls})
@@ -68,19 +68,23 @@ f = open('allsensclean.txt', 'r')
 content = f.readlines()
 #content = trimSens(list(d0['CONTENT']))
 
-d0 = pd.DataFrame({"CONTENT": content, "CLASS": d0["CLASS"], "LINK": ls})
+#d0 = pd.DataFrame({"CONTENT": content, "CLASS": d0["CLASS"], "LINK": ls})
 # d1 -- the data without links
-d1 = d0[d0['LINK'] == 0]
-d2 = d0[d0['LINK'] == 1]
-yp = np.array(d2['LINK'])
-yo = np.array(d2['CLASS'])
+#d1 = d0[d0['LINK'] == 0]
+#d2 = d0[d0['LINK'] == 1]
+#yp = np.array(d2['LINK'])
+#yo = np.array(d2['CLASS'])
 
-content_list = d1['CONTENT'].tolist()
+#content_list = d1['CONTENT'].tolist()
 
-se = pd.read_csv('ann.csv', header = None)
+se = pd.read_csv('sem.csv', header = None)
+#s2 = d0['LINK']
+#s3 = pd.read_csv('seminfo.csv', header = None)
+s = pd.concat([se,ls], axis=1)
+# annotated; VB before NP; Link
+print s
 
-
-x = se.values
+x = s.values
 y = np.array(d0['CLASS'])
 
 seed = random.randint(1, 1000)

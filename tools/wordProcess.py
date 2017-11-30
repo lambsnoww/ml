@@ -42,6 +42,9 @@ def hasLink(sens):
         elif sen.count('/') >= 3:
             l = 1
         # attLink = attLink + ',' + str(l)
+        # new added
+        if 'com' in sen.split():
+            l = 1
         ls.append(l)
 
     return ls
