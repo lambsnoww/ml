@@ -9,9 +9,9 @@
 import pandas as pd
 import numpy as np
 import tools.wordProcess as tw
-from Word import *
-from Frame import *
-from Frame2 import *
+from wordAttrExtraction.Word import *
+from wordAttrExtraction.Frame import *
+from wordAttrExtraction.Frame2 import *
 import tools.evaluate as ev
 
 import csv
@@ -160,7 +160,7 @@ if __name__ == "__main__":
         yp = np.array(d2['LINK'])
         yo = np.array(d2['CLASS'])
 
-        seed = random.randint(1, 1000000)
+        seed = random.randint(1,1000000)
 
         x_train, x_test, y_train, y_test = train_test_split(d1[['CONTENT', 'FRAME', 'CLASS']], d1['CLASS'], test_size=0.33, random_state=seed)
 
@@ -178,7 +178,7 @@ if __name__ == "__main__":
         tf = abs(tf)
         tf = tf.sort_values(by='Row_sum', axis=1, ascending=False)
 
-        word_features = tf.columns.values[0:100]
+        word_features = tf.columns.values[0:1000]
         ###################
 
         #p = x_train[x_train['CLASS'] == 1]
@@ -195,20 +195,38 @@ if __name__ == "__main__":
         tf = abs(tf)
         tf = tf.sort_values(by='Row_sum', axis=1, ascending=False)
 
-        frame_features = tf.columns.values[0:100]
+        frame_features = tf.columns.values[0:1000]
         ########## features found finished! #############
 
+        x1 = get_features(word_features, d1['CONTENT'])
+        x2 = get_features(frame_features, d1['CONTENT'])
+        x = np.concatenate((x1, x2), axis=1)
+
+        from sklearn.decomposition import PCA
+        pca = PCA(n_components=30)
+        #print pca.explained_variance_ratio_
+        #print pca.explained_variance_
+        x = pca.fit(x)
+        y = d1['CLASS']
+
+        x1 = pca.fit(x1)
+
+        xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size=0.33, random_state=seed)
+        xtrain1, xtest1, ytrain, ytest = train_test_split(x1, y, test_size=0.33, random_state=seed)
 
 
 
-        xtrain1 = get_features(word_features, x_train['CONTENT'])
-        xtrain2 = get_features(frame_features, x_train['FRAME'])
-        xtrain = np.concatenate((xtrain1, xtrain2), axis=1)
+
+
+
+        #xtrain1 = get_features(word_features, x_train['CONTENT'])
+        #xtrain2 = get_features(frame_features, x_train['FRAME'])
+        #xtrain = np.concatenate((xtrain1, xtrain2), axis=1)
         #xtrain = xtrain1
 
-        xtest1 = get_features(word_features, x_test['CONTENT'])
-        xtest2 = get_features(frame_features, x_test['FRAME'])
-        xtest = np.concatenate((xtest1, xtest2), axis=1)
+        #xtest1 = get_features(word_features, x_test['CONTENT'])
+        #xtest2 = get_features(frame_features, x_test['FRAME'])
+        #xtest = np.concatenate((xtest1, xtest2), axis=1)
         #xtest = xtest1
         '''
         pca = PCA(n_components=50)

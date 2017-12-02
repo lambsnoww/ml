@@ -60,37 +60,13 @@ d0 = pd.read_csv("Youtube.csv")
 
 lk = tw.hasLink(d0["CONTENT"])
 ls = pd.DataFrame(lk)
-#senlen = []
-#for i in d0["CONTENT"]:
-#    a = len(i)
-#    senlen.append(a)
-#frame = Frame2(10, 'allsensFrame.txt')
-# d0 -- all of the data
-#d0 = pd.DataFrame({"CONTENT": content, "FRAME": frame.framelist, "CLASS": d0["CLASS"], "LINK": ls})
 
-#f = open('allsensclean.txt', 'r')
-#content = f.readlines()
-#content = trimSens(list(d0['CONTENT']))
-
-#d0 = pd.DataFrame({"CONTENT": content, "CLASS": d0["CLASS"], "LINK": ls})
-# d1 -- the data without links
-#d1 = d0[d0['LINK'] == 0]
-#d2 = d0[d0['LINK'] == 1]
-#yp = np.array(d2['LINK'])
-#yo = np.array(d2['CLASS'])
-
-#content_list = d1['CONTENT'].tolist()
 
 se = pd.read_csv('sem.csv', header = None)
-#s2 = d0['LINK']
-#s3 = pd.read_csv('seminfo.csv', header = None)
 se['LINK'] = ls
 se['CLASS'] = d0['CLASS']
-#se['LENGTH'] = pd.Series(senlen) # sentences length unuseful
 s = se
 
-#s = se[se['LINK'] == 0]
-#s = s.drop('LINK', axis=1)
 
 
 # annotated; VB before NP; Link
@@ -130,17 +106,3 @@ print "___________________________________________________________"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-#seed = random.randint(1,1000000)
-#x_train, x_test, y_train, y_test = train_test_split(d1[['CONTENT', 'FRAME', 'CLASS']], d1['CLASS'], test_size=0.2, random_state=seed)
