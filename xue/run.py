@@ -79,10 +79,10 @@ seed = random.randint(1, 1000)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
 
 clf = svm.SVC()
-#clf = svm.SVR()
 #clf = GaussianNB()
 #clf = BernoulliNB()
 #clf = tree.DecisionTreeClassifier()
+#clf = RandomForestClassifier()
 #clf = KNeighborsClassifier()
 #clf = AdaBoostClassifier(n_estimators=100)
 

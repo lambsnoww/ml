@@ -1,0 +1,1955 @@
+Inspecting Natural_features
+Departing Statement Similarity Inspecting Age Color Natural_features People Clothing Stimulus_focus
+Statement Operational_testing Being_obligated
+Moving_in_place Experiencer_focus Natural_features
+Inspecting Accoutrements Locative_relation
+Age Locale_by_use Kinship
+Natural_features
+Arriving Becoming Desiring Inspecting Categorization Volubility
+Inspecting Natural_features Stimulus_focus Being_obligated
+Intentionally_act Inspecting Telling Natural_features Being_obligated
+
+Activity_start Correctness Intentionally_act Intentionally_act Death Reading Possession Frequency Cardinal_numbers Calendric_unit
+
+
+Emotion_directed
+Desiring Activity_start Experiencer_focus Text Intentionally_act Inspecting Intentionally_act Inspecting Capability Capability
+Inspecting Sole_instance
+
+
+Bringing Arriving Cause_to_make_progress Social_event Containers Clothing Clothing Locale_by_use Cause_to_start Expensiveness
+Arriving Desiring Inspecting Opinion Categorization People Cardinal_numbers Quantity Sole_instance
+Natural_features People
+Obviousness
+Inspecting
+Natural_features
+Existence Earnings_and_losses Money
+Causation Experiencer_focus Judgment_direct_address Inspecting Inspecting Age People Cardinal_numbers Usefulness Locative_relation
+Inspecting Impact
+Arriving Perception_active Inspecting Cardinal_numbers Locative_relation Cardinal_numbers
+Expensiveness
+Arriving Leadership Text Inspecting Remembering_experience Stimulus_focus
+Inspecting Categorization Locative_relation
+Causation Natural_features Quantity
+Manufacturing Text Conquering Measure_duration
+Cardinal_numbers Cardinal_numbers
+Attack Desiring Intentionally_act Taking_sides Inspecting Text Relative_time Measure_duration Reason Size
+Emotion_directed Perception_active Inspecting Natural_features Desirability Performing_arts
+Statement Removing Statement Desiring Experiencer_focus Experiencer_focus Cardinal_numbers Cardinal_numbers Part_orientational
+Cause_to_make_progress Becoming Experiencer_focus Judgment_direct_address Giving Inspecting Capability Capability Process_start Natural_features
+Commerce_buy Project Capability Objective_influence Coming_to_believe Locale_by_use Locative_relation Network Increment Performing_arts
+Observable_body_parts
+Experiencer_focus Political_locales
+
+Arriving Perception_active Quantity Relative_time
+Self_motion Statement Experiencer_focus Text Inspecting Opinion Existence Sensation Substance Vehicle
+
+Statement Categorization Opinion Categorization Temporal_collocation Calendric_unit Locative_relation
+
+Becoming Inspecting Categorization Locative_relation
+Inspecting Categorization Grasp Observable_body_parts Locative_relation
+Natural_features Observable_body_parts
+Arriving Assistance Perception_active Avoiding Categorization Frequency Observable_body_parts
+Causation Impact Inspecting People Required_event Cardinal_numbers Cardinal_numbers Cardinal_numbers Cardinal_numbers
+Getting Likelihood
+Arriving Performers_and_roles
+Natural_features Relative_time
+Inspecting People
+Experiencer_focus Increment
+Inspecting Desirability Locative_relation
+
+Inspecting Categorization Relational_quantity
+Statement Ordinal_numbers
+Text Categorization Relational_quantity
+Impact Temporal_collocation Cardinal_numbers Cardinal_numbers
+Categorization Quantity Measure_duration
+Experiencer_focus Experiencer_focus
+
+Placing Participation Existence Locative_relation
+Arriving Arriving Desiring Awareness Causation Perception_experience Categorization Categorization Desirability People
+Temporal_collocation Observable_body_parts Measure_duration
+Cardinal_numbers Quantity
+Difficulty
+Natural_features
+
+
+Make_noise Similarity Sounds Taking_time
+
+Attempt Filling Filling Taking_sides Judgment_direct_address Political_locales Commitment Quantity Stimulus_focus Relational_quantity
+
+Arriving Departing Departing Cause_to_make_progress Filling Judgment_communication Leadership Awareness Judgment_direct_address Judgment
+Motion
+Arriving Reveal_secret Inspecting Locative_relation Quantity
+Perception_active Inspecting Waking_up People Continued_state_of_affairs Continued_state_of_affairs
+Ordinal_numbers
+Inspecting
+Hair_configuration
+Natural_features
+Statement Temporal_collocation Part_whole Continued_state_of_affairs
+
+Cause_to_make_noise Dimension
+Stimulus_focus Cardinal_numbers
+Existence Natural_features Cardinal_numbers Kinship
+Inspecting Natural_features Stimulus_focus
+Using Arriving Emotion_directed Awareness Giving Giving Giving Giving Capability Performers_and_roles
+Attempt Education_teaching Intentionally_act Scrutiny Categorization Political_locales Quantity Being_obligated Origin Reason
+Natural_features
+Causation Emotion_directed Natural_features Part_orientational Idiosyncrasy
+Assistance Becoming Emotion_directed Locative_relation
+Arriving Cardinal_numbers
+
+Inspecting Desirability Locative_relation Means
+Statement Arriving Activity_ongoing Perception_active Categorization Deserving
+
+Statement Grasp People_by_origin Clothing_parts Being_obligated Origin Reason
+Money Have_as_requirement
+Natural_features
+Assistance Age Stimulus_focus Stimulus_focus Observable_body_parts
+
+Desirability
+Experiencer_focus Cardinal_numbers Cardinal_numbers
+Judgment_direct_address Age Capability Natural_features Performers_and_roles People
+Assistance Experiencer_focus Intentionally_act Intentionally_act Text Intentionally_act Success_or_failure Inspecting Cardinal_numbers Possession
+Arriving Text Experiencer_focus Age Frequency
+
+Emotion_directed Contacting Possession Age Physical_artworks People Stimulus_focus Quantity
+
+Causation
+Cardinal_numbers
+
+Hair_configuration Hair_configuration
+Cardinal_numbers Cardinal_numbers
+Categorization Capability Catastrophe People Temporal_collocation Locative_relation Dead_or_alive Sole_instance
+Natural_features
+
+Change_position_on_a_scale Assistance Emotion_directed Emotion_directed Natural_features People
+Desirability Performing_arts
+Hair_configuration
+Categorization Cardinal_numbers Cardinal_numbers Mental_property
+Becoming_aware Text Age Aesthetics
+Arriving Attempt Sign_agreement Intentionally_act Perception_active Experiencer_focus Giving Personal_relationship Giving Request
+Capability Cause_to_wake Required_event Cardinal_numbers Temporal_collocation Cardinal_numbers Locative_relation
+Arriving Arriving Political_locales Categorization Categorization Money Cardinal_numbers Quantity
+
+Make_noise Becoming Communication Intentionally_act Stimulus_focus Required_event Cardinal_numbers Being_obligated Cardinal_numbers Relational_quantity
+
+Calendric_unit Cardinal_numbers Time_vector
+Social_event Social_event
+Text Natural_features Grasp
+
+People Cardinal_numbers Quantity Cardinal_numbers Being_obligated Cardinal_numbers Mental_property
+
+Attempt People Quantity Accoutrements Performing_arts
+Arriving Assistance Emotion_directed Weapon
+Cause_change_of_position_on_a_scale Locative_relation
+Intentionally_act Communication_manner Natural_features
+Statement Cause_change_of_position_on_a_scale Opinion Locale Natural_features Temporal_collocation Part_whole
+Arriving Giving Commerce_pay Personal_relationship Expensiveness Money
+Inspecting
+Sounds Relative_time
+Inspecting Quantity
+Text Usefulness
+Increment
+
+
+Text Evoking
+Motion Giving Expensiveness Locative_relation
+Statement Judgment_direct_address Scrutiny Activity_ready_state
+Sounds Relative_time
+Frequency Observable_body_parts Type Sole_instance
+
+Text Experiencer_focus Age Natural_features
+Come_together Locative_relation
+Grant_permission Causation Scrutiny Performers_and_roles Natural_features
+Becoming_aware Text
+Cardinal_numbers Cardinal_numbers
+Text Being_named
+Emotion_directed
+Similarity Giving Sounds People Cardinal_numbers
+
+Cardinal_numbers Hair_configuration Hair_configuration
+Observable_body_parts
+
+Arriving Text Natural_features
+
+Stimulus_focus Observable_body_parts Being_obligated
+
+
+
+Giving Inspecting Age Natural_features Likelihood Performing_arts
+
+Text Stimulus_focus Desirability
+
+Hair_configuration
+Causation Categorization Categorization Stimulus_focus Cardinal_numbers Quantity
+
+Stimulus_focus
+Categorization Relational_quantity
+Inspecting Locative_relation
+Experiencer_focus Reading Aesthetics People Desirability
+Sounds
+Attempt Arriving Sending Social_event Social_event Commerce_pay Sounds Capability Age Age
+Scrutiny Emotion_directed Clothing People
+Statement Arriving Sending Sending Similarity Recording Causation Intentionally_act Experiencer_focus Commerce_pay
+Existence Text Political_locales Categorization People Cardinal_numbers Cardinal_numbers Cardinal_numbers Cardinal_numbers Sole_instance
+Categorization
+Perception_active Existence Perception_active Political_locales People Cardinal_numbers People Cardinal_numbers Cardinal_numbers
+Statement
+Quantity
+Categorization Cardinal_numbers Cardinal_numbers
+
+Body_movement Commerce_sell Arriving Apply_heat Weapon Capability Finish_competition Stimulus_focus Likelihood Compliance
+Cardinal_numbers
+Arriving Locative_relation Money
+
+Political_locales Aggregate Increment
+Categorization
+
+
+
+Arriving Capability Categorization Cardinal_numbers Locative_relation Cardinal_numbers Cardinal_numbers Part_inner_outer Performing_arts Sole_instance
+Reading Personal_relationship Part_ordered_segments
+
+Continued_state_of_affairs
+Experiencer_focus Relational_quantity
+Perception_active Cardinal_numbers Calendric_unit Time_vector Continued_state_of_affairs
+Statement Arriving Motion Activity_start Becoming_aware Causation Experiencer_focus Capability Judgment Age
+Arriving Chatting Quantity
+Perception_active Cardinal_numbers Quantity Part_piece
+
+Arriving Perception_active Text Quantity
+Judgment_direct_address Inspecting Telling Increment
+Desiring Political_locales Natural_features Desirability Aggregate Quantity Calendric_unit
+Placing Arriving Process_start Building_subparts
+Capability Natural_features
+Temporal_collocation
+Opinion Mental_property
+Awareness Existence Temporal_collocation Performing_arts
+Experiencer_focus Text Categorization Stimulus_focus Stimulus_focus
+Arriving Text Categorization Grasp Locative_relation Quantity Sufficiency
+Rite Sufficiency
+Leadership Desiring Success_or_failure Medical_conditions Measure_duration Sole_instance
+Relative_time
+Continued_state_of_affairs
+Arriving Frequency
+Statement Undergo_change Capability Political_locales Desirability People Being_obligated
+Capability Grasp Substance People
+Statement
+Breathing Experiencer_focus Frequency
+
+Arriving Capability Categorization Cardinal_numbers Cardinal_numbers Calendric_unit
+Existence Existence Certainty Categorization People Evaluative_comparison People Cardinal_numbers Cardinal_numbers Temporal_collocation
+Statement Correctness Adducing Perception_active Perception_active Text Existence People Age Age
+Removing Causation Text Stimulus_focus Cardinal_numbers Required_event Measure_duration
+Statement Grasp Quantity Reason
+Certainty People Cardinal_numbers Stimulus_focus Quantity Food Part_piece
+Memory Experiencer_obj Hair_configuration Temporal_collocation
+Removing
+Self_motion Being_active Hostile_encounter Rite Rite Performers_and_roles Catastrophe Stimulus_focus Certainty Temporal_collocation
+Statement Text Cause_to_continue Calendric_unit Cardinal_numbers Cardinal_numbers Calendric_unit Measure_duration Time_vector Time_vector
+Memory Quantity
+Statement Existence Text Temporal_collocation Artificiality Reason Sole_instance
+Getting Grasp People Calendric_unit Cardinal_numbers Cardinal_numbers Simple_name Partitive Partitive Sole_instance
+Desirability
+Travel Motion Statement Experiencer_focus Telling Temporal_collocation Kinship Ordinal_numbers
+Intentionally_act Intentionally_act Intentionally_act Getting Categorization Grasp Frequency Quantity Predicament Hair_configuration
+People Increment
+Awareness Intentionally_act Inspecting People Increment Deserving Relational_quantity Locative_relation
+Perception_active Continued_state_of_affairs Performing_arts Degree
+Categorization Cardinal_numbers Cardinal_numbers
+Sending Judgment_direct_address Experiencer_focus Age Natural_features Part_ordered_segments Performing_arts
+Cause_harm Cause_harm Cause_harm Change_position_on_a_scale Statement Change_position_on_a_scale Resolve_problem Arriving Awareness Social_event
+
+Leadership Categorization Categorization Cardinal_numbers Quantity Increment
+
+Capability Grasp Quantity Have_as_requirement Relative_time Relational_quantity
+Similarity Intentionally_act Existence Categorization Age People Cardinal_numbers Calendric_unit Cardinal_numbers Temporal_collocation
+Relational_quantity
+Categorization Cardinal_numbers Reason
+
+
+Catastrophe Inclusion Medical_conditions Calendric_unit Desirability Sufficiency Increment Sole_instance
+Sending Existence People Quantity Locative_relation Sufficiency Part_inner_outer
+Mental_property
+Arriving Request Perception_active Aggregate Membership
+Statement Using Breathing Awareness Text Certainty Categorization Required_event Temporal_collocation
+Arriving Arriving Categorization Locative_relation
+Arriving Arriving Experiencer_obj Political_locales Categorization Inclusion People_by_age Ordinal_numbers
+Becoming_a_member Temporal_collocation Locative_relation
+Text Existence Categorization Desirability Cardinal_numbers
+Perception_active
+Categorization Capability Categorization Dominate_situation Relational_quantity Relational_quantity Ranked_expectation
+Intentionally_act Existence Categorization People Cardinal_numbers Cardinal_numbers Part_inner_outer Sole_instance
+
+Getting Money Relational_quantity
+Experiencer_focus Text Cardinal_numbers Activity_ready_state
+Statement Awareness People_by_origin Quantity Temporal_subregion Relational_quantity
+Arriving Intentionally_act Existence Categorization Stimulus_focus Cardinal_numbers Cardinal_numbers Cardinal_numbers Being_obligated Sufficiency
+Arriving Request Natural_features Cardinal_numbers Cardinal_numbers Observable_body_parts
+Arriving Becoming Experiencer_focus Mass_motion Leadership Capability Performers_and_roles Containers People People
+Money
+Cardinal_numbers Cardinal_numbers
+Categorization Cardinal_numbers Cardinal_numbers Cardinal_numbers Cardinal_numbers Sole_instance
+Arriving Intentionally_act Awareness Experiencer_focus Intentionally_act Inspecting Possession People People Locative_relation
+Arriving Intentionally_act Desiring Text Calendric_unit
+Stimulus_focus
+Intentionally_act Categorization Experiencer_obj People_by_age Cardinal_numbers Cardinal_numbers Relational_quantity Deserving
+Arriving Cardinal_numbers Being_obligated
+Becoming Assistance Judgment_direct_address Locale_by_use People Stimulus_focus Part_orientational
+Buildings
+Mental_property
+Cardinal_numbers Relative_time
+
+Cause_change_of_position_on_a_scale
+Statement Motion Arriving Arriving Becoming Arriving Intentionally_act Attaching Intentionally_act Intentionally_act
+Experiencer_focus Text
+Cause_motion Stimulus_focus
+Becoming Grant_permission Age Purpose Cardinal_numbers
+Cause_harm Motion Arriving Perception_experience Natural_features Possession
+Arriving Inspecting Categorization Locative_relation
+Arriving Motion Sending Age
+Quantity
+
+Verification Desirability Cogitation Calendric_unit Continued_state_of_affairs Reason
+Intentionally_act Inspecting Shoot_projectiles Grant_permission Capability Natural_features People Cardinal_numbers Craft
+Getting Age
+
+Inspecting Waking_up Opinion
+
+Stimulus_focus
+
+Leadership Correctness Intentionally_act Categorization Desirability Existence Cardinal_numbers Locative_relation Cardinal_numbers Origin
+Recording Perception_active Political_locales
+Opinion Ingestion
+Removing Motion Vehicle Being_obligated
+Part_whole
+
+Desiring Social_event Awareness Awareness People Being_named
+
+Becoming Activity_ongoing Categorization Categorization Stimulus_focus Grasp Locative_relation Part_orientational
+Sounds Businesses
+Causation Awareness Commerce_pay Categorization Capability People Quantity
+Arriving Awareness Awareness Grant_permission Intentionally_act Inspecting Age Locative_relation Remembering_information
+Self_motion Possession Clothing People Vehicle Size
+Perception_active Physical_artworks Difficulty
+Inspecting Intentionally_act Categorization Being_up_to_it
+Statement Experiencer_focus Inspecting Emotion_directed Intentionally_act Weapon Judgment_direct_address Inspecting Inspecting Capability
+Commerce_buy Getting Intentionally_act Existence Chatting Categorization People Likelihood Cardinal_numbers Cardinal_numbers
+Buildings
+Statement Stimulus_focus
+Getting Rewards_and_punishments Earnings_and_losses Expensiveness
+Commerce_sell Commerce_buy Commerce_buy Intentionally_act Intentionally_act Age Success_or_failure Capability Clothing Quantity
+Arriving Intentionally_act Sounds Connectors Make_cognitive_connection
+Intentionally_act Text Categorization Being_obligated Increment Reason
+Social_event Social_event Stimulus_focus Hair_configuration
+Perception_experience Age People Calendric_unit Cardinal_numbers Observable_body_parts Relational_quantity Continued_state_of_affairs
+Existence Capability Categorization Cardinal_numbers Temporal_collocation Cardinal_numbers Being_obligated Sole_instance
+Intentionally_act Perception_active Temporal_collocation Reason
+Giving Request Being_obligated
+Emotion_directed Judgment_direct_address People Physical_artworks
+Awareness Waking_up Desirability Grasp Categorization Cardinal_numbers Cardinal_numbers Mental_property Ordinal_numbers Cardinal_numbers
+Leadership Experiencer_focus Capability Cause_to_start Sufficiency
+Assistance Stimulus_focus
+Placing Hostile_encounter Assistance Assistance Assistance Assistance Becoming Causation Render_nonfunctional Giving
+
+Perception_active
+Statement Desiring Communication_noise People Relative_time
+Text Observable_body_parts
+Arriving Scrutiny Natural_features People
+
+
+Motion Arriving Becoming Becoming Sending Communication_manner Memory Inspecting Natural_features Process_start
+Statement Arriving Arriving Desiring Perception_active Experiencer_focus Experiencer_focus Emotion_directed Frequency People
+
+Buildings
+Placing Causation Inspecting Stimulus_focus Relational_quantity
+Arriving Assistance Cause_to_fragment Age Cardinal_numbers Conquering Calendric_unit Expensiveness Performing_arts
+
+Arriving Filling Possession Stimulus_focus Locative_relation
+
+Arriving Desiring Similarity Perception_active Giving Judgment_direct_address Experiencer_focus Age Categorization Capability
+Judgment_direct_address Getting Experiencer_focus Becoming_a_member Stimulus_focus Increment
+Arriving Intentionally_act Giving Request Desirability Possession Natural_features Observable_body_parts Stimulus_focus Temporal_collocation
+Categorization Cardinal_numbers Part_orientational Part_orientational
+Existence People Quantity Relational_quantity Relational_quantity Increment Degree
+Experiencer_focus
+Judgment_direct_address Inspecting Buildings People
+Activity_start Causation Perception_active Capability Quantity Ordinal_numbers Relational_quantity
+Perception_active Frequency Relative_time Temporal_pattern Sole_instance
+Assistance
+Causation Temporal_collocation Money
+
+Text Age Age Inspecting Inspecting Boundary Boundary
+Leadership Text Grasp
+
+Desiring Experiencer_focus Causation Perception_active Communication_manner Experiencer_focus Judgment_direct_address Scrutiny Personal_relationship Age
+Intentionally_act Evoking Cardinal_numbers
+Causation Intentionally_act Biological_area Biological_area Quantity Identicality Direction Locating Origin
+
+Attempt Arriving Becoming_aware Stimulus_focus
+Hostile_encounter Roadways Impact Text Experiencer_focus Coming_to_believe Political_locales People Vehicle Relational_quantity
+Assistance Sounds
+Ambient_temperature Continued_state_of_affairs Type
+Judgment_direct_address Contacting Certainty Capability Vehicle Surviving
+
+Process_end
+Cause_change Cause_change Arriving Awareness Scrutiny Intentionally_act Age Temporal_collocation Type
+Intentionally_act Inspecting Importance Appointing
+
+Manipulation Process_end
+Being_obligated Performing_arts
+Filling Filling Perception_active Forming_relationships Judgment_direct_address Age Calendric_unit Social_interaction_evaluation Calendric_unit Ordinal_numbers
+
+Becoming Inspecting People Being_named
+
+
+
+Perception_experience Text Experiencer_focus Sounds People Frequency
+Desiring Causation Text Ingestion
+Intentionally_act Locative_relation
+
+Perception_active Perception_active Perception_active Perception_active Perception_active Perception_active Perception_active Compliance Compliance Compliance
+Experiencer_focus Contrition Continued_state_of_affairs
+Text Size
+Intentionally_act Text Preventing
+Statement Motion Inspecting Natural_features
+Taking_sides Medical_conditions Aggregate
+Perception_experience Sounds
+Scrutiny Opinion Color Observable_body_parts Hair_configuration Temporal_collocation Observable_body_parts Desirability Regard
+Experiencer_focus
+Assistance Giving Contacting Intentionally_act Cardinal_numbers Kinship Stimulus_focus
+Perception_experience
+Relative_time
+Desiring Make_noise Activity_finish Observable_body_parts Temporal_collocation
+Age
+Assistance Judgment_direct_address Personal_relationship Relational_quantity Degree
+
+Scrutiny Relational_quantity
+Text Likelihood
+Experiencer_focus
+Experiencer_focus Experiencer_focus Required_event Being_located Relational_quantity
+Sounds Being_named
+Becoming Perception_active Accomplishment Awareness Experiencer_focus Capability Capability Natural_features People People
+Commerce_sell Filling Taking_sides Reasoning People Age Cardinal_numbers Measure_duration Sole_instance
+
+
+
+Departing Arriving Shoot_projectiles Opinion Ingestion Aesthetics People Part_whole Temporal_collocation Temporal_collocation
+Statement Sounds Text Text Desirability Desirability Certainty Desirability Being_obligated Feeling
+Experiencer_focus Desirability Social_interaction_evaluation Kinship
+Judgment_direct_address
+Inclusion
+Intentionally_act Inspecting Experiencer_focus Giving Capability Stimulus_focus Cardinal_numbers
+Residence Social_interaction_evaluation
+Existence Temporal_collocation Preventing Part_inner_outer
+Experiencer_focus Experiencer_focus
+Desiring Becoming Becoming Judgment_direct_address Experiencer_focus Buildings Capability Physical_artworks People Stimulus_focus
+Removing Accuracy Observable_body_parts Degree
+Bringing Inspecting Judgment Desirability Desirability Natural_features Create_physical_artwork Quantity
+Existence
+Desiring Taking_sides Emotion_directed Judgment_direct_address Capability Natural_features People People Relational_quantity Adorning
+Intentionally_act Calendric_unit Cardinal_numbers Desirability Relative_time Performing_arts Performing_arts
+Experiencer_focus
+
+Intentionally_act Experiencer_focus Categorization Grasp Possession Cardinal_numbers
+Statement Emotion_directed Forming_relationships Forming_relationships Calendric_unit Relational_quantity
+Perception_active
+Becoming Text Desirability
+
+Contacting
+Statement Arriving Communication_response Experiencer_focus Quantity Being_obligated Quantity
+Arriving Cause_to_make_progress Causation Desiring Judgment_direct_address Memory Commerce_buy Importance Inspecting Political_locales
+Arriving Desiring Categorization Stimulus_focus Cardinal_numbers
+Filling Causation Experiencer_focus Text Natural_features Inclusion Temporal_collocation Locative_relation Have_as_requirement
+Becoming_aware Experiencer_focus Theft Age Process_start Quantity Performing_arts
+Existence Text Political_locales Capability Categorization People Cardinal_numbers Cardinal_numbers Being_obligated Sole_instance
+Desirability
+
+Experiencer_focus Membership
+Arriving Text Desirability Partitive
+Correctness People Grasp Quantity
+
+Text
+Perception_active
+Filling Judgment_direct_address Natural_features
+Awareness Performers_and_roles People Observable_body_parts Mental_property Locating
+
+Motion Perception_experience Sounds
+
+Experiencer_focus
+Desiring Experiencer_focus Competition Make_acquaintance
+Statement Emotion_directed Age People People Cardinal_numbers Relative_time
+Experiencer_focus Size
+
+
+Cause_change_of_strength Judgment Create_physical_artwork Categorization People Possession Likelihood Connectors Reason
+
+
+Desiring Causation Purpose Connectors Money Locative_relation
+Statement Arriving Becoming Activity_finish Grooming Natural_features Likelihood Ordinal_numbers Process_completed_state
+Judgment_direct_address Response Natural_features Containers People People Stimulus_focus Cardinal_numbers
+Arriving Attempt Arriving Desiring Communication_manner Telling Frequency Type Locative_relation
+Causation Natural_features People Quantity Stimulus_focus
+
+Arriving Intentionally_act Relational_quantity
+Sounds Experiencer_focus Scrutiny Text Frequency
+Political_locales Desirability Desirability
+Arriving Desirability Stimulus_focus Ambient_temperature
+Leadership Intentionally_act Frequency Calendric_unit Locative_relation Attention
+Experiencer_focus
+Experiencer_focus Kinship
+Experiencer_focus
+Relative_time
+Being_obligated Reason Being_operational
+Being_named
+Causation Intentionally_act Biological_area Quantity Locative_relation Locative_relation Locating
+
+Stimulus_focus
+Emotion_directed
+Desirability Quantity
+Statement Using Education_teaching Desiring Becoming_aware Assistance Commerce_sell Intentionally_act Research Cause_change_of_position_on_a_scale
+Certainty Experiencer_obj Clothing Temporal_subregion Locative_relation Locative_relation
+Scrutiny
+Intentionally_act Age Opinion Excreting Desirability Desirability Cardinal_numbers Temporal_collocation Secrecy_status Secrecy_status
+
+Filling Experiencer_focus Text Natural_features Temporal_collocation Locative_relation Have_as_requirement
+Experiencer_focus
+Age
+Desirability
+
+Statement Perception_experience Contacting Frequency
+Desiring Cause_change_of_position_on_a_scale Giving Experiencer_focus Intentionally_act Awareness Giving Emotion_directed People People
+
+
+
+
+Text Desirability
+Becoming Causation Experiencer_focus Age Inspecting Natural_features Stimulus_focus Locative_relation
+Contacting
+Assistance Roadways Intentionally_act Experiencer_focus Existence Capability Earnings_and_losses Aesthetics Quantity Membership
+
+
+Desirability
+
+Cardinal_numbers
+Scrutiny Experiencer_focus Aggregate Being_obligated Sole_instance
+Natural_features
+Causation Causation Intentionally_act Telling Text Text Text Natural_features Desirability Sensation
+Giving Sounds Age Exertive_force Relational_quantity
+Experiencer_focus Text Completeness
+Becoming_a_member Aggregate Money
+Leadership Sounds
+Giving
+Self_motion Activity_start Social_event Duplication Causation Cause_change_of_position_on_a_scale Causation Text Text Text
+
+Attaching Getting Text Sounds Experiencer_focus Excreting Natural_features Desirability Volubility Locative_relation
+Text Age Stimulus_focus
+Experiencer_focus Experiencer_focus
+Statement Intentionally_act Body_decoration Morality_evaluation
+Natural_features Possession Temporal_collocation Being_obligated
+Perception_active Leadership Intentionally_act Political_locales Existence Residence People Emotions_by_stimulus Frequency Measure_duration
+Cardinal_numbers Cardinal_numbers Relative_time Relational_quantity Kinship
+Using Text Appearance Age Observable_body_parts Observable_body_parts
+Cause_to_make_progress
+Buildings
+Desirability
+Arriving Building Experiencer_focus Aggregate Being_obligated
+Attempt Arriving Becoming Intentionally_act Causation Experiencer_focus Awareness Contacting Telling Experiencer_focus
+Request
+Emotion_directed Capability Observable_body_parts
+Sounds Inspecting Natural_features
+Sounds Relative_time
+Leadership Sounds
+Arriving Impact Locative_relation Cardinal_numbers Social_connection Increment
+
+Statement Statement Arriving Perception_active Text Expressing_publicly Experiencer_focus Intentionally_act Intentionally_act Intentionally_act
+Arriving
+
+Perception_active Correctness Scrutiny Text Request Age Inspecting Temporal_collocation Locative_relation Locative_relation
+Inclusion
+Placing Working_on Attempt Body_movement Grant_permission Perception_active Project People Expensiveness Expensiveness
+Arriving Causation Inspecting Personal_relationship Temperature People Cardinal_numbers
+Contacting Emotion_directed
+Existence Sole_instance
+Aesthetics People
+Desiring Inspecting Getting Natural_features
+Assistance Buildings Experiencer_focus Judgment Capability Physical_artworks Quantity
+Arriving Assistance Judgment_direct_address Quantity
+Calendric_unit Cardinal_numbers Temporal_collocation Cardinal_numbers Being_obligated
+Aesthetics People Reason
+Text Desirability
+Experiencer_focus Judgment_direct_address
+Natural_features
+Intentionally_act Causation Intentionally_act Quantity Being_obligated Increment Performing_arts
+Experiencer_focus
+Waiting
+
+Experiencer_focus Desirability Relational_quantity
+Causation Desirability Create_physical_artwork
+Statement Categorization
+Filling Causation Emotion_directed Scrutiny Noise_makers
+Being_obligated Legality
+People
+Experiencer_focus
+
+Causation Filling Awareness Experiencer_focus Sounds Text
+Intentionally_act Impact Possession Choosing Vehicle Likelihood Being_obligated Remembering_information Surviving
+Cause_harm Cause_change Motion Perception_active Text Existence Perception_active Scrutiny Age Desirability
+Change_position_on_a_scale Perception_active Memory Perception_active Similarity Capability Categorization Cardinal_numbers Required_event Likelihood
+Color Taking_time Speed Communicate_categorization Temporal_collocation Expensiveness Quantity Type
+Perception_active Forming_relationships Natural_features Releasing Likelihood Calendric_unit Measure_duration
+Correctness Text Coming_to_believe Identicality Being_obligated
+Text
+Arriving Text Frequency Age
+Forming_relationships
+Statement Filling Motion Becoming Becoming Perception_experience Experiencer_focus Awareness Intentionally_act Setting_fire
+
+Experiencer_focus
+Awareness Forming_relationships Emotion_directed Forming_relationships Forming_relationships Importance Certainty Temporal_collocation Identicality Cardinal_numbers
+Perception_experience Communication_manner Capability Quantity
+Statement Arriving Manufacturing Text Text Intentionally_act Experiencer_focus Wearing Frequency Attention
+Arriving Assistance Arriving Awareness Impact Scrutiny Capability Likelihood Locative_relation Temporal_collocation
+Filling Judgment_direct_address Containers Locative_relation
+Causation Scrutiny Fame People Biological_area Calendric_unit
+Becoming Grant_permission
+Experiencer_focus Quantity
+Social_event Cause_change_of_position_on_a_scale Sign_agreement Causation Expensiveness Money Locative_relation Relative_time Temporal_subregion
+Statement Leadership Sounds Experiencer_focus Capability Temporal_collocation Kinship
+Observable_body_parts
+Leadership Sounds Performing_arts
+Perception_experience Communication_manner Text Possession Temporal_collocation
+Experiencer_focus
+Awareness Awareness Intentionally_create People People Mental_property Identicality Origin
+Intentionally_act Natural_features Required_event Observable_body_parts Have_as_requirement
+Text Text Emotion_directed Scrutiny Stimulus_focus Aggregate
+Experiencer_focus Causation Inspecting Age Capability Political_locales Locative_relation Reason
+Desiring Likelihood
+
+Arriving Causation Giving Text Text Awareness Sounds Excreting Experiencer_focus Natural_features
+
+
+Experiencer_focus Communication_manner Stimulus_focus
+
+Text
+Experiencer_focus
+Attempt Statement Arriving Roadways Intentionally_act Arriving Experiencer_focus Capability Communicate_categorization Desirability
+Desiring Filling Intentionally_act Inspecting Calendric_unit Locative_relation
+Text Scrutiny Desirability Residence Desirability
+Experiencer_focus Sounds Cardinal_numbers Calendric_unit Relational_quantity Time_vector
+
+
+Assistance Experiencer_focus Intentionally_act Intentionally_act Text Intentionally_act Success_or_failure Inspecting Cardinal_numbers Possession
+Buildings
+Perception_experience Text Sounds Candidness Relational_quantity
+
+Arriving Causation Inspecting Impact Text Judgment_direct_address Text Judgment_direct_address Expansion Becoming_a_member
+Causation Emotion_directed Experiencer_focus Text Making_faces Aesthetics Stimulus_focus Temporal_collocation Locative_relation
+Statement Arriving Text Successful_action Experiencer_focus Text Text Text Personal_relationship Desirability
+Leadership Sounds Experiencer_focus Text
+Inclusion Substance Part_inner_outer Having_or_lacking_access
+Experiencer_focus Scrutiny Existence Kinship Quantity Size
+Statement Capability Coming_to_believe Opinion Categorization Grasp People Desirability Stimulus_focus Hair_configuration
+Residence Candidness Possession Preventing Calendric_unit Duration_attribute
+
+Placing Experiencer_obj Aesthetics Quantity Have_as_requirement
+Make_noise Existence
+Causation Text Awareness Capability Quantity Being_obligated Being_located Locative_relation
+Leadership Sounds
+
+Statement Arriving Sending Sending Similarity Recording Causation Intentionally_act Experiencer_focus Commerce_pay
+Statement Change_position_on_a_scale Correctness Leadership Text Sounds Experiencer_focus Text Opinion Sensation
+Becoming Text Usefulness
+Successful_action Perception_experience Sounds Intentionally_act Rite Success_or_failure Intentionally_create Political_locales Certainty Cure
+Roadways Sounds Residence
+Text Text People Desirability
+Causation Text Text Quantity
+
+Perception_experience Text Experiencer_focus Memorization Relational_quantity Relational_quantity Relational_quantity
+Statement Removing Self_motion Manufacturing Taking_sides Scrutiny Taking_sides Request Judgment_direct_address Buildings
+Arriving Locale_by_use Stimulus_focus Relative_time
+Experiencer_focus
+Motion Expensiveness Money
+Commerce_buy Text Certainty Desirability Quantity
+People
+
+Communication_manner Existence Locative_relation Relative_time
+Natural_features
+Assistance Arriving Desiring Perception_experience Perception_active Perception_active Giving Intentionally_act Intentionally_act Experiencer_focus
+Project Project Locale_by_use Political_locales Stimulus_focus Connectors Secrecy_status Being_named
+Experiencer_focus Wealthiness
+
+Stimulus_focus
+Text Experiencer_focus
+Motion Sounds Death
+Experiencer_focus Performing_arts
+Education_teaching Scrutiny Awareness Waking_up Frequency
+Sounds Locative_relation
+Sounds
+Arriving
+Judgment_direct_address
+Closure Gizmo Being_wet
+Experiencer_focus
+
+Relational_quantity
+Desirability
+Causation Desirability Desirability Relational_quantity Degree Degree Degree
+Text Judgment_direct_address Evidence Relational_quantity Relational_quantity
+
+Assistance Desiring Recording Judgment_direct_address Have_associated Cardinal_numbers Calendric_unit Cardinal_numbers Observable_body_parts Calendric_unit
+Statement Statement Perception_experience Perception_active Text Intentionally_act Success_or_failure Judgment_direct_address Temporal_collocation Subjective_influence
+Arriving Motion Cardinal_numbers Ordinal_numbers
+Cardinal_numbers Desirability
+
+Cause_change Desiring Desiring Sending Causation Inspecting Text Capability People People
+Self_motion Desiring Participation
+Participation
+
+
+Text
+
+Text
+Experiencer_focus Text
+
+Success_or_failure People Wearing Temporal_collocation
+Desirability Calendric_unit Relative_time
+Text Desirability
+Experiencer_focus Desirability Stimulus_focus
+
+Participation
+Perception_active Observable_body_parts Locative_relation
+
+
+
+
+Participation Process_start
+Arriving Text Being_necessary Categorization Required_event Cardinal_numbers Measure_duration
+People Stimulus_focus
+Self_motion Memory Locale_by_use Desirability Temporal_collocation Observable_body_parts
+
+Desirability
+Social_event Cardinal_numbers
+Text Frequency Cardinal_numbers Cardinal_numbers Cardinal_numbers Part_whole
+Participation
+Placing Arriving Manufacturing Intentionally_act Participation People
+Text Hiring Desirability
+Awareness Existence Stimulus_focus Kinship Kinship Membership
+Experiencer_focus Participation Participation
+Preventing Occupy_rank Degree
+Temporal_collocation Observable_body_parts
+Participation
+
+Text Usefulness
+Awareness Text Experiencer_focus
+Self_motion Intentionally_create Moving_in_place Difficulty
+
+Self_motion Intentionally_act Evoking Calendric_unit Temporal_collocation Observable_body_parts
+Causation Social_event Text Experiencer_focus
+Clothing Locative_relation Measure_duration
+Text Experiencer_focus
+
+Stimulus_focus
+Departing People
+Age Usefulness Timespan
+Age Desirability
+
+Opinion Cardinal_numbers Cardinal_numbers
+
+
+
+Text Desirability Calendric_unit Temporal_collocation
+Performing_arts
+Being_born Morality_evaluation
+Causation Social_event Text Experiencer_focus
+Causation Social_event Text Experiencer_focus
+Desirability
+Categorization Cardinal_numbers
+Activity_ongoing Participation Experiencer_focus
+Performing_arts
+
+
+Text Temporal_collocation
+
+Desiring People
+Experiencer_focus
+Motion Categorization Being_obligated
+Social_event
+
+Calendric_unit
+Desirability Desirability Desirability Desirability Desirability Temperature
+Experiencer_focus Experiencer_obj
+Awareness People Cardinal_numbers Being_named
+Intentionally_act Preventing Reason Performing_arts Performing_arts
+Stimulus_focus
+Quantity Reason
+
+
+Experiencer_focus
+Performing_arts
+
+Text
+
+Giving
+
+Hostile_encounter Hostile_encounter Hostile_encounter Hostile_encounter Filling Intentionally_act Perception_active Taking_sides Buildings Taking_sides
+
+Cause_emotion Opinion Calendric_unit Quantity Topic Time_vector
+
+Arriving Age Frequency
+Using Memory Experiencer_focus Desirability Quantity Temporal_collocation Continued_state_of_affairs
+Statement Text Being_strong Frequency
+Cardinal_numbers Calendric_unit Speed
+Perception_active Text Certainty Age
+Perception_active Calendric_unit
+Motion Motion
+Temporal_collocation Continued_state_of_affairs
+Text Participation Experiencer_focus
+
+Arriving
+Experiencer_focus
+Experiencer_focus Text
+
+Text
+Perception_experience Causation Text Age Commitment Continued_state_of_affairs
+Arriving Causation Locative_relation
+Text
+
+Experiencer_focus Desirability Relational_quantity Performing_arts
+
+Duplication Similarity Intentionally_act Text Hair_configuration Feeling Reason
+
+Participation Measure_duration
+Arriving Frequency
+Text
+Causation Similarity Physical_artworks
+Perception_active Locative_relation Topic Being_obligated Measure_duration Relational_quantity Continued_state_of_affairs
+Social_event Text Text Perception_active Intentionally_act Intentionally_act
+
+Observable_body_parts Locative_relation
+People Observable_body_parts
+Arriving Usefulness Temporal_pattern
+Participation Participation Text Calendric_unit
+
+
+Categorization Increment
+
+Self_motion Text Grasp Contrition Morality_evaluation
+Self_motion Self_motion Experiencer_focus
+Preventing
+Statement People_by_age Sufficiency
+Success_or_failure
+Experiencer_focus
+Arriving Perception_experience Social_event Text Sounds Frequency Being_obligated Measure_duration
+Self_motion Emptying Arriving Text Intentionally_act Cardinal_numbers Temperature People Sleep Locative_relation
+Color Experiencer_obj Hair_configuration
+Scrutiny Conquering
+
+
+Becoming Awareness Forming_relationships Forming_relationships Forming_relationships Success_or_failure Calendric_unit Time_vector
+
+
+Causation Observable_body_parts Locative_relation
+Self_motion Frequency Calendric_unit
+Text Desirability Desirability
+Self_motion Intentionally_act Political_locales Reason
+Text Experiencer_focus Experiencer_focus People
+Perception_active Death Stimulus_focus
+Self_motion Self_motion Desiring Capability Quantity Cardinal_numbers Mental_property Means
+Categorization Relational_quantity
+
+Experiencer_focus Text
+Social_event
+
+
+Desirability
+Make_noise
+Appearance Duplication Experiencer_focus Request Grasp People Required_event Likelihood Hair_configuration Temporal_collocation
+Grasp Waiting People_by_age
+Participation
+Experiencer_focus
+Social_event Personal_relationship Desirability Part_orientational Relational_quantity Degree
+
+Activity_start Intentionally_act Capability Calendric_unit Time_vector
+Perception_active Observable_body_parts Locative_relation
+Experiencer_focus
+Participation
+Arriving Experiencer_focus Temporal_collocation
+
+Participation
+
+
+People Clothing Clothing_parts
+Text
+Scrutiny Conquering
+Intentionally_act
+Arriving Grant_permission Cardinal_numbers Cardinal_numbers
+Leadership Calendric_unit Cardinal_numbers Measure_duration
+Statement Categorization
+Self_motion Continued_state_of_affairs
+
+
+
+
+Desirability Hear Reason
+Motion
+Self_motion Perception_active Dispersal Medical_conditions
+Hostile_encounter People Means
+
+Categorization Cardinal_numbers Relational_quantity
+Participation Contrition Quantity
+Experiencer_focus
+
+
+
+Self_motion
+Experiencer_focus Stimulus_focus
+Desirability
+Statement Perception_active Intentionally_act Experiencer_focus
+
+
+
+
+
+Collaboration Process_start Increment
+Arriving Motion Cause_motion Motion Discussion Desiring Motion Perception_experience Perception_active Scrutiny
+Perception_active Experiencer_focus Experiencer_focus Text Experiencer_obj Experiencer_obj Experiencer_obj
+
+
+
+Perception_active
+Arriving
+Performers_and_roles Natural_features Expertise
+
+
+Perception_experience Giving People Calendric_unit Quantity
+Statement Experiencer_focus Perception_active
+
+Statement Killing Experiencer_focus Intentionally_act
+
+
+
+
+
+
+Change_position_on_a_scale Change_position_on_a_scale Education_teaching Working_on Recording Performers_and_roles Needing Personal_relationship Create_physical_artwork Earnings_and_losses
+
+
+
+
+
+
+
+
+
+Judgment_direct_address Intentionally_act Categorization Natural_features Locale_by_use Stimulus_focus Quantity
+Participation Capability Being_obligated
+Emotion_directed Possession Relational_quantity
+
+
+Departing Intentionally_act Capability Observable_body_parts Being_named
+
+Judgment_direct_address Natural_features
+Assistance Manufacturing Experiencer_focus Awareness Inspecting Experiencer_focus Age People People Possession
+Self_motion Inspecting
+
+Attempt Arriving Emotion_directed Emotion_directed Cardinal_numbers
+Perception_active
+
+Political_locales Reason
+
+
+
+Statement Quantity
+Statement Impact Capability Categorization Cardinal_numbers Ordinal_numbers
+Arriving Assistance Cardinal_numbers Temporal_subregion
+Statement Perception_active Sounds Event Temporal_collocation Size
+
+
+Experiencer_obj People
+Statement
+Cause_harm Arriving Arriving Assistance Chatting Calendric_unit
+
+Statement Perception_active
+
+Statement
+
+Experiencer_focus
+Statement Perception_active
+Self_motion Arriving Inspecting Natural_features Stimulus_focus Temperature Temporal_collocation Being_obligated Relational_quantity
+
+
+People Fame
+Perception_active
+
+Statement Placing Text Calendric_unit Cardinal_numbers Locative_relation Continued_state_of_affairs
+
+
+Arriving Categorization Natural_features Inclusion
+
+
+
+
+
+Taking_sides
+
+Self_motion Arriving Assistance Purpose Cardinal_numbers Trust
+
+
+
+
+
+
+
+
+Arriving Sending Inspecting Natural_features Money
+
+Statement Quantity
+Statement Statement Hostile_encounter Causation Existence Weapon Categorization Organization People Observable_body_parts
+
+
+Becoming Ordinal_numbers
+Arriving Causation Categorization Capability Quantity
+
+
+Waking_up Natural_features
+Social_event Getting Emotion_directed
+Statement Giving Experiencer_focus Text Experiencer_focus Inspecting Existence Capability Judgment Choosing
+Request Request Contacting Being_obligated Part_orientational
+
+
+
+
+Natural_features Required_event Attention
+
+
+
+
+
+
+
+
+
+
+Similarity Perception_active
+
+
+
+
+
+
+
+
+
+
+Assistance Emotion_directed Capability Cardinal_numbers Required_event Have_as_requirement
+
+
+Emotion_directed Personal_relationship Natural_features Emotions_by_stimulus Grasp Degree
+
+
+Sounds Sounds Natural_features Compliance Observable_body_parts Relative_time
+Natural_features Personal_relationship Telling Possession
+
+
+
+
+
+
+
+
+
+
+
+
+Natural_features
+People Quantity Observable_body_parts
+
+
+Killing Motion Judgment_direct_address Scrutiny Color Color Natural_features People Information Increment
+
+
+
+
+Education_teaching Killing Intentionally_act Communication_manner Motion Perception_experience Intentionally_act Text Gathering_up Buildings
+Desirability Certainty
+Resolve_problem Quantity Predicament
+Roadways Age Continued_state_of_affairs
+Desirability Natural_features
+
+Assistance Experiencer_focus Intentionally_act Intentionally_act Success_or_failure Text Inspecting Possession Cardinal_numbers Taking_time
+
+Manufacturing Assistance Impact Inspecting Locative_relation Locative_relation
+Judgment_direct_address Perception_active Experiencer_focus Participation People
+Desiring Awareness Impact Capability Age Expertise Natural_features People Locative_relation Cardinal_numbers
+Desirability
+
+
+Scrutiny Categorization Cardinal_numbers
+
+Capability Natural_features
+
+
+Causation Inspecting Experiencer_focus Natural_features Being_obligated Relational_quantity Measure_duration Intoxicants Performing_arts
+
+
+Sounds Natural_features Desirability People
+Becoming
+Statement
+
+
+Perception_experience Perception_active People Biological_area Temporal_collocation Quantity Relational_quantity
+Self_motion Placing Arriving Perception_active Awareness Sounds People Connectors Quantity Relational_quantity
+Performing_arts
+
+Cause_harm Placing Stimulus_focus People_by_age Food
+Awareness
+Intentionally_act Sign_agreement Sign_agreement Intentionally_act Judgment_direct_address Desirability Natural_features Stimulus_focus Locative_relation Locative_relation
+Agree_or_refuse_to_act Participation Locative_relation Temperature
+Statement Statement Arriving Arriving Activity_start Intentionally_act Personal_relationship Age Capability Capability
+Clothing_parts Locative_relation
+Contacting
+Causation Judgment_direct_address Capability Political_locales
+Natural_features
+Emotion_directed People
+Judgment_direct_address Performing_arts
+Desiring Similarity Inspecting Natural_features Locative_relation
+Desirability
+Text Desirability Degree
+Frequency Relational_quantity
+Intentionally_act Experiencer_focus Existence Excreting Fields Performing_arts Performing_arts Performing_arts
+Text Experiencer_focus Relational_quantity
+Arriving Intentionally_act Causation Intentionally_act Awareness Text Participation Frequency Aggregate Kinship
+Text Desirability
+Text Desirability
+Placing Filling Perception_active Scrutiny Inspecting Expensiveness Locative_relation
+Causation Text Experiencer_focus
+
+
+Self_motion Education_teaching Causation
+Text Desirability
+Make_noise Perception_active
+Text
+Motion Scrutiny Capability Natural_features
+Motion Scrutiny Capability Natural_features
+Motion Natural_features
+Statement Quantity
+Experiencer_focus
+Causation Text Experiencer_focus Getting Sounds Excreting Natural_features People Stimulus_focus Desirability
+Quantity Calendric_unit Observable_body_parts
+Stimulus_focus
+Statement Aesthetics People
+Arriving Becoming Text Frequency Observable_body_parts
+Using Being_active Correctness Receiving Age Categorization Cardinal_numbers Kinship Sole_instance
+
+
+Awareness Categorization Experiencer_obj Desirability Possession Cardinal_numbers Relational_quantity
+Request Artifact Cardinal_numbers Stimulus_focus
+Relational_quantity
+
+People Degree
+Arriving Assistance Emotion_directed Cardinal_numbers
+Experiencer_focus Text
+Arriving Text Experiencer_focus Text Inspecting Ingest_substance Temporal_collocation Ambient_temperature Desirability Relational_quantity
+Motion Perception_experience Cause_to_make_progress Abusing Text Agree_or_refuse_to_act Personal_relationship Death Instance
+Reasoning Personal_relationship
+
+Scrutiny Conquering
+Cause_harm Inspecting Natural_features Stimulus_focus
+Collaboration
+
+Text Offenses
+
+Arriving Awareness Text Experiencer_focus Age Capability Calendric_unit Time_vector
+Scrutiny Color Part_piece
+Desiring Desiring Perception_active Text Have_as_requirement Ordinal_numbers
+Arriving Arriving Attempt Age Quantity Performing_arts Performing_arts
+
+Attention
+Perception_active Possession Frequency
+
+Becoming Becoming Emotion_directed Text Experiencer_focus Memory Frequency Frequency Frequency Residence
+Experiencer_focus Experiencer_focus Means Relational_quantity
+Text Cardinal_numbers Performing_arts
+
+
+
+Experiencer_focus Means
+Desirability
+
+
+Education_teaching Motion Excreting Impact Quantity Mental_property Ordinal_numbers Relational_quantity Remembering_information Timespan
+
+
+Sounds Sounds Age
+
+Using Statement Perception_experience Abusing Text_creation Impact Impact Capability Frequency Frequency
+
+Intentionally_act Awareness Perception_active Certainty Capability Process_end Process_end Frequency Cogitation Quantity
+
+
+Roadways Being_employed Activity_start Experiencer_focus Awareness Inspecting Text Giving Reasoning Natural_features
+Motion Text Desirability Temporal_collocation Ordinal_numbers Relational_quantity
+
+Motion
+Communication_manner Text Degree
+Secrecy_status
+
+
+
+Arriving Statement Desiring Giving Successful_action Judgment_direct_address Judgment Reading Capability Judgment
+Means Being_located
+
+Getting Experiencer_focus People Sleep Fullness
+Filling Text
+
+
+Perception_active Continued_state_of_affairs
+Cause_harm Perception_active Awareness
+Judgment_direct_address Natural_features Stimulus_focus
+Frequency
+Attempt Becoming Experiencer_focus Success_or_failure Experiencer_focus Reading Political_locales Political_locales Stimulus_focus People_by_age
+
+Contacting Categorization Aggregate People Being_obligated Being_obligated
+Text Sounds
+Experiencer_focus
+Experiencer_focus
+Statement Temporal_collocation Type
+Finish_competition
+
+
+Experiencer_focus
+Statement Temporal_collocation Type
+
+Ambient_temperature
+
+Commerce_buy Leadership Capability Frequency Biological_area Location_of_light Medical_conditions Desirability Ingestion Temperature
+Text Color Desirability Membership Sole_instance
+Statement Motion Leadership Social_event Awareness People_by_vocation Text Text Text Existence
+Attempt Arriving Social_event Causation Text Experiencer_focus Capability Difficulty Desirability Sensation
+Emotion_directed Age Request Locative_relation
+Emotion_directed Age Request Locative_relation
+Perception_active Identicality Continued_state_of_affairs Continued_state_of_affairs
+Arriving Weapon Locale_by_use Compliance Expensiveness Stimulus_focus Cardinal_numbers Cardinal_numbers Quantity Measure_duration
+Experiencer_focus
+Speed Measure_duration
+Judgment_direct_address Getting Causation Taking_sides Getting Experiencer_focus Text Text Judgment Inspecting
+
+Activity_stop
+Experiencer_focus Sounds
+Placing Perception_experience Communication_noise Locative_relation
+
+Perception_active Emotion_directed Text
+Becoming Quantity Being_obligated
+Getting
+Leadership
+Arriving Cause_motion Manufacturing Desiring Attempt_suasion Experiencer_focus Judgment_direct_address Experiencer_focus Judgment_direct_address Emotion_directed
+Desirability
+
+Motion Getting Sounds Create_physical_artwork Create_physical_artwork Calendric_unit Calendric_unit Means Performing_arts
+Text Age Locative_relation
+
+
+Finish_competition
+Becoming_aware
+Arriving Intentionally_act Physical_artworks Required_event Measure_duration Increment
+Emotion_directed Age Request Locative_relation
+Emotion_directed Age Request Locative_relation
+Arriving Cause_motion Manufacturing Desiring Attempt_suasion Experiencer_focus Experiencer_focus Judgment_direct_address Judgment_direct_address Emotion_directed
+Taking_sides Scrutiny Stimulus_focus
+Perception_active
+Frequency
+Experiencer_focus
+Earnings_and_losses
+Fluidic_motion Experiencer_focus Experiencer_focus Existence Cardinal_numbers Quantity Intoxicants Sufficiency
+Emotion_directed Age Request Locative_relation
+Experiencer_focus Experiencer_focus Sounds
+Experiencer_focus Being_located Means
+
+Categorization
+Arriving Being_employed Buildings Causation Inspecting Intentionally_create Inspecting Request Capability Natural_features
+Text
+Arriving Being_employed Emotion_directed Buildings Causation Inspecting Intentionally_create Apply_heat Inspecting Request
+Medical_conditions Performing_arts
+Arriving Being_employed Buildings Causation Inspecting Finish_competition Intentionally_create Inspecting Request Capability
+Experiencer_focus Buildings
+Arriving Being_employed Emotion_directed Causation Buildings Inspecting Intentionally_create Inspecting Request Lively_place
+Arriving Being_employed Emotion_directed Inspecting Causation Buildings Intentionally_create Inspecting Request Capability
+
+Text Desirability Temporal_collocation
+Experiencer_focus Desirability
+
+Arriving Being_employed Buildings Causation Inspecting Intentionally_create Inspecting Request Capability Natural_features
+Statement Grant_permission Capability Capability Capability Create_physical_artwork Grasp Calendric_unit Calendric_unit Performing_arts
+Statement Perception_active Getting Capability
+
+Text
+
+Text Inspecting Request Quantity Locative_relation Duration_attribute
+
+Experiencer_focus Means
+Intentionally_act Text Awareness People Cardinal_numbers Locative_relation Membership
+Arriving Being_employed Buildings Causation Inspecting Intentionally_create Inspecting Request Capability Experiencer_obj
+
+Using Arriving Being_employed Buildings Causation Inspecting Competition Intentionally_create Inspecting Request
+
+Text Experiencer_focus Desirability Residence Cardinal_numbers
+Create_physical_artwork Accoutrements Calendric_unit
+Statement Giving Abusing Emotion_directed Causation Text Intentionally_act Experiencer_focus Grasp Categorization
+Arriving Assistance Calendric_unit Continued_state_of_affairs Performing_arts
+Text Age Performers_and_roles Performing_arts
+Experiencer_focus Telling Capability Observable_body_parts Stimulus_focus Performing_arts
+Categorization Cardinal_numbers Social_connection
+
+Arriving Being_employed Intentionally_act Causation Buildings Inspecting Intentionally_create Inspecting Request Expansion
+Arriving Desiring Being_employed Causation Recording Intentionally_act Buildings Inspecting Intentionally_act Intentionally_create
+Calendric_unit
+Personal_relationship Contrition
+Leadership Becoming Leadership Sounds Inspecting Difficulty Fame Fame People Calendric_unit
+Experiencer_focus Natural_features
+Degree
+Categorization
+
+Experiencer_focus
+
+Experiencer_focus Text Degree
+Arriving Being_employed Finish_competition Emotion_directed Causation Buildings Intentionally_act Inspecting Intentionally_act Intentionally_act
+Experiencer_focus Kinship
+Perception_active
+Text Age Performers_and_roles Performing_arts
+Stimulus_focus
+Arriving Manufacturing Breathing Being_employed Intentionally_act Causation Intentionally_act Inspecting Buildings Intentionally_act
+Change_position_on_a_scale Self_motion Assessing Arriving Education_teaching Being_employed Apply_heat Causation Intentionally_act Buildings
+People_by_age
+Experiencer_focus
+Experiencer_focus Natural_features People Stimulus_focus
+Statement Killing Assistance Attempt Activity_start Perception_experience Intentionally_act Awareness Causation Text_creation
+Assistance Being_employed Becoming Causation Causation Perception_active Grant_permission Experiencer_focus Judgment_direct_address Text
+Experiencer_focus Experiencer_focus Being_located Means
+
+Inspecting Capability
+Certainty Collaboration Frequency Quantity
+Arriving Cause_motion Being_employed Intentionally_act Causation Intentionally_act Buildings Inspecting Intentionally_create Communication_response
+Statement Arriving Reveal_secret Make_noise Being_employed Causation Causation Text Intentionally_act Intentionally_act
+Desirability
+Arriving Being_employed Inspecting Buildings Causation Intentionally_create Finish_competition Experiencer_obj Inspecting Request
+Required_event Sent_items
+Desirability
+Categorization Deserving
+Increment
+Text Desirability
+Perception_experience Capability Calendric_unit
+Perception_active Continued_state_of_affairs
+Desiring People
+Desirability
+Natural_features
+Arriving Cause_motion Awareness Text_creation Causation Giving Perception_experience Experiencer_focus Judgment_direct_address Experiencer_focus
+Aesthetics Stimulus_focus
+
+Statement Activity_start Assistance Perception_experience Becoming Causation Activity_ongoing Getting Giving Experiencer_focus
+
+Cause_harm Causation Becoming Text Capability Locale Frequency Desirability Frequency Observable_body_parts
+Experiencer_focus Text Sounds
+Judgment_direct_address Judgment_direct_address Desirability Cardinal_numbers Cardinal_numbers Clothing_parts Clothing_parts Usefulness
+Bringing Communication_noise Text Difficulty Observable_body_parts Relational_quantity
+Observable_body_parts
+Text
+Experiencer_focus Abounding_with Being_located Means
+Desirability Locative_relation People Part_orientational Performing_arts Performing_arts
+Statement Arriving Hostile_encounter Being_employed Causation Inspecting Buildings Intentionally_act Intentionally_create Inspecting
+Self_motion Arriving Cause_to_make_progress Being_employed Leadership Causation Intentionally_act Apply_heat Inspecting Buildings
+Arriving Being_employed Causation Desiring Causation Reshaping Awareness Buildings Intentionally_act Inspecting
+Arriving Being_employed Intentionally_act Cause_change_of_position_on_a_scale Accomplishment Causation Buildings Inspecting Intentionally_act Intentionally_act
+
+Arriving Memory Text Age Calendric_unit Cardinal_numbers Temporal_collocation Locative_relation Ordinal_numbers Time_vector
+Age Natural_features Cardinal_numbers Calendric_unit
+
+Natural_features
+Natural_features Stimulus_focus
+Statement Killing Personal_relationship
+Cardinal_numbers Simple_name
+
+Desiring Impact People_by_age Calendric_unit
+Intentionally_act Intoxicants
+Giving Inspecting Weapon Food Food Electricity Duration_attribute
+Experiencer_focus
+Sounds
+Sounds
+
+Arriving Categorization Inclusion Increment
+Surviving
+Statement Departing Roadways Awareness Assistance Awareness Roadways Grant_permission Perception_active Judgment_direct_address
+Arriving Opinion Cardinal_numbers Being_obligated
+
+
+Arriving Cause_motion Awareness Text_creation Causation Giving Perception_experience Experiencer_focus Judgment_direct_address Experiencer_focus
+Building Building Inspecting Inspecting Performers_and_roles Performers_and_roles Political_locales Political_locales Clothing Clothing
+Natural_features Natural_features Natural_features Natural_features Natural_features Natural_features Natural_features Natural_features Natural_features Intoxicants
+Stimulus_focus
+
+
+
+People
+Being_employed Experiencer_focus
+Beat_opponent Text Capability Hair_configuration
+Perception_active Observable_body_parts Locative_relation
+Experiencer_focus Expertise
+Emotion_directed Natural_features
+Building Departing Arriving Assistance Being_employed Assistance Working_on Cause_to_make_progress Cause_to_make_progress Cause_to_make_progress
+Desiring Perception_active Awareness Inspecting Age Participation Capability Color Temporal_collocation People_by_age
+Experiencer_focus
+Arriving Text Age Frequency Desirability
+Hostile_encounter Causation Temporal_collocation Locative_relation Ordinal_numbers
+Arriving Cause_motion Awareness Text_creation Causation Giving Perception_experience Experiencer_focus Judgment_direct_address Experiencer_focus
+Statement Assistance Assistance Desiring Awareness Experiencer_focus Emotion_directed Awareness Emotion_directed Judgment_direct_address
+Departing Statement Activity_start Manufacturing Experiencer_focus Communication_noise Capability Natural_features Locale Grasp
+
+Statement Filling Inspecting Judgment Sounds Cardinal_numbers Relational_quantity Size Degree
+Text Experiencer_focus Being_up_to_it
+
+Statement Departing Arriving Attempt Roadways Arriving Supply Similarity Causation Judgment_direct_address
+Desirability
+Experiencer_focus
+Natural_features Grasp Duration_attribute
+Experiencer_focus Age Categorization Frequency Calendric_unit Locative_relation
+Desirability
+Emotion_directed Age Request Locative_relation
+
+Arriving Emotion_directed Judgment_direct_address Experiencer_focus Sounds Capability People Stimulus_focus Relational_quantity
+Arriving Natural_features
+Text
+Arriving Sending Intentionally_act Becoming Inspecting Experiencer_focus Judgment_direct_address Text Reading Natural_features
+Contacting Sign_agreement Getting Physical_artworks Observable_body_parts
+Contacting Sign_agreement Getting Physical_artworks Observable_body_parts
+Cause_harm Contacting
+Perception_active Stimulus_focus
+
+
+Perception_experience Categorization Sole_instance
+Desiring Text Text Inspecting Request Grasp People People Desirability Stimulus_focus
+Statement Arriving Request Text Impact Communication_manner Impact Sounds Scrutiny Text
+Statement Arriving Building Assistance Assistance Cause_to_make_progress Cause_to_make_progress Cause_to_make_progress Intentionally_act Activity_ongoing
+Quantity
+Getting Categorization Sufficiency
+
+Manufacturing Performing_arts
+Text Political_locales
+
+Experiencer_focus
+Awareness People People
+Statement Intentionally_act Activity_stop Intentionally_act Text Frequency People People People People_by_age
+Experiencer_focus
+
+Experiencer_focus
+Intentionally_act Sounds Capability Capability Difficulty People_by_age
+Experiencer_focus
+Performing_arts
+Contacting Text Inclusion Aggregate Relational_quantity
+Cause_harm Capability Natural_features People Stimulus_focus
+Experiencer_focus Text
+Arriving Age Locative_relation Part_orientational
+
+Statement Desiring Causation Similarity Judgment_direct_address Inspecting Sounds Reading Age Categorization
+Experiencer_focus Being_located Means
+Judgment_direct_address Inspecting Reading Age People Activity_ready_state Calendric_unit Observable_body_parts Increment Increment
+Departing Causation Activity_ongoing Inspecting Text Judgment Existence Scrutiny Capability Existence
+People
+Stimulus_focus Losing_it
+Causation Similarity Causation Judgment_direct_address Text People Cardinal_numbers Stimulus_focus Have_as_requirement Sole_instance
+Travel Cause_to_make_progress Cause_to_make_progress Activity_ongoing Correctness Intentionally_act Sending Intentionally_act Judgment_direct_address Text
+Statement Departing Arriving Change_position_on_a_scale Arriving Arriving Arriving Perception_experience Arriving Activity_start
+Text Performing_arts
+Education_teaching Filling Desiring Becoming Intentionally_act Causation Intentionally_act Judgment_direct_address Inspecting Scrutiny
+Self_motion Sounds Natural_features Performing_arts
+
+Cause_harm Inspecting Contacting
+Being_located Means
+Awareness Desiring Awareness Sounds Age Sounds Possession Connectors Dimension
+
+Arriving Categorization Required_event Quantity
+Statement Arriving Arriving Desiring Working_on Arriving Intentionally_act Intentionally_act Giving Experiencer_focus
+
+Relational_quantity
+Desirability
+Judgment_direct_address Experiencer_focus Subordinates_and_superiors
+Intentionally_act Inspecting People Required_event Being_named Locative_relation Trust
+Statement Departing Attempt Desiring Assistance Arriving Judgment_communication Intentionally_act Intentionally_act Agree_or_refuse_to_act
+Cause_harm Inspecting Contacting
+Text
+Desiring Text Finish_competition Experiencer_focus Grasp Grasp People Dressing Being_located Means
+Education_teaching Perception_experience Experiencer_focus Recording Giving Experiencer_focus Experiencer_focus Inspecting Capability Age
+Locative_relation
+Text Inspecting Judgment_direct_address Experiencer_focus Possession Quantity Being_located Locative_relation Means Increment
+Statement Desirability
+Experiencer_focus Type
+Assistance Intentionally_act
+Perception_active Observable_body_parts Locative_relation
+Statement Departing Arriving Similarity Intentionally_act Existence Sending Emotion_directed Judgment_direct_address Text
+Causation Contacting Intentionally_act Inspecting Success_or_failure Difficulty Possession Likelihood Money Locative_relation
+Statement Desiring Intentionally_act Supply Causation Perception_active Causation Experiencer_focus Text Experiencer_focus
+Arriving Building Inspecting Locale_by_use Connectors People Hair_configuration Hair_configuration Quantity Position_on_a_scale
+
+
+
+Sending Judgment_direct_address Text Sounds Age Connectors Usefulness Quantity
+Awareness Inspecting Judgment_direct_address Experiencer_focus Telling Judgment Capability Natural_features People Quantity
+Judgment_direct_address Experiencer_focus Age Subordinates_and_superiors
+Experiencer_focus Means
+Statement Departing Arriving Change_position_on_a_scale Arriving Arriving Arriving Perception_experience Arriving Activity_start
+Experiencer_focus Being_located Stimulus_focus Means
+Cardinal_numbers Relational_quantity
+Using Perception_active Experiencer_focus Existence People Being_obligated Performing_arts
+Roadways Becoming Intentionally_act Inspecting Temporal_collocation Recovery Locative_relation Locative_relation
+Arriving Personal_relationship Natural_features Locative_relation
+People Usefulness
+Experiencer_focus Inspecting Natural_features Stimulus_focus Locative_relation Ordinal_numbers
+Desirability Quantity
+People_by_vocation People Sensation Origin
+Awareness Observable_body_parts Cardinal_numbers Locative_relation Being_obligated Being_obligated
+Statement Stimulus_focus Part_orientational
+Experiencer_focus
+Text
+Inspecting Clothing Natural_features Wearing Usefulness Relational_quantity Time_vector
+Natural_features
+
+Text Age
+
+Using Removing Arriving Arriving Being_employed Intentionally_act Causation Intentionally_act Buildings Intentionally_act
+
+Beat_opponent Natural_features Taking_time Surpassing Temporal_collocation
+Statement Departing Arriving Change_position_on_a_scale Arriving Arriving Arriving Perception_experience Arriving Activity_start
+Experiencer_focus
+Intentionally_act Inspecting Residence Quantity Being_located Locative_relation Locative_relation Means Increment
+Arriving Assistance Desiring Causation Causation Judgment_direct_address Emotion_directed Request Capability Grasp
+Perception_active
+Experiencer_focus
+Experiencer_focus Being_located
+Perception_active Continued_state_of_affairs
+Statement Departing Arriving Change_position_on_a_scale Arriving Arriving Arriving Perception_experience Arriving Activity_start
+
+Sounds Stimulus_focus Temperature
+Killing Arriving Leadership Intentionally_act Verification Becoming Becoming Text Text Experiencer_focus
+
+
+Emotion_directed
+Activity_ongoing Possession Hair_configuration Kinship Relational_quantity
+Statement Statement Placing Placing Intentionally_act Emotion_directed Text Sounds Age Certainty
+
+
+Activity_start Giving Inspecting Natural_features People Evoking People People Likelihood Dimension
+
+Arriving Attempt Assistance Causation Capability Age Age Calendric_unit Cardinal_numbers Have_as_requirement
+Text Aesthetics
+Natural_features People People_by_age
+Hostile_encounter Arriving Inspecting Perception_active Capability Natural_features Possession Grasp People Certainty
+Sounds Desirability
+Text
+Self_motion Arriving Emotion_directed Scrutiny Inspecting Judgment Certainty Age People Likelihood
+Text Experiencer_focus Desirability
+Text Perception_active Performing_arts
+Arriving Assistance Activity_start Causation Perception_active Text_creation Judgment_direct_address Intentionally_act Communication_noise Capability
+
+Natural_features Relational_quantity
+Kinship Size
+
+Experiencer_focus
+Scrutiny
+Motion Judgment_direct_address Natural_features
+
+Experiencer_focus Capability Trust
+
+
+Attack Reveal_secret Becoming Protecting Existence Scrutiny Law Grasp Purpose Cognitive_connection
+Capability Natural_features
+Sounds
+
+Experiencer_focus
+Filling Age
+Text Experiencer_focus Text Certainty Desirability
+Create_physical_artwork Desirability Stimulus_focus
+Experiencer_focus
+Relational_quantity
+Arriving Arriving Roadways Desiring Awareness Text Experiencer_focus Emotion_directed Age Capability
+Text Color Desirability Color Membership Membership
+People Change_of_quantity_of_possession
+Natural_features
+Experiencer_focus Taking_sides Text Sounds Natural_features People Cardinal_numbers Observable_body_parts Measure_duration Relative_time
+
+Desirability
+Placing Experiencer_focus Experiencer_focus Intentionally_act Awareness Emotion_directed Inspecting Scrutiny Excreting Sounds
+Arriving Statement Desiring Impact Scrutiny Certainty Natural_features Desirability People_by_age Reason
+
+Roadways Relative_time Surviving
+Natural_features
+Desiring People People Relational_quantity
+Using Arriving Attempt Motion Becoming_aware Desiring Desiring Intentionally_act Activity_start Intentionally_act
+Scrutiny Color Aesthetics Observable_body_parts
+Categorization
+Stimulus_focus
+Experiencer_focus Text
+Experiencer_focus Text
+Arriving Arriving Cardinal_numbers Cardinal_numbers Ordinal_numbers
+Desirability
+Text Political_locales Containers Desirability
+
+Text Grasp Increment Type
+
+Experiencer_focus
+Experiencer_focus
+Experiencer_focus Quantity Reason
+Arriving Awareness Text Age Dressing
+Experiencer_focus
+
+Perception_experience Text Opinion Purpose Frequency Measure_duration
+Perception_active
+Arriving Text Experiencer_focus Relational_quantity
+Text Experiencer_focus Being_up_to_it
+Desirability
+Experiencer_focus Calendric_unit Time_vector Continued_state_of_affairs
+
+
+Sensation Stimulus_focus
+Text Experiencer_focus Existence Capability Halt Sensation Required_event Quantity Timespan Reason
+Experiencer_focus Stimulus_focus
+Perception_active Continued_state_of_affairs
+
+Memory Text
+
+Perception_active
+Hostile_encounter Hostile_encounter Hostile_encounter Hostile_encounter Assistance Hostile_encounter Hostile_encounter Filling Protecting Intentionally_act
+Text Desirability
+
+Text Desirability
+Sufficiency
+
+Experiencer_focus
+Causation Text Text Experiencer_focus Aggregate
+
+Perception_active
+Text Coming_to_believe Age Age Calendric_unit Temporal_collocation Feeling
+Experiencer_focus
+Text Desirability Quantity Cardinal_numbers
+Experiencer_focus People
+Experiencer_focus Experiencer_focus Desirability Degree
+Perception_active Continued_state_of_affairs
+Text
+
+Text Political_locales Containers Desirability
+Stimulus_focus
+Individual_history
+Grasp
+
+Aesthetics Origin
+Observable_body_parts Locative_relation
+
+Commitment
+Arriving Causation Appearance Text Being_necessary Containers Political_locales Organization Event Temporal_collocation
+Experiencer_focus Personal_relationship
+
+Experiencer_focus
+Assistance Becoming Perception_active Impact Impact Categorization Clothing_parts Cardinal_numbers Deciding Relational_quantity
+
+Experiencer_focus Text Desirability
+
+Statement Arriving Statement Statement Ingest_substance Cardinal_numbers Kinship Stimulus_focus Preventing
+Stimulus_focus
+
+Desirability
+Text Experiencer_focus Capability People
+Experiencer_focus
+Activity_ongoing Scrutiny Getting Commitment Desirability Observable_body_parts Means Increment Increment Increment
+Statement Calendric_unit
+Excreting Categorization Inclusion Quantity Locative_relation Increment
+
+Experiencer_focus
+Experiencer_focus
+Text Text
+Text Usefulness
+Experiencer_focus
+Perception_active Text Temporal_collocation
+Memory
+Giving Judgment_direct_address
+
+
+Experiencer_focus Aesthetics
+
+Containers Political_locales
+Desirability Kinship
+Text
+Perception_experience Experiencer_focus Age Calendric_unit Temporal_collocation Continued_state_of_affairs Sole_instance
+Stimulus_focus
+
+Becoming Experiencer_focus Cardinal_numbers
+Experiencer_focus
+Experiencer_focus Experiencer_focus Text
+Text Awareness Locative_relation Desirability Identicality
+Experiencer_focus
+Experiencer_focus Text
+
+
+Stimulus_focus
+Text Desirability
+Experiencer_focus
+
+Text
+Experiencer_focus
+
+Perception_active Recording Natural_features Purpose Cardinal_numbers
+Calendric_unit
+
+Desirability
+Calendric_unit
+
+Experiencer_focus
+
+Text
+Perception_experience Stimulus_focus
+Experiencer_focus
+
+
+Text Aesthetics People
+Experiencer_focus
+Cause_change_of_position_on_a_scale Certainty Desirability Choosing
+Text Experiencer_focus Calendric_unit Temporal_collocation
+Observable_body_parts
+Statement Social_event Emotion_directed Similarity Communication_manner Capability Frequency Cardinal_numbers Used_up
+
+Political_locales Containers
+Judgment_communication Calendric_unit Time_vector
+Stimulus_focus
+Arriving Assistance Sounds Text Categorization Categorization Create_physical_artwork Cardinal_numbers Cardinal_numbers Cardinal_numbers
+
+Text
+Statement Causation Text Text Success_or_failure Remembering_experience Desirability Inclusion Quantity Desirability
+Experiencer_focus Text Containers Political_locales Expectation
+Desirability Timespan
+Causation Causation Emotion_directed Desirability Event Remembering_information
+Text Experiencer_focus Cardinal_numbers Relational_quantity
+Text Desirability Stimulus_focus
+Motion Text
+
+
+
+Experiencer_focus
+Text Experiencer_focus Kinship
+
+
+Statement Similarity Memory Text Capability Political_locales Choosing Cardinal_numbers Measure_duration Remembering_information
+
+
+Statement Assistance Desiring Attempt_suasion Intentionally_act Causation Reveal_secret Cause_change_of_position_on_a_scale Giving Judgment_direct_address
+Arriving Emotion_directed
+Request Natural_features
+Request
+Request Natural_features
+Text Desirability
+
+Getting Accoutrements
+
+Awareness Causation Social_event Experiencer_focus Inspecting Scrutiny People People Being_named
+Desiring Working_on Sounds Finish_competition Money
+Experiencer_focus Natural_features Stimulus_focus
+Roadways Intentionally_act Grasp People Quantity
+
+
+Causation Age Cardinal_numbers Frequency Money Means Measure_duration Used_up
+Text Existence Aesthetics Stimulus_focus
+Arriving Causation Natural_features Capability Capability Event
+Being_employed Activity_start Getting Perception_active Causation Experiencer_focus Run_risk Commerce_pay Protecting Intentionally_create
+Evaluative_comparison Quantity Cardinal_numbers
+Adopt_selection Statement Creating Arriving Activity_start Getting Causation Causation Success_or_failure Perception_active
+Frequency
+Cause_change Desiring Assistance Perception_experience Perception_active Intentionally_act Theft Experiencer_focus Scrutiny Personal_relationship
+Cause_change Attempt Being_employed Cause_to_make_progress Intentionally_act Scrutiny Expertise Desirability Expensiveness Evidence
+Arriving Statement Intentionally_act Perception_active Text Judgment_direct_address Natural_features Court_examination Stimulus_focus Continued_state_of_affairs
+
+Frequency
+Becoming_aware Arriving Arriving Grant_permission Activity_start Request Text_creation Sign_agreement Intentionally_act Intentionally_act
+Arriving Being_employed Buildings Causation Inspecting Intentionally_create Inspecting Request Capability Natural_features
+Age
+Arriving Statement Attempt Arriving Arriving Intentionally_act Causation Awareness Experiencer_focus Giving
+Taking_sides
+Statement Self_motion Arriving Being_employed Causation Intentionally_act Inspecting Buildings Intentionally_act Intentionally_create
+
+Working_on Working_on Social_event Causation Buildings Getting Experiencer_focus Sounds Sounds Getting
+Experiencer_focus Text Temporal_collocation Cardinal_numbers
+Statement Bringing Arriving Becoming_aware Being_employed Causation Intentionally_act Buildings Inspecting Intentionally_act
+Causation Money Quantity
+Arriving Causation Money Desirability
+Statement Arriving Locale_by_use Cardinal_numbers Cardinal_numbers Cardinal_numbers Cardinal_numbers Cardinal_numbers Cardinal_numbers
+Working_on Working_on Social_event Causation Buildings Getting Experiencer_focus Sounds Sounds Getting
+Becoming Causation Giving Buildings Scrutiny Commerce_pay Commerce_pay Categorization Response Locale_by_use
+Working_on Working_on Social_event Causation Causation Buildings Getting Getting Experiencer_focus Sounds
+Arriving Being_employed Intentionally_act Success_or_failure Causation Buildings Experiencer_focus Inspecting Intentionally_create Finish_competition
+Arriving Being_employed Grant_permission Causation Buildings Experiencer_focus Inspecting Intentionally_act Intentionally_act Intentionally_create
+Self_motion Arriving Being_employed Causation Intentionally_act Inspecting Buildings Intentionally_create Inspecting Submitting_documents
+Natural_features
+
+Working_on Working_on Social_event Causation Causation Buildings Getting Getting Experiencer_focus Sounds
+Arriving
+Arriving
+Arriving Working_on Desiring Causation Roadways Getting Experiencer_focus Getting Giving Commerce_buy
+People Usefulness
+Working_on Working_on Social_event Causation Causation Buildings Getting Getting Experiencer_focus Sounds
+Natural_features Locale_by_use
+Filling Being_located
+Natural_features
+Being_employed Causation Awareness Agree_or_refuse_to_act Agree_or_refuse_to_act Request Request Money Being_obligated Measure_linear_extent
+Text Experiencer_focus Experiencer_focus Temporal_collocation
+
+
+
+Experiencer_focus
+Usefulness
+Hair_configuration
+
+Text
+Locative_relation
+
+Desiring Text Age
+Usefulness
+
+Memory
+
+Causation Success_or_failure Political_locales Containers
+Text Desirability
+Experiencer_focus
+Change_position_on_a_scale Becoming Becoming Certainty Certainty Individual_history Misdeed Quantity Quantity Temporal_collocation
+Body_movement Breathing Desiring Perception_experience Inspecting Grasp Age People Secrecy_status
+Desiring Intentionally_act Categorization Certainty Reasoning Locale_by_use Frequency Calendric_unit Connectors
+Attaching Sending Impact Capability Temporal_collocation Position_on_a_scale
+
+
+
+
+Experiencer_focus
+Similarity Experiencer_focus Personal_relationship Experiencer_focus People Quantity Relational_quantity
+
+Experiencer_focus
+Aesthetics
+Aesthetics Degree
+Desirability
+Ambient_temperature
+Usefulness
+Experiencer_obj
+Causation Sounds Experiencer_focus Sounds Stimulus_focus Performing_arts
+Usefulness
+Filling Emotion_directed
+Statement Statement Filling Intentionally_act Intentionally_act Giving Getting Success_or_failure Experiencer_focus Sending
+Buildings Sounds Sounds Natural_features Connectors Shapes Shapes
+Social_event Age
+Text Locative_relation
+
+Experiencer_focus Vehicle
+Contacting Text Inclusion Aggregate Relational_quantity
+Text_creation Abounding_with
+Education_teaching Filling Desiring Becoming Intentionally_act Causation Intentionally_act Judgment_direct_address Inspecting Scrutiny
+Arriving Emotion_directed Network
+Judgment_direct_address Experiencer_focus Subordinates_and_superiors
+Usefulness
+
+Being_employed Text Aesthetics People Aesthetics
+
+Experiencer_focus
+
+
+Desirability
+Arriving Text Frequency Age
+Frequency Part_whole Being_obligated
+Experiencer_focus
+Text Experiencer_focus
+Desiring Perception_experience
+Desirability
+Expressing_publicly Commerce_buy Age Color Color Expertise Color Expertise Commerce_scenario Commerce_scenario
+Statement Statement Assistance Desiring Causation Cause_to_amalgamate Success_or_failure Undergo_change Taking_sides Taking_sides
+Leadership Leadership Leadership Leadership Leadership Leadership Leadership Leadership Leadership Leadership
+Desirability Social_interaction_evaluation Kinship Kinship Kinship Kinship Kinship Kinship Kinship Kinship
+Assistance Awareness Contacting Capability Existence Existence Difficulty Cognitive_connection Quantity Increment
+Text Stimulus_focus
+Self_motion Mental_property
+Experiencer_obj
+Desirability
+Stimulus_focus
+
+
+Desirability
+Statement Self_motion Statement Filling Arriving Perception_experience Giving Judgment_direct_address Perception_active Experiencer_focus
+Causation Contacting Intentionally_act Giving Inspecting Success_or_failure Difficulty Possession Observable_body_parts Likelihood
+Judgment_direct_address Experiencer_focus Subordinates_and_superiors
+Scrutiny Money Temporal_collocation Measure_duration Means Type
+Sounds Make_acquaintance
+Causation Text Intentionally_act Experiencer_focus Certainty People Increment
+Scrutiny Stimulus_focus
+Statement Education_teaching Motion Desiring Text Request Inclusion Observable_body_parts Kinship Quantity
+Terrorism Giving Clothing Experiencer_obj Political_locales People_by_religion People_by_religion Aggregate Wealthiness
+Arriving Motion Natural_features Usefulness
+Arriving Motion Awareness Inspecting Capability Natural_features Quantity Performing_arts
+Inspecting Existence Natural_features Temporal_collocation Evidence
+Statement Statement Arriving Perception_experience Arriving Becoming Perception_experience Judgment_direct_address Intentionally_act Judgment_direct_address
+Statement Motion Becoming Text Request People_by_age Remembering_information
+Statement Statement Arriving Perception_experience Arriving Becoming Perception_experience Judgment_direct_address Intentionally_act Judgment_direct_address
+Becoming Perception_experience Natural_features Personal_relationship Stimulus_focus
+Arriving Earnings_and_losses Connectors Money Import_export
+Statement Statement Arriving Perception_experience Arriving Becoming Perception_experience Judgment_direct_address Intentionally_act Judgment_direct_address
+Type
+Causation Likelihood Money
+Emotion_directed Natural_features
+Attempt Money
+Statement Filling Filling Intentionally_act Perception_active Perception_active Inspecting Judgment_direct_address Awareness Capability
+
+Perception_active Inspecting Scrutiny Cause_to_wake People Cause_to_wake Topic Gizmo Origin
+Statement Statement Arriving Arriving Arriving Attempt Arriving Perception_experience Perception_experience Experiencer_focus
+Statement Statement Arriving Arriving Arriving Attempt Arriving Perception_experience Perception_experience Experiencer_focus
+Arriving Statement Desiring Giving Successful_action Judgment_direct_address Judgment Capability Judgment Categorization
+Stimulus_focus
+Judgment_direct_address Stimulus_focus
+Arriving Killing Assistance Text_creation Impact Behind_the_scenes Getting Capability Categorization Cardinal_numbers
+Inspecting Contacting People People Locative_relation
+Observable_body_parts
+Observable_body_parts
+Natural_features Locative_relation
+Request Categorization
+Experiencer_focus Cause_to_amalgamate Age Inspecting Age Personal_relationship Stimulus_focus Quantity Locative_relation Type
+Text Locative_relation
+Usefulness
+Arriving Statement Desiring Giving Successful_action Judgment_direct_address Judgment Capability Judgment Categorization
+Statement Statement Filling Intentionally_act Intentionally_act Giving Getting Success_or_failure Experiencer_focus Sending
+Statement Statement Filling Intentionally_act Intentionally_act Giving Getting Success_or_failure Experiencer_focus Sending
+Statement Statement Filling Intentionally_act Intentionally_act Giving Getting Success_or_failure Experiencer_focus Sending
+Text Locative_relation
+Text Locative_relation
+Text Locative_relation
+Statement Statement Filling Intentionally_act Intentionally_act Giving Getting Success_or_failure Experiencer_focus Sending
+Social_event Intentionally_act Intentionally_act Intentionally_act Giving Giving Giving Cause_change_of_position_on_a_scale Judgment_direct_address Sounds
+Inspecting Experiencer_focus Natural_features
+Natural_features
+
+
+Age
+Statement Statement Filling Intentionally_act Giving Intentionally_act Getting Success_or_failure Experiencer_focus Sending
+Statement Killing Manufacturing Causation Perception_active Experiencer_focus Perception_experience Contacting Place_weight_on Intentionally_create
+Experiencer_focus Cause_to_amalgamate Age Inspecting Age Personal_relationship Stimulus_focus Quantity Locative_relation Type
+Roadways Sending Inspecting Reasoning Political_locales Stimulus_focus Increment Judicial_body Locative_relation
+Statement Becoming_aware Desiring Desiring Assistance Roadways Desiring Perception_experience Perception_experience Causation
+Inspecting Natural_features Natural_features
+Statement Becoming_aware Desiring Desiring Assistance Roadways Desiring Perception_experience Perception_experience Causation
+
+Text Experiencer_focus
+Text Experiencer_focus
+Cardinal_numbers Measure_duration
+Causation Perception_active Certainty Categorization People Temporal_collocation Ambient_temperature Quantity Dimension
+Killing Roadways Activity_stop Body_movement Intentionally_act Experiencer_focus Change_posture Grasp Commitment People
+Cause_temperature_change Giving Text Frequency
+Text Experiencer_focus
+Statement Perception_experience Desiring Experiencer_focus Experiencer_focus Text Text Calendric_unit Remembering_information
+Experiencer_focus Becoming_a_member Inspecting Age Personal_relationship Quantity Locative_relation Type
+Statement Statement Filling Intentionally_act Giving Intentionally_act Getting Success_or_failure Experiencer_focus Sending
+Age Age Age Age Age Age Age Age Age Age
+Age Age Age Age Age Age Age Age Age Age
+Age Age Age Age Age Age Age Age Age Age
+Leadership
+Aesthetics
+Intentionally_act
+Communication_manner Text Experiencer_focus Frequency Residence
+Causation Text Experiencer_focus Cardinal_numbers Aesthetics Being_born Locative_relation
+
+
+Desirability

@@ -1,10 +1,7 @@
 #_*_coding:utf-8_*_
+
 #仅利用语义信息进行机器学习模型训练，最高正确率达87%左右
 #利用Fisher LDA判别，正确率87%左右
-
-import pandas as pd
-import numpy as np
-
 
 import nltk
 from nltk.probability import FreqDist
@@ -60,22 +57,27 @@ import random
 from sklearn import preprocessing
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 #from sklearn.lda import LDA
-#from theano import *
-from pybrain.tools.shortcuts import buildNetwork
-
-
-
 
 
 d0 = pd.read_csv("Youtube.csv")
 
 lk = tw.hasLink(d0["CONTENT"])
 ls = pd.DataFrame(lk)
-
+#p = [0] * len(d0)
+'''
+for i in len(d0['CONTENT']):
+    if 'please' in d0['CONTENT'].values.low():
+        p[i] = 1
+    else:
+        p[i] = 0
+'''
 
 se = pd.read_csv('sem.csv', header = None)
+#se['AVE'] = se.mean()
+#se['STD'] = se.std()
 se['LINK'] = ls
 se['CLASS'] = d0['CLASS']
+#se['P'] = p
 s = se
 
 
@@ -115,51 +117,14 @@ lda = LinearDiscriminantAnalysis(n_components=1)
 lda.fit(x_train, y_train)
 x = lda.transform(x)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
+
 classifier = lda.fit(x_train, y_train)
 y_pred = classifier.predict(x_test)
 
-clf = KNeighborsClassifier()
-clf.fit(x_train, y_train)
-y_pred2 = clf.predict(x_test)
-
-clf = svm.SVC()
-clf.fit(x_train, y_train)
-y_pred3 = clf.predict(x_test)
-
-
-from sklearn.ensemble import RandomForestClassifier
-clf = RandomForestClassifier()
-clf.fit(x_train, y_train)
-y_pred4 = clf.predict(x_test)
-
-clf = svm.SVC(kernel='poly')
-clf.fit(x_train, y_train)
-y_pred5 = clf.predict(x_test)
-
-clf = svm.SVC(kernel='rbf')
-clf.fit(x_train, y_train)
-y_pred6 = clf.predict(x_test)
-
-
-y_predout = [0] * len(y_pred)
-for i in range(len(y_pred)):
-    if y_pred[i] + y_pred2[i] + y_pred3[i] + y_pred4[i] + y_pred5[i] >= 3:
-        y_predout[i] = 1
-    else:
-        y_predout[i] = 0
 
 
 
 A, P, R, F = ev.outcome(y_pred, y_test)
-A, P, R, F = ev.outcome(y_pred2, y_test)
-A, P, R, F = ev.outcome(y_pred3, y_test)
-A, P, R, F = ev.outcome(y_pred4, y_test)
-A, P, R, F = ev.outcome(y_pred5, y_test)
-
-
-print "integration___________________________________________________________"
-
-A, P, R, F = ev.outcome(y_predout, y_test)
 
 print "___________________________________________________________"
 #SVM, KNN, Adaboost performs better

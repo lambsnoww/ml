@@ -32,6 +32,8 @@ import matplotlib.pyplot as plt
 from sklearn.datasets.samples_generator import make_blobs
 
 from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 
 
@@ -113,21 +115,27 @@ if __name__ == '__main__':
     x_new = pca.transform(x)
     #plt.scatter(x_new[:, 0], x_new[:, 1], x_new[:, 2], marker='o')
     #plt.show()
-    print x_new
+    #print x_new
+
+    #x_new = x
 
 
+    #n_samples = len(y)
+    #random_state = 170
+    #y_pred = KMeans(n_clusters=2, random_state=random_state).fit_predict(x_new)
+    #A, P, R, F = ev.outcome(y_pred, y)
 
 
 
     seed = random.randint(1, 10000)
     x_train, x_test, y_train, y_test = train_test_split(x_new, y, test_size=0.3, random_state=seed)
 
-    clf = svm.SVC()
+    #clf = svm.SVC()
     #clf = GaussianNB()
     #clf = BernoulliNB()
     #clf = tree.DecisionTreeClassifier()
     #clf = KNeighborsClassifier()
-    #clf = AdaBoostClassifier(n_estimators=100)
+    clf = AdaBoostClassifier(n_estimators=100)
     # clf = MLPClassifier()
 
     #from stacked.stacked_generalization.lib.stacking import StackedClassifier
@@ -135,9 +143,20 @@ if __name__ == '__main__':
     #clfs = [GaussianNB(), BernoulliNB(), tree.DecisionTreeClassifier()]
     #clf = StackedClassifier(bclf, clfs)
 
+
+
     classifier = clf.fit(x_train, y_train)
     y_pred = classifier.predict(x_test)
     A, P, R, F = ev.outcome(y_pred, y_test)
+    '''
+    lda = LinearDiscriminantAnalysis(n_components=1)
+    lda.fit(x_train, y_train)
+    x = lda.transform(x)
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
+    classifier = lda.fit(x_train, y_train)
+    y_pred = classifier.predict(x_test)
+    '''
+
 
 
 

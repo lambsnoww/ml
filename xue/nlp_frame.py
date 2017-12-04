@@ -1,6 +1,7 @@
 #_*_coding:utf-8_*_
 #运用sklearn.feature_extraction.text中的工具产生VSM向量空间模型
 #降维后达89%左右
+#加入LINK特征，然后进行PCA降维，Adaboost正确率可达95%左右
 import numpy as np
 import pandas as pd
 from collections import defaultdict
@@ -30,6 +31,9 @@ import matplotlib.pyplot as plt
 #from mpl_toolkits.mplot3d import Axes3D
 from sklearn.datasets.samples_generator import make_blobs
 from sklearn.decomposition import PCA
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import chi2
+
 
 import json
 
@@ -70,13 +74,19 @@ class Frame(object):
                     # print n
                     if n >= m:
                         break
-                ss.append(s.strip())
+                if s.strip() != '':
+                    ss.append(s.strip())
+                else:
+                    ss.append('')
 
         self.framelist = ss
 
 def writeFrames():
     f = open('frame_info.txt', 'w')
     frame = Frame(10, 'allsensFrame.txt')
+    for line in frame.framelist:
+        f.write(line + '\n')
+    f.close()
 
 
 
@@ -139,9 +149,12 @@ def trimSens():
 
 
 if __name__ == '__main__':
-    english_punctuations = [',', '.', ':', ';', '?', '(', ')', '[', ']', '&', '!', '*', '@', '#', '$', '%', '\n', '<', '>', '~', '-', '_']
 
-    f = open('allsensclean.txt', 'r')
+    english_punctuations = [',', '.', ':', ';', '?', '(', ')', '[', ']', '&', '!', '*', '@', '#', '$', '%', '\n', '<', '>', '~', '-', '_']
+    #writeFrames()
+
+    #____________frame_______________
+    f = open('frame_info.txt', 'r')
     sens = f.readlines()
     f.close()
     d = pd.read_csv('YouTube.csv')
@@ -149,39 +162,69 @@ if __name__ == '__main__':
     X = vectorizer.fit_transform(sens)
     word = vectorizer.get_feature_names()
     print word
-    x = X.toarray()
+    x_frame = X.toarray()
     y = np.array(d['CLASS'])
 
-    pca = PCA(n_components=30)
-    pca.fit(x)
-    x_new = pca.transform(x)
+    lk = hasLink(d["CONTENT"])
+    lk = np.array(lk).reshape(-1,1)
+
+
+    #____________word_______________
+    f = open('allsensclean.txt', 'r')
+    sens = f.readlines()
+    f.close()
+    vectorizer = CountVectorizer()
+    X = vectorizer.fit_transform(sens)
+    word = vectorizer.get_feature_names()
+    print word
+    x_word = X.toarray()
+    print x_word
+    print lk
+
+    print len(x_word)
+    print len(lk)
+
+    x_all = np.concatenate((x_word, lk), axis=1)
+
+    #x_all = x_word
+    #x_all = x_frame
+    #x_all = np.concatenate((x_frame, x_word), axis=1)
+
+
+    #pca = PCA(n_components=10)
+    #pca.fit(x_all)
+    #x_new = pca.transform(x_all)
+    #x_new = SelectKBest(chi2, k=10).fit_transform(x_all, y)
+    #x_all = x_new
     #plt.scatter(x_new[:, 0], x_new[:, 1], x_new[:, 2], marker='o')
     #plt.show()
-    print x_new
 
 
 
 
 
     seed = random.randint(1, 10000)
-    x_train, x_test, y_train, y_test = train_test_split(x_new, y, test_size=0.3, random_state=seed)
+    x_train, x_test, y_train, y_test = train_test_split(x_all , y, test_size=0.3, random_state=seed)
 
-    clf = svm.SVC()
+    #clf = svm.SVC()
     #clf = GaussianNB()
     #clf = BernoulliNB()
     #clf = tree.DecisionTreeClassifier()
     #clf = KNeighborsClassifier()
     #clf = AdaBoostClassifier(n_estimators=100)
-    # clf = MLPClassifier()
+    #clf = MLPClassifier()
 
-    #from stacked.stacked_generalization.lib.stacking import StackedClassifier
-    #bclf = KNeighborsClassifier()
-    #clfs = [GaussianNB(), BernoulliNB(), tree.DecisionTreeClassifier()]
-    #clf = StackedClassifier(bclf, clfs)
+    from stacked.stacked_generalization.lib.stacking import StackedClassifier
+    bclf = KNeighborsClassifier()
+    clfs = [GaussianNB(), BernoulliNB(), tree.DecisionTreeClassifier()]
+    clf = StackedClassifier(bclf, clfs)
 
     classifier = clf.fit(x_train, y_train)
     y_pred = classifier.predict(x_test)
     A, P, R, F = ev.outcome(y_pred, y_test)
+
+    x_train, x_test, y_train, y_test = train_test_split(x_word , y, test_size=0.3, random_state=seed)
+
 
 
 

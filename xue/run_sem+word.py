@@ -1,10 +1,7 @@
 #_*_coding:utf-8_*_
+
 #仅利用语义信息进行机器学习模型训练，最高正确率达87%左右
 #利用Fisher LDA判别，正确率87%左右
-
-import pandas as pd
-import numpy as np
-
 
 import nltk
 from nltk.probability import FreqDist
@@ -60,13 +57,19 @@ import random
 from sklearn import preprocessing
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 #from sklearn.lda import LDA
-#from theano import *
-from pybrain.tools.shortcuts import buildNetwork
+f = open('allsensclean.txt', 'r')
+sens = f.readlines()
+f.close()
+vectorizer = CountVectorizer()
+X = vectorizer.fit_transform(sens)
+word = vectorizer.get_feature_names()
+print word
+x_word = X.toarray()
 
-
-
-
-
+pca = PCA(n_components=30)
+pca.fit(x_word)
+x_word = pca.transform(x_word)
+#__________________________semantic______
 d0 = pd.read_csv("Youtube.csv")
 
 lk = tw.hasLink(d0["CONTENT"])
@@ -78,21 +81,21 @@ se['LINK'] = ls
 se['CLASS'] = d0['CLASS']
 s = se
 
-
-
 # annotated; VB before NP; Link
 #print s
 
-x = s.drop('CLASS', axis=1).values
+x_sem = s.drop('CLASS', axis=1).values
 #x_scaled = preprocessing.scale(x)
 #x = x_scaled
 #print x
 y = np.array(s['CLASS'])
 
-seed = random.randint(1, 1000)
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
+#x_all = np.concatenate((x_word, x_sem), axis=1)
 
-#clf = svm.SVC()
+seed = random.randint(1, 1000)
+x_train, x_test, y_train, y_test = train_test_split(x_sem, y, test_size=0.2, random_state=seed)
+
+clf = svm.SVC()
 #clf = svm.SVR()
 #clf = GaussianNB()
 #clf = BernoulliNB()
@@ -107,59 +110,37 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 #clf = StackedClassifier(bclf, clfs)
 
 
-#classifier = clf.fit(x_train, y_train)
+clf.fit(x_train, y_train)
+y_pred = clf.predict(x_test)
 
 
-
-lda = LinearDiscriminantAnalysis(n_components=1)
-lda.fit(x_train, y_train)
-x = lda.transform(x)
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
-classifier = lda.fit(x_train, y_train)
-y_pred = classifier.predict(x_test)
-
-clf = KNeighborsClassifier()
+x_train, x_test, y_train, y_test = train_test_split(x_word, y, test_size=0.2, random_state=seed)
+clf = AdaBoostClassifier(n_estimators=100)
 clf.fit(x_train, y_train)
 y_pred2 = clf.predict(x_test)
 
-clf = svm.SVC()
-clf.fit(x_train, y_train)
-y_pred3 = clf.predict(x_test)
 
+'''
+lda = LinearDiscriminantAnalysis(n_components=1)
+lda.fit(x_train, y_train)
+x = lda.transform(x_all)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
 
-from sklearn.ensemble import RandomForestClassifier
-clf = RandomForestClassifier()
-clf.fit(x_train, y_train)
-y_pred4 = clf.predict(x_test)
-
-clf = svm.SVC(kernel='poly')
-clf.fit(x_train, y_train)
-y_pred5 = clf.predict(x_test)
-
-clf = svm.SVC(kernel='rbf')
-clf.fit(x_train, y_train)
-y_pred6 = clf.predict(x_test)
-
+classifier = lda.fit(x_train, y_train)
+y_pred = classifier.predict(x_test)
+'''
 
 y_predout = [0] * len(y_pred)
 for i in range(len(y_pred)):
-    if y_pred[i] + y_pred2[i] + y_pred3[i] + y_pred4[i] + y_pred5[i] >= 3:
+    if y_pred[i] + y_pred2[i] >= 1:
         y_predout[i] = 1
     else:
         y_predout[i] = 0
 
-
-
 A, P, R, F = ev.outcome(y_pred, y_test)
 A, P, R, F = ev.outcome(y_pred2, y_test)
-A, P, R, F = ev.outcome(y_pred3, y_test)
-A, P, R, F = ev.outcome(y_pred4, y_test)
-A, P, R, F = ev.outcome(y_pred5, y_test)
-
-
-print "integration___________________________________________________________"
-
 A, P, R, F = ev.outcome(y_predout, y_test)
+
 
 print "___________________________________________________________"
 #SVM, KNN, Adaboost performs better
