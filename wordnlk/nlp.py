@@ -15,7 +15,7 @@ def tovector():
     f1 = open('allsensclean.txt', 'r')
     lines = f1.readlines()
     f1.close()
-    f = open('sem.csv', 'w')
+    f = open('sem2.csv', 'w')
     for text in lines:
         print text
 

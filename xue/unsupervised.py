@@ -57,8 +57,9 @@ import random
 
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
-
-
+import matplotlib.pyplot as plt
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.decomposition import PCA
 
 d0 = pd.read_csv("Youtube.csv")
 
@@ -66,7 +67,7 @@ lk = tw.hasLink(d0["CONTENT"])
 ls = pd.DataFrame(lk)
 
 
-se = pd.read_csv('sem.csv', header = None)
+se = pd.read_csv('sem2.csv', header=None)
 se['LINK'] = ls
 se['CLASS'] = d0['CLASS']
 s = se
@@ -77,16 +78,19 @@ s = se
 print s
 
 x = s.drop('CLASS', axis=1).values
-y = np.array(s['CLASS'])
+y = np.array(s['CLASS']).reshape(-1,1)
+x_new = x
+
+'''
+pca = PCA(n_components=6)
+pca.fit(x)
+x_new = pca.transform(x)
+'''
+
 
 n_samples = len(y)
 random_state = 1700
-y_pred = KMeans(n_clusters=2, random_state=random_state).fit_predict(x)
-for i in range(len(y_pred)):
-    if y_pred[i] == 0:
-        y_pred[i] = 1
-    else:
-        y_pred[i] = 0
+y_pred = KMeans(n_clusters=2, random_state=random_state).fit_predict(x_new)
 
 A, P, R, F = ev.outcome(y_pred, y)
 

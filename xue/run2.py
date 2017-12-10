@@ -72,7 +72,7 @@ for i in len(d0['CONTENT']):
         p[i] = 0
 '''
 
-se = pd.read_csv('sem.csv', header = None)
+se = pd.read_csv('sem2.csv', header = None)
 #se['AVE'] = se.mean()
 #se['STD'] = se.std()
 se['LINK'] = ls

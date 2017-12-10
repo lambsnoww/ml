@@ -62,7 +62,7 @@ lk = tw.hasLink(d0["CONTENT"])
 ls = pd.DataFrame(lk)
 
 
-se = pd.read_csv('sem.csv', header = None)
+se = pd.read_csv('sem2.csv', header = None)
 se['LINK'] = ls
 se['CLASS'] = d0['CLASS']
 s = se

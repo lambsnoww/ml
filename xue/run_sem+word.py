@@ -57,6 +57,9 @@ import random
 from sklearn import preprocessing
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 #from sklearn.lda import LDA
+from sklearn.neural_network import MLPClassifier
+
+
 f = open('allsensclean.txt', 'r')
 sens = f.readlines()
 f.close()
@@ -65,10 +68,20 @@ X = vectorizer.fit_transform(sens)
 word = vectorizer.get_feature_names()
 print word
 x_word = X.toarray()
+x_origin = x_word
 
-pca = PCA(n_components=30)
+pca = PCA(n_components=10)
 pca.fit(x_word)
 x_word = pca.transform(x_word)
+
+#TfidfTransformer()
+
+
+
+
+
+
+
 #__________________________semantic______
 d0 = pd.read_csv("Youtube.csv")
 
@@ -76,7 +89,7 @@ lk = tw.hasLink(d0["CONTENT"])
 ls = pd.DataFrame(lk)
 
 
-se = pd.read_csv('sem.csv', header = None)
+se = pd.read_csv('sem2.csv', header = None)
 se['LINK'] = ls
 se['CLASS'] = d0['CLASS']
 s = se
@@ -90,10 +103,10 @@ x_sem = s.drop('CLASS', axis=1).values
 #print x
 y = np.array(s['CLASS'])
 
-#x_all = np.concatenate((x_word, x_sem), axis=1)
+x_all = np.concatenate((x_word, x_sem), axis=1)
 
 seed = random.randint(1, 1000)
-x_train, x_test, y_train, y_test = train_test_split(x_sem, y, test_size=0.2, random_state=seed)
+x_train, x_test, y_train, y_test = train_test_split(x_all, y, test_size=0.2, random_state=seed)
 
 clf = svm.SVC()
 #clf = svm.SVR()
@@ -114,36 +127,78 @@ clf.fit(x_train, y_train)
 y_pred = clf.predict(x_test)
 
 
-x_train, x_test, y_train, y_test = train_test_split(x_word, y, test_size=0.2, random_state=seed)
+x_train, x_test, y_train, y_test = train_test_split(x_sem, y, test_size=0.2, random_state=seed)
 clf = AdaBoostClassifier(n_estimators=100)
 clf.fit(x_train, y_train)
 y_pred2 = clf.predict(x_test)
 
-
-'''
 lda = LinearDiscriminantAnalysis(n_components=1)
-lda.fit(x_train, y_train)
-x = lda.transform(x_all)
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
-
 classifier = lda.fit(x_train, y_train)
-y_pred = classifier.predict(x_test)
-'''
+y_pred3 = classifier.predict(x_test)
 
-y_predout = [0] * len(y_pred)
-for i in range(len(y_pred)):
-    if y_pred[i] + y_pred2[i] >= 1:
-        y_predout[i] = 1
-    else:
-        y_predout[i] = 0
 
+x_train, x_test, y_train, y_test = train_test_split(x_word, y, test_size=0.2, random_state=seed)
+#lda = LinearDiscriminantAnalysis(n_components=1)
+#classifier = lda.fit(x_train, y_train)
+#y_pred3 = classifier.predict(x_test)
+clf = AdaBoostClassifier(n_estimators=100)
+clf.fit(x_train, y_train)
+y_pred4 = clf.predict(x_test)
+
+
+
+
+#A, P, R, F = ev.outcome(y_pred, y_test)
+#A, P, R, F = ev.outcome(y_pred2, y_test)
+#A, P, R, F = ev.outcome(y_pred3, y_test)
+clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes = (5, 2), random_state = 1)
+clf.fit(x_train, y_train)
+y_pred5 = clf.predict(x_test)
+
+print 'ALL'
 A, P, R, F = ev.outcome(y_pred, y_test)
+print 'sem-adaboost'
 A, P, R, F = ev.outcome(y_pred2, y_test)
-A, P, R, F = ev.outcome(y_predout, y_test)
+print 'sem-ida'
+A, P, R, F = ev.outcome(y_pred3, y_test)
+print 'word-adaboost'
+A, P, R, F = ev.outcome(y_pred4, y_test)
+print 'word-MLP'
+A, P, R, F = ev.outcome(y_pred5, y_test)
+print 'MLP'
+#A, P, R, F = ev.outcome(y_pred6, y_test)
+#print 'ALL'
+
+out = y_pred2 + y_pred3 + y_pred4
+
+for i in range(len(out)):
+    if out[i] >= 2:
+        out[i] = 1
+    else:
+        out[i] = 0
+A, P, R, F = ev.outcome(out, y_test)
 
 
 print "___________________________________________________________"
+
+
+
+#x_train, x_test, y_train, y_test = train_test_split(x_origin, y, test_size=0.2, random_state=seed)
+#clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes = (5, 2), random_state = 1)
+#clf.fit(x_train, y_train)
+#y_pred11 = clf.predict(x_test)
+#A, P, R, F = ev.outcome(y_pred11, y_test)
+
+
+
+
+
+
+
+
 #SVM, KNN, Adaboost performs better
+
+#all sem word
 
 
 

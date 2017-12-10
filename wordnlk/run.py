@@ -81,7 +81,7 @@ ls = pd.DataFrame(lk)
 
 #content_list = d1['CONTENT'].tolist()
 
-se = pd.read_csv('sem.csv', header = None)
+se = pd.read_csv('sem2.csv', header = None)
 #s2 = d0['LINK']
 #s3 = pd.read_csv('seminfo.csv', header = None)
 se['LINK'] = ls

@@ -62,7 +62,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 #from sklearn.lda import LDA
 #from theano import *
 from pybrain.tools.shortcuts import buildNetwork
-
+from sklearn.neural_network import MLPClassifier
 
 
 
@@ -73,7 +73,7 @@ lk = tw.hasLink(d0["CONTENT"])
 ls = pd.DataFrame(lk)
 
 
-se = pd.read_csv('sem.csv', header = None)
+se = pd.read_csv('sem2.csv', header = None)
 se['LINK'] = ls
 se['CLASS'] = d0['CLASS']
 s = se
@@ -136,30 +136,41 @@ clf = svm.SVC(kernel='poly')
 clf.fit(x_train, y_train)
 y_pred5 = clf.predict(x_test)
 
-clf = svm.SVC(kernel='rbf')
+
+
+
+
+clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes = (5, 2), random_state = 1)
 clf.fit(x_train, y_train)
 y_pred6 = clf.predict(x_test)
 
-
-y_predout = [0] * len(y_pred)
-for i in range(len(y_pred)):
-    if y_pred[i] + y_pred2[i] + y_pred3[i] + y_pred4[i] + y_pred5[i] >= 3:
-        y_predout[i] = 1
-    else:
-        y_predout[i] = 0
-
-
-
+print 'IDA'
 A, P, R, F = ev.outcome(y_pred, y_test)
+print 'KNN'
 A, P, R, F = ev.outcome(y_pred2, y_test)
+print 'SVM'
 A, P, R, F = ev.outcome(y_pred3, y_test)
+print 'Random Forest'
 A, P, R, F = ev.outcome(y_pred4, y_test)
+print 'SVM'
 A, P, R, F = ev.outcome(y_pred5, y_test)
+print 'MLP'
+A, P, R, F = ev.outcome(y_pred6, y_test)
+print 'ALL'
+
+out = y_pred + y_pred2 + y_pred3 + y_pred4 + y_pred5 + y_pred6
+
+for i in range(len(out)):
+    if out[i] >= 3:
+        out[i] = 1
+    else:
+        out[i] = 0
+A, P, R, F = ev.outcome(out, y_test)
 
 
-print "integration___________________________________________________________"
+print "___________________________________________________________"
 
-A, P, R, F = ev.outcome(y_predout, y_test)
+#A, P, R, F = ev.outcome(y_predout, y_test)
 
 print "___________________________________________________________"
 #SVM, KNN, Adaboost performs better
