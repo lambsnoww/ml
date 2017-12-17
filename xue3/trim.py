@@ -103,5 +103,46 @@ def clean_emoji(sens):
 
     return sens_new
 
+def hasLink(sens):
+    #attLink = ""
+    ls = []
+    for sen in sens:
+        l = 0
+        if ("http://" in sen) or ("https://" in sen) or ("www." in sen) or (".com" in sen):
+            l = 1
+        elif sen.count('/') >= 3:
+            l = 1
+        # attLink = attLink + ',' + str(l)
+        # new added
+        if 'com' in sen.split():
+            l = 1
+        ls.append(l)
+    return ls
+
+def toUpper():
+    f = open('sens_final.txt', 'r')
+    sens = f.read().split()
+    f.close()
+    pun = ['.', '!', '?']
+    words = ['i\'m', 'i am']
+    out = []
+    for sen in sens:
+        new_sen = ''
+        if len(sen) > 0:
+            #sen.replace(0,str.toUpper(sen[0]))
+            a = sen.split('.!?')
+            for i in a:
+                if len(i) > 0 and str.isalnum(i[0]):
+                    if len(i) > 1:
+                        i = i[0].upper() + i[1:]
+                    else:
+                        i = i[0].upper()
+            b = ''.join(a)
+
+
+
+
+
+
 if __name__ == '__main__':
     trim_sens('allsensclean.txt', 'sens_final.txt')

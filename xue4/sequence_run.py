@@ -41,15 +41,9 @@ from stacked.stacked_generalization.lib.stacking import StackedClassifier
 
 #多值比较只取最小值
 def knn_lin(k, x_train, y_train, test):
+
     a = test.split(',')
-    '''
-    for i in a:
-        if i.find('p') != -1 and i.find('h') > i.find('p'):
-            return 1
-        if i.find('p') != -1 and i.find('h') == -1:
-            return 1
-    return 0
-    '''
+
     dis_list = []
     for index in range(len(x_train)):
         dis = 9999

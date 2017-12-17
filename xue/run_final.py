@@ -2,6 +2,7 @@
 
 #仅利用语义信息进行机器学习模型训练，最高正确率达87%左右
 #利用Fisher LDA判别，正确率87%左右
+#PCA降维200后，累积贡献率才达86左右
 
 import nltk
 from nltk.probability import FreqDist
@@ -61,6 +62,13 @@ from sklearn.neural_network import MLPClassifier
 #import gensim
 from gensim.models.keyedvectors import KeyedVectors
 import tool
+from tpot import TPOTRegressor
+from tpot import TPOTClassifier
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.linear_model import LassoLarsCV
+#RandomForestRegressor
+
+
 
 
 def main():
@@ -77,13 +85,17 @@ def main():
     vectorizer = CountVectorizer()
     X = vectorizer.fit_transform(sens)
     word = vectorizer.get_feature_names()
-    print word
     x_word = X.toarray()
+    print "dimention:"
+    print len(x_word[0])
     x_origin = x_word
 
-    pca = PCA(n_components=10)
+    pca = PCA(n_components=200)
     pca.fit(x_word)
     x_word = pca.transform(x_word)
+    print pca.explained_variance_ratio_
+    print len(pca.explained_variance_ratio_)
+    print sum(pca.explained_variance_ratio_)
     df_word = pd.DataFrame(x_word)
     df_word['LINK'] = ls
 
@@ -118,6 +130,7 @@ def main():
     s = df.values
     attr = (tool.get_word_features())
     x_sem = np.concatenate((s, attr), axis=1)
+    #x_sem = s
 
     # annotated; VB before NP; Link
     #print s
@@ -211,10 +224,20 @@ def main():
     A, P, R, F = ev.outcome(y_pred7, y_test)
 
     print "___________________________________________________________"
+    '''
+    pipeline_optimizer = TPOTClassifier(generations=5, population_size=20, cv=5, random_state=42, verbosity=2)
+    pipeline_optimizer.fit(x_train, y_train)
+    print(pipeline_optimizer.score(x_test, y_test))
+    pipeline_optimizer.export('tpot_exported_pipeline.py')
 
 
+    label8 = 'sem-generic'
 
-
+    clf.fit(x_train, y_train)
+    y_pred8 = clf.predict(x_test)
+    print label8
+    A, P, R, F = ev.outcome(y_pred8, y_test)
+    '''
 
 
 
