@@ -62,6 +62,7 @@ from sklearn.neural_network import MLPClassifier
 from gensim.models.keyedvectors import KeyedVectors
 import xue.tool as tool
 import re
+import hmmlearn
 
 
 def main():
@@ -217,6 +218,35 @@ def main():
     #SVM, KNN, Adaboost performs better
 
     #all sem word
+    ##################################
+
+    dataframe = pd.DataFrame(x_sem)
+    dataframe['CLASS'] = pd.Series(y)
+
+    dataframe['LINK'] = ls
+    dataframe = dataframe[dataframe['LINK']==0]
+    x = dataframe.drop('CLASS',axis=1).values
+    em = pd.read_csv('em.csv', header=None)
+    x = np.concatenate((x,em.values), axis=1)
+    #x = em
+    y = np.array(dataframe['CLASS'])
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
+
+    #clf = svm.SVC()
+    #clf = GaussianNB()
+    #clf = BernoulliNB()
+    #clf = tree.DecisionTreeClassifier()
+    #clf = KNeighborsClassifier()
+    clf = AdaBoostClassifier(n_estimators=100)
+    #from stacked.stacked_generalization.lib.stacking import StackedClassifier
+    #bclf = KNeighborsClassifier()
+    #clfs = [GaussianNB(), BernoulliNB(), tree.DecisionTreeClassifier()]
+    #clf = StackedClassifier(bclf, clfs)
+
+    clf.fit(x_train, y_train)
+    y_pred = clf.predict(x_test)
+    print "em-added"
+    A, P, R, F = ev.outcome(y_pred, y_test)
 
 
 def word_len():

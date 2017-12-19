@@ -94,18 +94,18 @@ def knn_lin2(k, x_train, y_train, test):
         return 1
     else:
         return 0
-#copy of knn_lin2
+#random i in a, average in b
 def knn_lin3(k, x_train, y_train, test):
     a = test.split(',')
     dis_list = []
     for index in range(len(x_train)):
         dis = 0
         b = x_train[index].split(',')
-        for i in a:
-            for j in b:
-                tmp = Levenshtein.distance(i, j)
-                dis += tmp
-        dis = float(dis)/(len(a) * len(b))
+        i = random.randint(0,len(a)-1)
+        for j in b:
+            tmp = Levenshtein.distance(a[i], j)
+            dis += tmp
+        dis = float(dis)/(len(b))
         dis_list.append((dis, index))
     nearest = sorted(dis_list, key=lambda x: x[0])
 
