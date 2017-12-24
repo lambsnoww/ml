@@ -61,7 +61,6 @@ from sklearn.neural_network import MLPClassifier
 #import gensim
 from gensim.models.keyedvectors import KeyedVectors
 import xue.tool as tool
-import evaluate as ev
 import re
 import hmmlearn
 
@@ -69,7 +68,6 @@ import hmmlearn
 def main():
 
     ab = pd.read_csv('abnormal.csv', header=None)
-
     d0 = pd.read_csv("Youtube.csv")
     lk = tw.hasLink(d0["CONTENT"])
     ls = pd.DataFrame(lk)
@@ -82,13 +80,15 @@ def main():
     word = vectorizer.get_feature_names()
     print word
     x_word = X.toarray()
-    x_origin = x_word
+    #x_origin = x_word
 
     pca = PCA(n_components=200)
     pca.fit(x_word)
     x_word = pca.transform(x_word)
+
     df_word = pd.DataFrame(x_word)
     df_word['LINK'] = ls
+    #df_word['CLASS'] = d0['CLASS']
 
     f = open('emoji.txt', 'r')
     a = f.readlines()
@@ -98,9 +98,11 @@ def main():
     df_word['EMOJI'] = pd.Series(e)
     df_word['AB0'] = ab[0]
     df_word['AB1'] = ab[1]
+    #df_word = df_word[df_word['LINK']==0]
 
     #df_word = df_word[df_word['LINK'] == 0]
     x_word = df_word.values
+    #y = df_word['CLASS']
 
 
 
@@ -115,12 +117,132 @@ def main():
     df['EMOJI'] = pd.Series(e)
     df['AB0'] = ab[0]
     df['AB1'] = ab[1]
-    #s = df[df['LINK'] == 0]
+    #df = df[df['LINK'] == 0]
+
+    ###########yyyyyyyyyyy#############
     y = np.array(df['CLASS'])
     df = df.drop('CLASS', axis=1)
     s = df.values
     attr = (tool.get_word_features())
     x_sem = np.concatenate((s, attr), axis=1)
+
+    #x_word, x_sem
+
+
+    seed = random.randint(1, 1000)
+    x_train_word, x_test_word, y_train, y_test = train_test_split(x_word, y, test_size=0.2, random_state=seed)
+    x_train_sem, x_test_sem, y_train, y_test = train_test_split(x_sem, y, test_size=0.2, random_state=seed)
+
+    nt = len(x_train_word)
+    r = 0.7
+    rr = int(r * nt)
+    sample_train_L1 = x_train_word[0:rr]
+    sample_train_L2 = x_train_sem[0:rr]
+    yL = y_train[0:rr]
+    sample_train_U1 = x_train_word[rr:]
+    sample_train_U2 = x_train_sem[rr:]
+    yU = y_train[rr:]
+
+    for i in range(9):
+        print i
+        if len(sample_train_U1) == 0:
+            break
+        #clf = svm.SVC()
+        #clf = GaussianNB()
+        #clf = KNeighborsClassifier()
+        clf = AdaBoostClassifier(n_estimators=100)
+        clf.fit(sample_train_L1, yL)
+        # clf = svm.SVC()
+        # clf = BernoulliNB()
+        # clf = tree.DecisionTreeClassifier()
+        # clf = KNeighborsClassifier()
+        #clf = AdaBoostClassifier(n_estimators=100)
+        # from stacked.stacked_generalization.lib.stacking import StackedClassifier
+        # bclf = KNeighborsClassifier()
+        # clfs = [GaussianNB(), BernoulliNB(), tree.DecisionTreeClassifier()]
+        # clf = StackedClassifier(bclf, clfs)
+        #clf2 = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes = (5, 2), random_state = 1)
+        clf2 = svm.SVC()
+        clf2.fit(sample_train_L2, yL)
+        yU_pred1 = clf.predict(sample_train_U1)
+        yU_pred2 = clf2.predict(sample_train_U2)
+        p = 5
+        n = 5
+        cnt = 100
+        while p+n > 0:
+            cnt -= 1
+            if cnt == 0:
+                break
+            if len(sample_train_U1) == 0:
+                break
+            a = random.randint(0, len(sample_train_U1)-1)
+            if (yU_pred1[a] == 1 and p > 0) or \
+                    (yU_pred1[a] == 0 and n > 0):
+                t = yU_pred1[a]
+                tmp = sample_train_U1[a]
+                tmp2 = sample_train_U2[a]
+                #add
+                sample_train_L1 = np.row_stack((sample_train_L1, tmp))
+                sample_train_L2 = np.row_stack((sample_train_L2, tmp2))
+                yL = np.append(yL, t)
+                #delete
+                sample_train_U1 = np.delete(sample_train_U1, a, axis=0)
+                sample_train_U2 = np.delete(sample_train_U2, a, axis=0)
+                yU = np.append(yU[0:a], yU[a+1:]) # ndarray删除
+                if t == 1:
+                    p -= 1
+                elif t == 0:
+                    n -= 1
+        p = 5
+        n = 5
+        cnt = 100
+        while p+n > 0:
+            cnt -= 1
+            if cnt == 0:
+                break
+            if len(sample_train_U1) == 0:
+                break
+            a = random.randint(0, len(sample_train_U1)-1)
+            if (yU_pred2[a] == 1 and p > 0) or \
+                    (yU_pred2[a] == 0 and n > 0):
+                t = yU_pred2[a]
+                tmp = sample_train_U1[a]
+                tmp2 = sample_train_U2[a]
+                #add
+                sample_train_L1 = np.row_stack((sample_train_L1, tmp))
+                sample_train_L2 = np.row_stack((sample_train_L2, tmp2))
+                yL = np.append(yL, t)
+                #delete
+                sample_train_U1 = np.delete(sample_train_U1, a, axis=0)
+                sample_train_U2 = np.delete(sample_train_U2, a, axis=0)
+                yU = np.append(yU[0:a], yU[a+1:]) # ndarray删除
+                if t == 1:
+                    p -= 1
+                elif t == 0:
+                    n -= 1
+
+    y_pred1 = clf.predict(x_test_word)
+    print y_pred1
+    print clf.predict_proba(x_test_word)
+    y_pred2 = clf2.predict(x_test_sem)
+
+    ev.outcome(y_pred1, y_test)
+    ev.outcome(y_pred2, y_test)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '''
 
     # annotated; VB before NP; Link
     #print s
@@ -228,7 +350,7 @@ def main():
     dataframe = dataframe[dataframe['LINK']==0]
     x = dataframe.drop('CLASS',axis=1).values
     em = pd.read_csv('em.csv', header=None)
-    #x = np.concatenate((x,em.values), axis=1)
+    x = np.concatenate((x,em.values), axis=1)
     #x = em
     y = np.array(dataframe['CLASS'])
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
@@ -248,6 +370,7 @@ def main():
     y_pred = clf.predict(x_test)
     print "em-added"
     A, P, R, F = ev.outcome(y_pred, y_test)
+    '''
 
 
 def word_len():
@@ -352,7 +475,7 @@ if __name__ == '__main__':
     #for i in emoji:
     #    f.write(str(i) + '\n')
     #f.close()
-    #trim_sens('sens_emoji.txt', 'sens_final.txt')
+    trim_sens('sens_emoji.txt', 'sens_final.txt')
 
     main()
 

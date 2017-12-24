@@ -64,6 +64,9 @@ import xue.tool as tool
 import evaluate as ev
 import re
 import hmmlearn
+from sklearn.model_selection import KFold
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import StratifiedKFold
 
 
 def main():
@@ -130,7 +133,7 @@ def main():
     #x = x_scaled
     #print x
 
-    x_all = np.concatenate((x_word, x_sem), axis=1)
+    #x_all = np.concatenate((x_word, x_sem), axis=1)
 
     #b1 = 0; e1 = 349; b2 = 350; e2 = 699; b3 = 700; e3 = 1137;
     #b4 = 1138; e4 = 1584; b5 = 1585; e5 = 1954
@@ -141,113 +144,95 @@ def main():
     #x_all = x_all[b4:b5,]; x_sem = x_sem[b4:b5,]; x_word = x_word[b4:b5,]; y = y[b4:b5,]
     #x_all = x_all[b5:e5+1,]; x_sem = x_sem[b5:e5+1,]; x_word = x_word[b5:e5+1,]; y = y[b5:e5+1,]
 
-    label = 'all-adaboost'
-    seed = random.randint(1, 1000)
-    x_train, x_test, y_train, y_test = train_test_split(x_all, y, test_size=0.2, random_state=seed)
 
     #clf = svm.SVC()
     #clf = GaussianNB()
     #clf = BernoulliNB()
     #clf = tree.DecisionTreeClassifier()
     #clf = KNeighborsClassifier()
-    clf = AdaBoostClassifier(n_estimators=100)
+    #clf = AdaBoostClassifier(n_estimators=100)
     #from stacked.stacked_generalization.lib.stacking import StackedClassifier
     #bclf = KNeighborsClassifier()
     #clfs = [GaussianNB(), BernoulliNB(), tree.DecisionTreeClassifier()]
     #clf = StackedClassifier(bclf, clfs)
 
+    '''
+
+    kf = StratifiedKFold(n_splits=10)
+    bestAccuracy = -1
+    bestc = -1
+    bestg = -1
+    l = range(-5,5)
+    c_range = [10 ** i for i in l]
+    g_range = [10 ** i for i in l]
+
+    for cc in c_range:
+        for gg in g_range:
+            sum = 0
+            for train_index, test_index in kf.split(x_sem, y):
+                #print("TRAIN:", train_index, "TEST:", test_index)
+                x_train, x_test = x_sem[train_index], x_sem[test_index]
+                y_train, y_test = y[train_index], y[test_index]
+                clf = svm.SVC(C=cc, gamma=gg)
+                clf.fit(x_train, y_train)
+                y_pred = clf.predict(x_test)
+                acc = accuracy_score(y_test, y_pred)
+                sum += acc
+            ave = float(sum)/10
+            if ave > bestAccuracy:
+                bestAccuracy = ave; bestc = cc; bestg = gg;
+    print bestc, bestg, bestAccuracy
+    
+
+    kf = StratifiedKFold(n_splits=10)
+    bestAccuracy = -1
+    bestc = -1
+    #bestg = -1
+    l = range(-5, 5)
+    l = range(1, 10)
+    #c_range = [1,2,3,4,5,6,7,8,9,10,15,20,25,30,40,50,60,70,80,90,100,120,140,160]
+    c_range = range(1,1000)
+    #c_range = [2**i for i in l]
+    #g_range = [10 ** i for i in l]
+
+    for cc in c_range:
+        sum = 0
+        for train_index, test_index in kf.split(x_sem, y):
+            # print("TRAIN:", train_index, "TEST:", test_index)
+            x_train, x_test = x_sem[train_index], x_sem[test_index]
+            y_train, y_test = y[train_index], y[test_index]
+            clf = KNeighborsClassifier(cc)
+            clf.fit(x_train, y_train)
+            y_pred = clf.predict(x_test)
+            acc = accuracy_score(y_test, y_pred)
+            sum += acc
+        ave = float(sum) / 10
+        if ave > bestAccuracy:
+            bestAccuracy = ave;
+            bestc = cc;
+    print bestc, bestAccuracy
+
+    '''
+
+    seed = random.randint(1, 1000)
+    x_train, x_test, y_train, y_test = train_test_split(x_sem, y, test_size=0.2, random_state=seed)
+    label5 = 'sem-knn'
+    clf = KNeighborsClassifier(24)
+    clf.fit(x_train, y_train)
+    y_pred = clf.predict(x_test)
+    A, P, R, F = ev.outcome(y_pred, y_test)
+
+    label5 = 'sem-knn'
+    clf = KNeighborsClassifier()
     clf.fit(x_train, y_train)
     y_pred = clf.predict(x_test)
 
 
-    label2 = 'sem-adaboost'
-    x_train, x_test, y_train, y_test = train_test_split(x_sem, y, test_size=0.2, random_state=seed)
-    clf = AdaBoostClassifier(n_estimators=100)
-    clf.fit(x_train, y_train)
-    y_pred2 = clf.predict(x_test)
-
-    label3 = 'sem-ida'
-    lda = LinearDiscriminantAnalysis(n_components=1)
-    classifier = lda.fit(x_train, y_train)
-    y_pred3 = classifier.predict(x_test)
-
-    label4 = 'sem-KNN'
-    clf = KNeighborsClassifier(100)
-    clf.fit(x_train, y_train)
-    y_pred4 = clf.predict(x_test)
-
-    label5 = 'sem-svm'
-    clf = svm.SVC()
-    clf.fit(x_train, y_train)
-    y_pred5 = clf.predict(x_test)
-
-    label6 = 'word-adaboost'
-    x_train, x_test, y_train, y_test = train_test_split(x_word, y, test_size=0.2, random_state=seed)
-    clf = AdaBoostClassifier(n_estimators=100)
-    clf.fit(x_train, y_train)
-    y_pred6 = clf.predict(x_test)
-
-
-
-
-    #A, P, R, F = ev.outcome(y_pred, y_test)
-    #A, P, R, F = ev.outcome(y_pred2, y_test)
-    #A, P, R, F = ev.outcome(y_pred3, y_test)
-    label7 = 'word-MLP'
-    clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes = (5, 2), random_state = 1)
-    clf.fit(x_train, y_train)
-    y_pred7 = clf.predict(x_test)
-
-    print label
     A, P, R, F = ev.outcome(y_pred, y_test)
-    print label2
-    A, P, R, F = ev.outcome(y_pred2, y_test)
-    print label3
-    A, P, R, F = ev.outcome(y_pred3, y_test)
-    print label4
-    A, P, R, F = ev.outcome(y_pred4, y_test)
-    print label5
-    A, P, R, F = ev.outcome(y_pred5, y_test)
-    print label6
-    A, P, R, F = ev.outcome(y_pred6, y_test)
-    print label7
-    A, P, R, F = ev.outcome(y_pred7, y_test)
 
     print "___________________________________________________________"
 
 
-    #SVM, KNN, Adaboost performs better
-
-    #all sem word
-    ##################################
-
-    dataframe = pd.DataFrame(x_sem)
-    dataframe['CLASS'] = pd.Series(y)
-
-    dataframe['LINK'] = ls
-    dataframe = dataframe[dataframe['LINK']==0]
-    x = dataframe.drop('CLASS',axis=1).values
-    em = pd.read_csv('em.csv', header=None)
-    #x = np.concatenate((x,em.values), axis=1)
-    #x = em
-    y = np.array(dataframe['CLASS'])
-    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
-
-    #clf = svm.SVC()
-    #clf = GaussianNB()
-    #clf = BernoulliNB()
-    #clf = tree.DecisionTreeClassifier()
-    #clf = KNeighborsClassifier()
-    clf = AdaBoostClassifier(n_estimators=100)
-    #from stacked.stacked_generalization.lib.stacking import StackedClassifier
-    #bclf = KNeighborsClassifier()
-    #clfs = [GaussianNB(), BernoulliNB(), tree.DecisionTreeClassifier()]
-    #clf = StackedClassifier(bclf, clfs)
-
-    clf.fit(x_train, y_train)
-    y_pred = clf.predict(x_test)
-    print "em-added"
-    A, P, R, F = ev.outcome(y_pred, y_test)
 
 
 def word_len():

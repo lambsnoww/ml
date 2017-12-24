@@ -24,8 +24,8 @@ def outcome(p, a):
     R = float(TP) / (TP + FN)
     #F-value
     F = 2 * P * R / (P + R)
-    print "accuracy, precision, recall, F-value:"
-    print (A, P, R, F)
+    #print "Accuracy,Precision,Recall,F-value:"
+    print (("%f,%f,%f,%g") % (A, P, R, F))
     '''
     print "****************************************"
     print "from/to  spam  no-spam"
