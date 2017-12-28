@@ -3,6 +3,8 @@ from pycorenlp import StanfordCoreNLP
 from sklearn.metrics import *
 import nltk
 from nltk.stem import WordNetLemmatizer
+#import nltk
+#nltk.download()
 
 abb_word = ['CC', 'CD', 'DT', 'EX', 'FW', 'IN', 'JJ', 'JJR', 'JJS', 'LS', 'MD', 'NN', 'NNS', 'NNP', 'NNPS', 'PDT',
             'POS', 'PRP', 'PRP$', 'RB', 'RBR', 'RBS', 'RP', 'SYM', 'TO', 'UH', 'VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ',
@@ -44,8 +46,10 @@ def lcs(s1, s2):
     return mmax
 
 def get_sem_sequence_vector(sens):
-    rt = []
-    vec = []
+    rt = [] # list of tag list
+    vec = [] # vector of tags
+    verblist = [] # first verb base list
+    countlemma = [] # base verb count
     for text in sens:
         print text
 
@@ -65,19 +69,42 @@ def get_sem_sequence_vector(sens):
             'outputFormat': 'json'
         })
 
+        lemmatizer = WordNetLemmatizer()
+        cnt = 0
+        verb = 'zzZ'
         if 'sentences' in output:
             lst = []
             for i in range(len(output['sentences'])):
                 a = output['sentences'][i]['parse']
                 t = get_tags(a)
 
-                for i in t:
-                    if i in tags or i == 'ROOT':
-                        lst.append(i)
+                for ii in t:
+                    if ii in tags or ii == 'ROOT':
+                        lst.append(ii)
                 print lst
+                # get word before lemma
+                if 'VP' in lst:
+                    b = a.split()
+                    for iii in b:
+                        if 'VP' in iii:
+                            c = iii
+                            break
+                    d = c.split()[-1]
+                    for iiii in range(len(d)):
+                        if d[-iiii-1].isalpha():
+                            break
+                    d = d[:-iiii]
+
+                    if lemmatizer.lemmatize(d) == d:
+                        cnt += 1
+                        verb = verb + ' ' + lemmatizer.lemmatize(d, 'v')
+                        #verb.append(lemmatizer.lemmatize(d))
+
             rt.append(lst)
         else:
             rt.append([])
+        verblist.append(verb)
+        countlemma.append(cnt)
         # extract vector
         p = [0] * len(abb)
         if 'sentences' in output:
@@ -88,7 +115,7 @@ def get_sem_sequence_vector(sens):
                         p[abb.index(t)] += a.count(t)
         vec.append(p)
 
-    return rt, vec
+    return rt, vec, verblist, countlemma
 
 #提取每一行开头的tag
 def get_tags(line):

@@ -1,8 +1,9 @@
 #_*_coding:utf-8_*_
-# semantic info - v n pos; sem vector
+# semantic info - v n pos; sem vector; verb base list, verb base count
+# run in this order: 1.cc 2.model
 
 
-
+from sklearn.feature_extraction.text import CountVectorizer
 from pycorenlp import StanfordCoreNLP
 import tools
 import numpy as np
@@ -25,7 +26,18 @@ if __name__ == '__main__':
 
     #sens and labels prepared
 
-    lst, vec = tools.get_sem_sequence_vector(sens)
+    lst, vec, verblist, countlemma = tools.get_sem_sequence_vector(sens)
+
+    # verb vector: x_verb
+    vectorizer = CountVectorizer()
+    X = vectorizer.fit_transform(verblist)
+    word = vectorizer.get_feature_names()
+    print word
+    x_verb = X.toarray()
+
+    #countlemma - 1-dimensional list
+
+
     seqs = tools.to_sequence(lst)
     #seqs:the sem info
 
@@ -53,7 +65,14 @@ if __name__ == '__main__':
 
     #vec and features
 
-    feat = np.concatenate((vec, features), axis=1)
+    countlemma = np.array(countlemma).reshape(-1,1)
+
+    feat = np.concatenate((vec, features, x_verb, countlemma), axis=1)
+
+    print x_verb[:5]
+    print countlemma[:5]
+
+
 
     f = open('sem_features.txt', 'w')
     for i in feat:
