@@ -94,6 +94,7 @@ def get_sem_sequence_vector(sens):
                         if d[-iiii-1].isalpha():
                             break
                     d = d[:-iiii]
+                    d = str.lower()
 
                     if lemmatizer.lemmatize(d) == d:
                         cnt += 1

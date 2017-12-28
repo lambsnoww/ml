@@ -1,6 +1,6 @@
 #_*_coding:utf-8_*_
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-
+from sklearn.metrics import *
 from sklearn import svm
 from sklearn import linear_model
 from sklearn.naive_bayes import GaussianNB
@@ -10,6 +10,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.datasets import load_iris
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neural_network import MLPClassifier
 # the stacked classifier
 from stacked.stacked_generalization.lib.stacking import StackedClassifier
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
@@ -45,10 +46,10 @@ if __name__ == '__main__':
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=seed)
     x_train_sens, x_test_sens, y_train, y_test = train_test_split(sens, y, test_size=0.2, random_state=seed)
 
-
-
-    #clf = LinearDiscriminantAnalysis(n_components=1)
+    # MLP(10)和SVM(001,100)
+    # clf = MLPClassifier(hidden_layer_sizes=10)
     clf = svm.SVC(gamma=0.001, C=100)
+    #clf = LinearDiscriminantAnalysis(n_components=1)
     #clf = GaussianNB()
     #clf = BernoulliNB()
     #clf = tree.DecisionTreeClassifier()
@@ -70,7 +71,7 @@ if __name__ == '__main__':
     print "On test data:"
     y_pred = clf.predict(x_test)
     tools.evaluate(y_pred, y_test)
-    '''
+
     for i in range(len(y_test)):
         if y_test[i] == 0 and y_pred[i] == 1:
             print '1, 0'
@@ -79,7 +80,9 @@ if __name__ == '__main__':
         if y_test[i] == 1 and y_pred[i] == 0:
             print '0, 1'
             print x_test_sens[i]
-    '''
+
+    print confusion_matrix(y_test, y_pred)
+
 
 
 
