@@ -5,7 +5,7 @@ import sys
 from collections import Counter
 from collections import defaultdict
 import pandas as pd
-import tools.wordProcess as tw
+#import tools.wordProcess as tw
 import pylab
 
 
@@ -57,7 +57,7 @@ class Word(object):
             sen = sen.strip()
             sens.append(sen)
 
-        self.sentences = sens # trimed sentences
+        self.sentences = sens # trimed sentence
 
         ls = []
         for line in sens:

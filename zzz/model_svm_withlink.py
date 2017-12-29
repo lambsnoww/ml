@@ -67,6 +67,7 @@ if __name__ == '__main__':
     # MLP(10)和SVM(001,100)
     # clf = MLPClassifier(hidden_layer_sizes=10)
     clf = svm.SVC(gamma=0.001, C=100)
+    #clf = svm.SVC(gamma=0.00001, C=100) # precision
     #clf = LinearDiscriminantAnalysis(n_components=1)
     #clf = GaussianNB()
     #clf = BernoulliNB()
@@ -81,16 +82,23 @@ if __name__ == '__main__':
     #clf = StackedClassifier(bclf, clfs)
 
     clf.fit(x_train, y_train)
-
     y_pred_train = clf.predict(x_train)
+    y_pred = clf.predict(x_test)
+
+    app = [1] * int(210*0.2)
+    app2 = [1] * int(210*0.8)
+    y_pred = np.concatenate((y_pred, app), axis=0)
+    y_test = np.concatenate((y_test, app), axis=0)
+    y_pred_train = np.concatenate((y_pred_train, app2), axis=0)
+    y_train = np.concatenate((y_train, app2), axis=0)
+
     print "On train data:"
     tools.evaluate(y_pred_train, y_train)
-
     print "On test data:"
-    y_pred = clf.predict(x_test)
-    tools.evaluate(y_pred, y_test)
 
+    tools.evaluate(y_pred, y_test)
     tools.print_misclassified(y_pred, y_test, x_test_sens)
+    #tools.print_misclassified(y_pred_train, y_train, x_train_sens)
 
 
 

@@ -11,6 +11,7 @@ import pandas as pd
 from sklearn import svm
 from sklearn.model_selection import train_test_split
 from random import randint
+import string
 
 if __name__ == '__main__':
 

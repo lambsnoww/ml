@@ -2,7 +2,10 @@
 from pycorenlp import StanfordCoreNLP
 from sklearn.metrics import *
 import nltk
+from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
+import string
+import numpy as np
 #import nltk
 #nltk.download()
 
@@ -15,6 +18,12 @@ tags = abb_phrase
 
 abb = abb_word
 abb.extend(abb_phrase)
+def wordTrim(word):
+    new_word = ''
+    for i in word:
+        if i.isalpha():
+            new_word += i
+    return new_word
 
 def hasLink(sens):
     #attLink = ""
@@ -50,6 +59,8 @@ def get_sem_sequence_vector(sens):
     vec = [] # vector of tags
     verblist = [] # first verb base list
     countlemma = [] # base verb count
+
+
     for text in sens:
         print text
 
@@ -94,7 +105,7 @@ def get_sem_sequence_vector(sens):
                         if d[-iiii-1].isalpha():
                             break
                     d = d[:-iiii]
-                    d = str.lower()
+                    d = str.lower(str(d))
 
                     if lemmatizer.lemmatize(d) == d:
                         cnt += 1
@@ -116,7 +127,7 @@ def get_sem_sequence_vector(sens):
                         p[abb.index(t)] += a.count(t)
         vec.append(p)
 
-    return rt, vec, verblist, countlemma
+    return rt, vec, verblist, countlemma, notwordcount
 
 #提取每一行开头的tag
 def get_tags(line):
@@ -162,6 +173,128 @@ def evaluate(y_pred, y_true):
     print 'accuracy, precision, recall, f-measure'
     print acc, pre, rec, f
 
+def abnormal(sens):
+    abnlist = []
+    a = 0; b = 0
+    for sen in sens:
+        if length_abnormal(sen):
+            a = 1
+        if punctuation_abnormal(sen):
+            b = 1
+        abnlist.append([a, b])
+    return abnlist
+
+def length_abnormal(sen):
+    words = sen.split()
+    maxlen = 0
+    for i in words:
+        if len(i) > maxlen:
+            maxlen = len(i)
+
+    if len(words) == 0:
+        return 1
+    a = float(len(sen)) / len(words)
+    if a > 20 or a < 3:
+        return 1
+    elif maxlen > 20 or maxlen < 3:
+        return 1
+    return 0
+
+def punctuation_abnormal(sen):
+    english_punctuations = [',', '.', ':', ';', '?', '(', ')', '[', ']', '&', '!', '*', '@', '#', '$', '%', '\n', '<', '>', '~', '_']
+    c = 0
+    for i in english_punctuations:
+        c += sen.count(i)
+    if c == 0 and len(sen.split()) > 20:
+        return 1
+    if float(len(sen.split())) / c > 20:
+        return 1
+    return 0
+
+def get_word_feature(sens):
+    f = []
+    for s in sens:
+
+        # the num of words
+        line = s.strip()
+        line = line.lower()
+        words = line.split()
+        word_counts = len(words)
 
 
+        # if has a hyperlink
+        #link = 0
+        spwords = 0
+        if "http" in line:
+            spwords += 1
+        elif "www" in line:
+            spwords += 1
+        elif "html" in line:
+            spwords += 1
+        # elif "com" in line:
+        #    link = 1
 
+        # specific words: follow me, please subscribe, join, my channel, my videos, sub
+        if "follow" in line:
+            spwords += 1
+        elif "subscribe" in line:
+            spwords += 1
+        elif "sub" in line:
+            spwords += 1
+        elif "join" in line:
+            spwords += 1
+        elif "check" in line:
+            spwords += 1
+        elif "please" in line:
+            spwords += 1
+        #elif "channel" in line:
+
+        #    spwords += 1
+        # elif "video" in line:
+        #    spwords += 1
+        spwords2 = 0
+        if 'follow me' in line:
+            spwords += 1
+        elif 'please subscribe' in line:
+            spwords += 1
+        elif 'my channel' in line:
+            spwords += 1
+        elif 'my video' in line:
+            spwords += 1
+        elif 'my new channel' in line:
+            spwords += 1
+        elif 'check out' in line:
+            spwords += 1
+        elif 'take a look at' in line:
+            spwords += 1
+        elif 'like this comment' in line:
+            spwords += 1
+        # uppercase
+        pun = string.punctuation
+        upcnt = 0
+        for word in words:
+            w = word.translate(None, pun)
+            if word.isupper() and word != 'I':
+                upcnt += 1
+        # punctuation_____________________
+        # print attr_line
+
+        #ret = np.array([word_counts, link, spwords, upcnt])
+        ret = np.array([word_counts, spwords, upcnt])
+        # ret = np.array([link, spwords, upcnt])
+        f.append(ret)
+    return f
+
+    # return attr
+
+def print_misclassified(y_pred, y_test, x_test_sens):
+    for i in range(len(y_test)):
+        if y_test[i] == 0 and y_pred[i] == 1:
+            print '1, 0'
+            print x_test_sens[i]
+    for i in range(len(y_test)):
+        if y_test[i] == 1 and y_pred[i] == 0:
+            print '0, 1'
+            print x_test_sens[i]
+
+    print confusion_matrix(y_test, y_pred)

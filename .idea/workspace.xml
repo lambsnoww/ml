@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="667bac6f-318d-49a1-87b3-196009be3725" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zzz/model.py" afterPath="$PROJECT_DIR$/zzz/model.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zzz/co_training.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zzz/dep/count.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zzz/model_svm_tools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zzz/model_svm_withlink.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zzz/model_word.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zzz/other/sem_features3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/zzz/model.py" afterPath="$PROJECT_DIR$/zzz/other/model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordAttrExtraction/Word.py" afterPath="$PROJECT_DIR$/wordAttrExtraction/Word.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xue4/sem_extract.py" afterPath="$PROJECT_DIR$/xue4/sem_extract.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zzz/cc.py" afterPath="$PROJECT_DIR$/zzz/cc.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zzz/model_svm.py" afterPath="$PROJECT_DIR$/zzz/model_svm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zzz/sens_xlink.txt" afterPath="$PROJECT_DIR$/zzz/sens_xlink.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zzz/tools.py" afterPath="$PROJECT_DIR$/zzz/tools.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,30 +35,8 @@
       <file leaf-file-name="cc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zzz/cc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zzz/model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-334">
-              <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-              <folding>
-                <element signature="e#20#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sem_features.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zzz/sem_features.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="70" column="60" lean-forward="false" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -56,8 +45,8 @@
       <file leaf-file-name="model_svm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zzz/model_svm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+            <state relative-caret-position="102">
+              <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding>
                 <element signature="e#20#88#0" expanded="true" />
               </folding>
@@ -65,69 +54,93 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tools.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="model_svm_withlink.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zzz/model_svm_withlink.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model_svm_tools.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zzz/model_svm_tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+              <folding>
+                <element signature="e#20#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="co_training.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zzz/co_training.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="89" column="44" lean-forward="false" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+              <folding>
+                <element signature="e#30#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model_word.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zzz/model_word.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+              <folding>
+                <element signature="e#30#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extmath.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Python/2.7/site-packages/sklearn/utils/extmath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sens_xlink.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zzz/sens_xlink.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="1690" column="0" lean-forward="false" selection-start-line="1690" selection-start-column="0" selection-end-line="1690" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sem_features.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zzz/sem_features.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zzz/tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="95" column="33" lean-forward="true" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+            <state relative-caret-position="-1002">
+              <caret line="213" column="4" lean-forward="false" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="4" />
               <folding>
                 <element signature="e#20#57#0" expanded="true" />
-                <element signature="e#700#1071#0" expanded="false" />
-                <element signature="e#1094#1474#0" expanded="false" />
-                <element signature="e#3821#4201#0" expanded="false" />
+                <element signature="e#1286#1666#0" expanded="false" />
+                <element signature="e#1875#3940#0" expanded="false" />
+                <element signature="e#4035#4415#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emoji.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xue2/emoji.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_final.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xue2/run_final.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="167" column="10" lean-forward="true" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="10" />
-              <folding>
-                <element signature="e#78#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sens_emoji.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xue2/sens_emoji.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sens_final.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xue2/sens_final.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sem_extract.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xue2/sem_extract.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -143,13 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>df['</find>
-      <find>to_csv</find>
-      <find>[0,349]</find>
-      <find>hasLink</find>
-      <find>knn</find>
-      <find>knn_lin</find>
-      <find>Lev</find>
       <find>train_test</find>
       <find>argsort</find>
       <find>Vec</find>
@@ -161,7 +167,6 @@
       <find>get_sem</find>
       <find>abb_word</find>
       <find>abb_wor</find>
-      <find>concate</find>
       <find>x_train, x</find>
       <find>header</find>
       <find>sem_fea</find>
@@ -170,9 +175,17 @@
       <find>KN</find>
       <find>C=</find>
       <find>lda</find>
-      <find>abnormal</find>
       <find>MLP</find>
       <find>lemmatize</find>
+      <find>trime</find>
+      <find>wordtrim</find>
+      <find>abnormal</find>
+      <find>concate</find>
+      <find>reshape</find>
+      <find>subscribe</find>
+      <find>training</find>
+      <find>predict_pro</find>
+      <find>vectorizer</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -184,15 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xue2/allsensclean.txt" />
-        <option value="$PROJECT_DIR$/xue2/sem_extract.py" />
-        <option value="$PROJECT_DIR$/xue2/trim.py" />
-        <option value="$PROJECT_DIR$/xue3.py" />
-        <option value="$PROJECT_DIR$/trim.py" />
-        <option value="$PROJECT_DIR$/xue2/sens_final.txt" />
-        <option value="$PROJECT_DIR$/xue3/sem_extract.py" />
-        <option value="$PROJECT_DIR$/xue3/sens_final.txt" />
-        <option value="$PROJECT_DIR$/xue3/sequences.txt" />
         <option value="$PROJECT_DIR$/xue2/run_final.py" />
         <option value="$PROJECT_DIR$/xue3/sem_sequence.py" />
         <option value="$PROJECT_DIR$/xue3/DataFrame.csv" />
@@ -205,7 +209,6 @@
         <option value="$PROJECT_DIR$/xue4/allsens_test.txt" />
         <option value="$PROJECT_DIR$/xue4/allsens.txt" />
         <option value="$PROJECT_DIR$/xue4/sequence_run.py" />
-        <option value="$PROJECT_DIR$/xue4/sem_extract.py" />
         <option value="$PROJECT_DIR$/xue4/sem_seq.txt" />
         <option value="$PROJECT_DIR$/xue4/code.py" />
         <option value="$PROJECT_DIR$/xue3/hmm.py" />
@@ -220,7 +223,6 @@
         <option value="$PROJECT_DIR$/xue3/run_final.py" />
         <option value="$PROJECT_DIR$/xue3/run_final_svm.py" />
         <option value="$PROJECT_DIR$/zzz/abstract" />
-        <option value="$PROJECT_DIR$/zzz/sens_xlink.txt" />
         <option value="$PROJECT_DIR$/zzz/allsens.txt" />
         <option value="$PROJECT_DIR$/xue4/Youtube.csv" />
         <option value="$PROJECT_DIR$/zzz/test.py" />
@@ -231,18 +233,29 @@
         <option value="$PROJECT_DIR$/zzz/nlp.py" />
         <option value="$PROJECT_DIR$/zzz/zzz.py" />
         <option value="$PROJECT_DIR$/zzz/dep/model.py" />
-        <option value="$PROJECT_DIR$/zzz/cc.py" />
         <option value="$PROJECT_DIR$/zzz/model.py" />
+        <option value="$PROJECT_DIR$/xue2/Youtube.csv" />
+        <option value="$PROJECT_DIR$/zzz/sens_xlink.txt" />
+        <option value="$PROJECT_DIR$/xue4/sem_extract.py" />
+        <option value="$PROJECT_DIR$/xue/tool.py" />
         <option value="$PROJECT_DIR$/zzz/model_svm.py" />
+        <option value="$PROJECT_DIR$/zzz/dep/count.py" />
         <option value="$PROJECT_DIR$/zzz/tools.py" />
+        <option value="$PROJECT_DIR$/zzz/model_svm_withlink.py" />
+        <option value="$PROJECT_DIR$/zzz/labels.txt" />
+        <option value="$PROJECT_DIR$/wordAttrExtraction/Word.py" />
+        <option value="$PROJECT_DIR$/zzz/co_training.py" />
+        <option value="$PROJECT_DIR$/zzz/cc.py" />
+        <option value="$PROJECT_DIR$/zzz/model_word.py" />
+        <option value="$PROJECT_DIR$/zzz/model_svm_tools.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="23" />
+    <option name="x" value="509" />
     <option name="y" value="23" />
-    <option name="width" value="1141" />
-    <option name="height" value="777" />
+    <option name="width" value="1372" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -296,20 +309,24 @@
             <path>
               <item name="ml" type="b2602c69:ProjectViewProjectNode" />
               <item name="ml" type="462c0819:PsiDirectoryNode" />
-              <item name="zzz" type="462c0819:PsiDirectoryNode" />
+              <item name="xue3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ml" type="462c0819:PsiDirectoryNode" />
+              <item name="xue4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ml" type="b2602c69:ProjectViewProjectNode" />
               <item name="ml" type="462c0819:PsiDirectoryNode" />
               <item name="zzz" type="462c0819:PsiDirectoryNode" />
-              <item name="other" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,19 +342,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/zzz" />
+      <recent name="$PROJECT_DIR$/zzz/other" />
+      <recent name="$PROJECT_DIR$/zzz/dep" />
+      <recent name="$PROJECT_DIR$/xue3" />
+      <recent name="$PROJECT_DIR$/xue4" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/zzz/other" />
       <recent name="$PROJECT_DIR$/zzz/dep" />
       <recent name="$PROJECT_DIR$/zzz" />
       <recent name="$PROJECT_DIR$/xue3/dep" />
       <recent name="$PROJECT_DIR$/xue4" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/zzz" />
-      <recent name="$PROJECT_DIR$/zzz/dep" />
-      <recent name="$PROJECT_DIR$/xue3" />
-      <recent name="$PROJECT_DIR$/xue4" />
-      <recent name="$PROJECT_DIR$/xue2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -352,8 +369,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.model_svm">
-    <configuration name="cc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.model_word">
+    <configuration name="co_training" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -365,7 +382,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ml" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zzz/cc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zzz/co_training.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="count" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zzz/dep" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ml" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zzz/dep/count.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -387,23 +421,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zzz" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ml" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zzz/model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="model_svm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -421,7 +438,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="nlp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="model_svm_withlink" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -433,12 +450,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ml" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zzz/other/nlp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zzz/model_svm_withlink.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="zzz" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="model_word" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -450,26 +467,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ml" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zzz/dep/zzz.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zzz/model_word.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.ml.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.nlp" />
-      <item index="2" class="java.lang.String" itemvalue="Python.zzz" />
-      <item index="3" class="java.lang.String" itemvalue="Python.cc" />
-      <item index="4" class="java.lang.String" itemvalue="Python.model" />
-      <item index="5" class="java.lang.String" itemvalue="Python.model_svm" />
+      <item index="1" class="java.lang.String" itemvalue="Python.model_svm" />
+      <item index="2" class="java.lang.String" itemvalue="Python.count" />
+      <item index="3" class="java.lang.String" itemvalue="Python.model_svm_withlink" />
+      <item index="4" class="java.lang.String" itemvalue="Python.co_training" />
+      <item index="5" class="java.lang.String" itemvalue="Python.model_word" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.model_svm" />
-        <item index="1" class="java.lang.String" itemvalue="Python.model" />
-        <item index="2" class="java.lang.String" itemvalue="Python.cc" />
-        <item index="3" class="java.lang.String" itemvalue="Python.nlp" />
-        <item index="4" class="java.lang.String" itemvalue="Python.zzz" />
+        <item index="0" class="java.lang.String" itemvalue="Python.model_word" />
+        <item index="1" class="java.lang.String" itemvalue="Python.model_svm_withlink" />
+        <item index="2" class="java.lang.String" itemvalue="Python.co_training" />
+        <item index="3" class="java.lang.String" itemvalue="Python.count" />
+        <item index="4" class="java.lang.String" itemvalue="Python.model_svm" />
       </list>
     </recent_temporary>
   </component>
@@ -502,18 +519,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="23" width="1141" height="777" extended-state="0" />
-    <editor active="true" />
+    <frame x="509" y="23" width="1372" height="1057" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26387626" sideWeight="0.6369681" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22180451" sideWeight="0.6369681" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19914803" sideWeight="0.49044585" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36267072" sideWeight="0.401105" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15757576" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15781488" sideWeight="0.598895" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21938232" sideWeight="0.598895" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18968134" sideWeight="0.49171272" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36417556" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23934427" sideWeight="0.6342105" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32694355" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19271624" sideWeight="0.48025477" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24007745" sideWeight="0.36578947" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2644809" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -648,7 +664,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/zzz/tools.py</url>
-          <line>47</line>
+          <line>56</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -661,156 +677,17 @@
           <line>1</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zzz/dep/zzz.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="64" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xue4/abnormal.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue3/sem_sequence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="181" column="24" lean-forward="false" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue3/sem_all.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="1954" column="0" lean-forward="false" selection-start-line="1954" selection-start-column="0" selection-end-line="1954" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue3/sequences.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue3/sequence_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="e#1387#2200#0" expanded="false" />
-            <element signature="e#2255#2851#0" expanded="false" />
-            <element signature="e#2914#3510#0" expanded="false" />
-            <element signature="e#3544#5822#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue3/trim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="119" column="13" lean-forward="false" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/sequence_run.py" />
-    <entry file="file://$PROJECT_DIR$/xue4/sem_seq.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="1580" column="2" lean-forward="false" selection-start-line="1580" selection-start-column="2" selection-end-line="1580" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/dep/allsens.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="1941" column="1" lean-forward="false" selection-start-line="1941" selection-start-column="1" selection-end-line="1941" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/dep/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue4/Youtube.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="1352" column="0" lean-forward="false" selection-start-line="1352" selection-start-column="0" selection-end-line="1352" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue3/Youtube.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="1169" column="0" lean-forward="false" selection-start-line="1169" selection-start-column="0" selection-end-line="1169" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue/nlp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue4/sem_extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2389">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue4/sequence_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="148" column="4" lean-forward="false" selection-start-line="148" selection-start-column="4" selection-end-line="148" selection-end-column="4" />
-          <folding>
-            <element signature="e#21#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/dep/zzz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1294">
-          <caret line="102" column="19" lean-forward="false" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
-          <folding>
-            <element signature="e#54#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue4/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="332" column="28" lean-forward="false" selection-start-line="332" selection-start-column="28" selection-end-line="332" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/dep/sem_seq.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2221">
-          <caret line="436" column="0" lean-forward="true" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zzz/dep/sem_run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -826,14 +703,6 @@
           <folding>
             <element signature="e#8597#10360#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xue3/run_final3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="324" column="33" lean-forward="false" selection-start-line="324" selection-start-column="33" selection-end-line="324" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,15 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/labels.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="1690" column="0" lean-forward="false" selection-start-line="1690" selection-start-column="0" selection-end-line="1690" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1430">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,34 +759,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/sens_xlink.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="810" column="0" lean-forward="false" selection-start-line="810" selection-start-column="0" selection-end-line="810" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="810" column="0" lean-forward="false" selection-start-line="810" selection-start-column="0" selection-end-line="810" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/seqs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/other/sem_features.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -957,19 +791,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xue3/run_final2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xue2/abnormal.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,7 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,9 +823,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="167" column="10" lean-forward="true" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="10" />
-          <folding>
-            <element signature="e#78#89#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xue2/sens_emoji.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xue2/sens_final.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xue2/Youtube.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="986" column="110" lean-forward="false" selection-start-line="986" selection-start-column="110" selection-end-line="986" selection-end-column="110" />
         </state>
       </provider>
     </entry>
@@ -1015,7 +863,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xue2/sens_emoji.txt">
+    <entry file="file://$PROJECT_DIR$/wordnlk/wordProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/other/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xue3/run_final2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="69" column="27" lean-forward="false" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xue4/sem_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/sklearn/cross_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xue/tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/dep/allsens.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34938">
+          <caret line="1941" column="1" lean-forward="false" selection-start-line="1941" selection-start-column="1" selection-end-line="1941" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/dep/count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/seqs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1023,59 +934,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xue2/sens_final.txt">
+    <entry file="file://$PROJECT_DIR$/zzz/other/sem_features2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/other/sem_features.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/dep/zzz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#54#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/other/sem_features3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/labels.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xue4/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4194">
+          <caret line="332" column="28" lean-forward="false" selection-start-line="332" selection-start-column="28" selection-end-line="332" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xue3/run_final3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1189">
+          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/wordProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordAttrExtraction/Word.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/sklearn/utils/extmath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zzz/cc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="70" column="60" lean-forward="false" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/co_training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="89" column="44" lean-forward="false" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+          <folding>
+            <element signature="e#30#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zzz/sem_features.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="27">
           <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1002">
+          <caret line="213" column="4" lean-forward="false" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="4" />
+          <folding>
+            <element signature="e#20#57#0" expanded="true" />
+            <element signature="e#1286#1666#0" expanded="false" />
+            <element signature="e#1875#3940#0" expanded="false" />
+            <element signature="e#4035#4415#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/sens_xlink.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="1690" column="0" lean-forward="false" selection-start-line="1690" selection-start-column="0" selection-end-line="1690" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zzz/model_svm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding>
             <element signature="e#20#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/model.py">
+    <entry file="file://$PROJECT_DIR$/zzz/model_word.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        <state relative-caret-position="783">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding>
-            <element signature="e#20#88#0" expanded="true" />
+            <element signature="e#30#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zzz/tools.py">
+    <entry file="file://$PROJECT_DIR$/zzz/model_svm_withlink.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="95" column="33" lean-forward="true" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+        <state relative-caret-position="504">
+          <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz/model_svm_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
           <folding>
-            <element signature="e#20#57#0" expanded="true" />
-            <element signature="e#700#1071#0" expanded="false" />
-            <element signature="e#1094#1474#0" expanded="false" />
-            <element signature="e#3821#4201#0" expanded="false" />
+            <element signature="e#20#88#0" expanded="true" />
           </folding>
         </state>
       </provider>

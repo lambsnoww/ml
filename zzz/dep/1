@@ -1,0 +1,36 @@
+df = pd.read_csv('sem_features.txt', header=None)
+
+    f = open('labels.txt', 'r')
+    labels = f.read().split()
+    # do not forget to transfer chr to int
+    labels = [ord(i)-ord('0') for i in labels]
+    f.close()
+
+    f = open('sens_xlink.txt', 'r')
+    sens = f.readlines()
+    f.close()
+
+    notwordcount = []
+    for text in sens:
+        a = text.split()
+        senlen = len(a)
+        nc = 0
+        b = 0
+        for word in a:
+            tmp = tools.wordTrim(word).lower()
+            if len(tmp) == 0:
+                continue
+            if not tools.wordnet.synsets(tmp):
+                nc += 1
+        if senlen != 0:
+            b = float(nc) / senlen
+        notwordcount.append([nc, b])
+
+    abn = tools.abnormal(sens)
+    #abn = np.array(abn).reshape(-1, 2)
+
+    word_features = tools.get_word_feature(sens)
+
+    x = df.values
+    x = np.concatenate((x, notwordcount, abn, word_features), axis=1)
+    y = labels
