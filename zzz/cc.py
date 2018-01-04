@@ -67,7 +67,7 @@ if __name__ == '__main__':
     #vec and features
 
     countlemma = np.array(countlemma).reshape(-1,1)
-
+    #vec - ? features - 2, x_verb - ?, countlemma - 1
     feat = np.concatenate((vec, features, x_verb, countlemma), axis=1)
 
     print x_verb[:5]

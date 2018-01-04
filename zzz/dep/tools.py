@@ -127,7 +127,7 @@ def get_sem_sequence_vector(sens):
                         p[abb.index(t)] += a.count(t)
         vec.append(p)
 
-    return rt, vec, verblist, countlemma#, notwordcount
+    return rt, vec, verblist, countlemma, notwordcount
 
 #提取每一行开头的tag
 def get_tags(line):
@@ -172,37 +172,6 @@ def evaluate(y_pred, y_true):
 
     print 'accuracy, precision, recall, f-measure'
     print acc, pre, rec, f
-
-def evaluate_list(y_pred_list, y_true):
-    acc = []; pre = []; rec = []; f_score = []
-    for i in y_pred_list:
-        a = accuracy_score(y_true, i)
-        p = precision_score(y_true, i)
-        r = recall_score(y_true, i)
-        f = f1_score(y_true, i)
-        acc.append(a)
-        pre.append(p)
-        rec.append(r)
-        f_score.append(f)
-    print "accuracy"
-    for i in acc:
-        print i
-    print ''
-    print "precision"
-    for i in pre:
-        print i
-    print ''
-    print "recall"
-    for i in rec:
-        print i
-    print ''
-    print "f-score"
-    for i in f_score:
-        print i
-    print ''
-
-
-
 
 def abnormal(sens):
     abnlist = []

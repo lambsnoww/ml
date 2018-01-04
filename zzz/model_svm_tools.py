@@ -76,7 +76,7 @@ def get_word_features():
     vectorizer = CountVectorizer()
     X = vectorizer.fit_transform(sens)
     word = vectorizer.get_feature_names()
-    print word
+    #print word
     x_word = X.toarray()
     #x_origin = x_word
 
@@ -115,8 +115,10 @@ def get_word_features():
     # abn = np.array(abn).reshape(-1, 2)
 
     word_features = tools.get_word_feature(sens)
-
-    x = np.concatenate((x_word, notwordcount, abn, word_features), axis=1)
+    # co-training use additional info
+    # but chapter4 not
+    x = x_word
+    #x = np.concatenate((x_word, notwordcount, abn, word_features), axis=1)
     y = labels
 
     return x, y
